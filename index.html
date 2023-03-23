@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src=p2Matcher.js></script>
+    <title>Neopets Drawing Prompts!</title>
+  </head>
+  <body>
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="card-body text-center">
+                  <h1>Neopets Drawing Prompts!</h1>
+                  <br>
+                  <button onclick="myFunction()" type="button" class="btn btn-primary">Random P2!</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="text-center">
+                <br>
+                  <div id="drawP"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        <p>Unofficially powered by the Jellyneo Item Database
+            <a href="https://items.jellyneo.net/"target="_blank" rel="noopener noreferrer"><img src="https://www.jellyneo.net/images/articles/idbicon.png" alt="JNIDBLOGO" /></a></p>
+            <p>Questions? Concerns? Ideas? DM edd #4569 on discord</p>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        function myFunction() {
+            let url = jnLinkFormat(getDrawPrompt());
+          document.getElementById("drawP").innerHTML = url;
+        }
+    </script>
+  </body>
+</html>
+<style>
+    .searchimg { 
+        cursor: pointer; 
+        height: 20px !important; 
+        width: 20px !important; 
+    }
+    .search-helper { 
+        margin-top: 0; 
+        margin-bottom: 0; 
+    }
+    body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+    
+    </style>
