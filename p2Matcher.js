@@ -100,7 +100,6 @@ function getUniqueDrawPrompt()
         //easy case, no unique colors
         colorPick = Math.floor(Math.random() * ppColors.length);
         // Combine and return 
-        console.log("fuck");
         return [ppColors[colorPick], fullArray[i][0]];
     } else 
     {
