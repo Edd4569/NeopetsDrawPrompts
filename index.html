@@ -8,16 +8,22 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src=p2Matcher.js></script>
-    <title>Neopets Drawing Prompts!</title>
+    <script src=p2LabRay.js></script>
+    <title>Edd's Neopets Stuff!</title>
   </head>
   <body>
     <div class="col-sm-12">
         <div class="card">
             <div class="card-body text-center">
-                  <h1>Neopets Drawing Prompts!</h1>
+                  <h1>Neopets Goodies!</h1>
                   <br>
-                  <button onclick="randomP2()" type="button" class="btn btn-primary">Random P2!</button>
-                  <button onclick="uniqueP2()" type="button" class="btn btn-primary">Unique P2!</button>
+                  <blockquote class="blockquote">
+                    <button onclick="randomP2()" type="button" class="btn btn-primary">Random P2!</button>
+                    <button onclick="uniqueP2()" type="button" class="btn btn-primary">Unique P2!</button>
+                    <button onclick="p2labRay()" type="button" class="btn btn-primary">The Petpet Laboratory!</button>
+                  </blockquote>
+                  <br>
+                  <figcaption class="blockquote-footer">(The Petpet Laboratory is in beta)</figcaption>
             </div>
         </div>
     </div>
@@ -31,43 +37,78 @@
     </div>
     <footer>
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        <p>Unofficially powered by the Jellyneo Item Database
+        
+        <p>© 1999-2023 Neopets, Inc. All rights reserved.<br> Unofficially powered by the Jellyneo Item Database.
             <a href="https://items.jellyneo.net/"target="_blank" rel="noopener noreferrer"><img src="https://www.jellyneo.net/images/articles/idbicon.png" alt="JNIDBLOGO" /></a></p>
-            <p>Questions? Concerns? Ideas? DM edd #4569 on discord</p>
+            <figcaption class="blockquote-footer">
+              <br>This is an unauthorized fan site
+              <p>Questions? Concerns? Ideas? DM @eddwith3ds on discord</p>
+            </figcaption>
     </div>
 </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
         function randomP2() {
-            let url = jnLinkFormat(getDrawPrompt());
+          clearOutcome();
+          let url = jnLinkFormat(getDrawPrompt());
           document.getElementById("drawP").innerHTML = url;
         }
         function uniqueP2() {
+          clearOutcome();
           setUpArray();
           let url = jnLinkFormat(getUniqueDrawPrompt());
           document.getElementById("drawP").innerHTML = url;
+        }
+        function p2labRay() {
+          setupLabRay();
+          let url = onLabRayP2Button(1);
+          document.getElementById("drawP").innerHTML = p2LabRayGreeting(1) + url + '<br>' +'<button onclick="Zap()" type="button" class="btn btn-primary">Zap the poor Petpet!</button><br>';
+        }
+        function Zap() {
+          setupLabRay();
+          let url = onLabRayP2Button(0);
+          let z = getZapCount();
+          let newText = p2LabRayGreeting(0) + url + '<br>' + '<button onclick="Zap()" type="button" class="btn btn-primary">Zap the poor Petpet!</button>';
+          newText += `   <button onclick="Restart()" type="button" class="btn btn-danger">Restart!</button><br>`+ z;
+          document.getElementById("drawP").innerHTML = newText;
+        }
+        function Restart() {
+          let url = onRestart(1);
+          document.getElementById("drawP").innerHTML = p2LabRayGreeting(1) + url + '<br>' +'<button onclick="Zap()" type="button" class="btn btn-primary">Zap the poor Petpet!</button><br>';
         }
     </script>
   </body>
 </html>
 <style>
-    .searchimg { 
-        cursor: pointer; 
-        height: 20px !important; 
-        width: 20px !important; 
-    }
-    .search-helper { 
-        margin-top: 0; 
-        margin-bottom: 0; 
-    }
-    body {
+.searchimg { 
+  cursor: pointer; 
+  height: 20px !important; 
+  width: 20px !important; 
+}
+.namBox {
+  width: 75%;
+}
+.p2out {
+  border: 1px solid #000000;
+  padding: 4px;
+  background-color: #fff;
+  max-width: 92px;
+  max-height: 92px;
+  aspect-ratio: 1 / 1;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+.search-helper { 
+  margin-top: 0; 
+  margin-bottom: 0; 
+}
+body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
-
 footer {
   margin-top: auto;
 }
-    
-    </style>
+</style>
