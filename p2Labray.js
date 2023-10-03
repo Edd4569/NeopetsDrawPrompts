@@ -42,7 +42,8 @@ function NameChange () {
 }
 function PetLevelUp () { 
     p2Level+=1;
-    outcome = "LevelUp";
+    outcome = `Nothing <i>looks</i> different about Fritz but you can sense something happened.<br>It becomes evident later when it tries to climb a tree but breaks off the branch instead. 
+    The ray has increased its level to: ${p2Level} `;
     return updateP2();
 }
 function PetLevelDown () { 
@@ -75,7 +76,7 @@ function Nothing () {
 }
 function Disappear () { 
     outcome =`Your fears that the Kookith didn't actually know what the heck he was doing are confirmed when ${p2Name} suddenly disappears, leaving no trace. 
-    <br> None. Nada. Zip. Ziltch. <br> Have another Slorg... Take better care of it this time.`
+    <br> None. Nada. Zip. Ziltch. <br> <b>Have another Slorg... Take better care of it this time.</b>`
     onRestart(0);
     return updateP2();
 }
@@ -187,6 +188,7 @@ function randexec() {
 }
 
 function setupLabRay() {
+    // List of Possible Names
     labRayNameList.push("1337");
     labRayNameList.push("Bhudda of Geraptiku");
     labRayNameList.push("Dirigibles");
@@ -232,7 +234,7 @@ function setupLabRay() {
     labRayNameList.push("Type Mismatch Error");
     labRayNameList.push("Woojit");
     labRayNameList.push("Your Ad Here");
-
+    // Add the P2s here:
     labRayList.push(["8-Bit Altachuck",54401,101,"https://images.neopets.com/items/altachuck_8bit.gif",1]);
     labRayList.push(["8-Bit Drackonack",46234,101,"https://images.neopets.com/items/drackonack_8bit.gif",1]);
     labRayList.push(["8-Bit Gobbler",46432,101,"https://images.neopets.com/items/gobbler_8bit.gif",1]);
@@ -401,7 +403,7 @@ function setupLabRay() {
     labRayList.push(["Blue Aroota",42744,101,"https://images.neopets.com/items/aroota_blue.gif",0]);
     labRayList.push(["Blue Avabot",22905,101,"https://images.neopets.com/items/avabot_blue.gif",0]);
     labRayList.push(["Blue Babaa",8183,101,"https://images.neopets.com/items/babaa_blue.gif",0]);
-    labRayList.push(["Rotoblur 4000",9639,99,"https://images.neopets.com/items/petpet_roto.gif",0]);
+    labRayList.push(["Blue Baby Fireball",8552,101,"https://images.neopets.com/items/fireball_blue.gif",0]);
     labRayList.push(["Blue Baby Space Fungus",22001,101,"https://images.neopets.com/items/blue_baby_fungus.gif",0]);
     labRayList.push(["Blue Babyca",32278,101,"https://images.neopets.com/items/babyca_blue.gif",0]);
     labRayList.push(["Blue Barbat",8057,101,"https://images.neopets.com/items/barbat_blue.gif",0]);
@@ -500,7 +502,7 @@ function setupLabRay() {
     labRayList.push(["Blue Quintilc",28267,101,"https://images.neopets.com/items/quintilc_blue.gif",0]);
     labRayList.push(["Blue Rashpid",25613,101,"https://images.neopets.com/items/rashpid_blue.gif",0]);
     labRayList.push(["Blue Reptillior",18981,101,"https://images.neopets.com/items/reptillior_blue.gif",0]);
-    labRayList.push(["Vacumatic 9000",19329,99,"https://images.neopets.com/items/robo_petpet4.gif",0]);
+    labRayList.push(["Blue Roburg 3T3",22838,101,"https://images.neopets.com/items/roburg_blue.gif",0]);
     labRayList.push(["Blue Rock",17565,101,"https://images.neopets.com/items/rock_blue.gif",0]);
     labRayList.push(["Blue Rotawheel",22717,101,"https://images.neopets.com/items/rotawheel_blue.gif",0]);
     labRayList.push(["Blue Sauropod",4867,101,"https://images.neopets.com/items/sauropod_blue.gif",0]);
@@ -519,24 +521,24 @@ function setupLabRay() {
     labRayList.push(["Blue Spyven",25216,101,"https://images.neopets.com/items/spyven_blue.gif",0]);
     labRayList.push(["Blue Stego",16217,101,"https://images.neopets.com/items/stego_blue.gif",0]);
     labRayList.push(["Blue Stopngo 400",29569,101,"https://images.neopets.com/items/stopngo_blue.gif",0]);
-    labRayList.push(["Disco Albat",60282,101,"https://images.neopets.com/items/disco_albat.gif",0]);
+    labRayList.push(["Blue Sutekh",16214,101,"https://images.neopets.com/items/des_pet_3blue.gif",0]);
     labRayList.push(["Blue Symol",8105,101,"https://images.neopets.com/items/symol_blue.gif",0]);
-    labRayList.push(["Island Alkenore",15991,101,"",0]);
+    labRayList.push(["Blue Taigar",28387,101,"https://images.neopets.com/items/taiger_blue.gif",0]);
     labRayList.push(["Blue Tasu",24830,101,"https://images.neopets.com/items/tasu_blue.gif",0]);
     labRayList.push(["Blue Tekkal",73267,101,"https://images.neopets.com/items/tekkal_blue.gif",0]);
-    labRayList.push(["Pink Alkenore",15987,101,"",0]);
+    labRayList.push(["Blue Tencals",30182,101,"https://images.neopets.com/items/tencal_blue.gif",0]);
     labRayList.push(["Blue Tigermouse",10620,101,"https://images.neopets.com/items/tigermouse_blue.gif",0]);
     labRayList.push(["Blue Trunkard",28695,101,"https://images.neopets.com/items/trunkard_blue.gif",0]);
     labRayList.push(["Blue Turtum",15266,101,"https://images.neopets.com/items/turtum_blue.gif",0]);
     labRayList.push(["Blue Tyrowbee",21862,101,"https://images.neopets.com/items/tyrowbee_blue.gif",0]);
     labRayList.push(["Blue Uggatrip",22177,101,"https://images.neopets.com/items/uggatrip_blue.gif",0]);
     labRayList.push(["Blue Ukali",34080,101,"https://images.neopets.com/items/ukali_blue.gif",0]);
-    labRayList.push(["Spring Apis",64732,101,"",0]);
+    labRayList.push(["Blue Ultra Pinceron",15257,101,"https://images.neopets.com/items/ultra_pince_blue.gif",0]);
     labRayList.push(["Blue Urgoni",22074,101,"https://images.neopets.com/items/urgoni_blue.gif",0]);
     labRayList.push(["Blue Wadjet",4301,101,"https://images.neopets.com/items/wadjet_blue.gif",0]);
     labRayList.push(["Blue Wain",19058,101,"https://images.neopets.com/items/wain_blue.gif",0]);
     labRayList.push(["Blue Walein",15235,101,"https://images.neopets.com/items/walein_blue.gif",0]);
-    labRayList.push(["Island Baby Blu",8551,101,"https://images.neopets.com/items/baby_blu_island.gif",0]);
+    labRayList.push(["Blue Walking Carpet",27869,101,"https://images.neopets.com/items/walkingcarpet_blue.gif",0]);
     labRayList.push(["Blue Warf",8058,101,"https://images.neopets.com/items/warf_blue.gif",0]);
     labRayList.push(["Blue Weewoo",14201,101,"https://images.neopets.com/items/weewoo_blue.gif",0]);
     labRayList.push(["Blue Wheelie",21429,101,"https://images.neopets.com/items/wheelie_blue.gif",0]);
@@ -597,7 +599,7 @@ function setupLabRay() {
     labRayList.push(["Candy Vampire",212,99,"https://images.neopets.com/items/hall_petpet_corn.gif",0]);
     labRayList.push(["Candychan",16021,99,"https://images.neopets.com/items/candychan_red.gif",0]);
     labRayList.push(["Caprior",44420,96,"https://images.neopets.com/items/caprior.gif",0]);
-    labRayList.push(["Mutant Baby Blu",27449,101,"https://images.neopets.com/items/babyblu_mutant.gif",0]);
+    labRayList.push(["Captive Shadow Wraith",41634,101,"https://images.neopets.com/items/cshadwraith.gif",0]);
     labRayList.push(["Carma",665,93,"https://images.neopets.com/items/pet_carma.gif",0]);
     labRayList.push(["Carmariller",8281,89,"https://images.neopets.com/items/carmariller_yellow.gif",0]);
     labRayList.push(["Catamara",3168,70,"https://images.neopets.com/items/isl_petpet13.gif",0]);
@@ -611,7 +613,7 @@ function setupLabRay() {
     labRayList.push(["Checkered Slorg",31335,101,"https://images.neopets.com/items/slorg_checkered.gif",0]);
     labRayList.push(["Checkered Spyder",27377,101,"https://images.neopets.com/items/spyder_checkered.gif",0]);
     labRayList.push(["Checkered Symol",31192,101,"https://images.neopets.com/items/symol_checkered.gif",0]);
-    labRayList.push(["Purple Baby Blu",36597,101,"https://images.neopets.com/items/babyblu_purple.gif",0]);
+    labRayList.push(["Checkered Walking Carpet",64889,101,"https://images.neopets.com/items/walkingcarpet_checkered.gif",0]);
     labRayList.push(["Checkered Zebba",42198,101,"https://images.neopets.com/items/zebba_checkered.gif",0]);
     labRayList.push(["Cheerlub",8012,93,"https://images.neopets.com/items/isl_petpet7.gif",0]);
     labRayList.push(["Chiruck",20650,101,"https://images.neopets.com/items/petpet_hoosahoosa.gif",1]);
@@ -846,7 +848,7 @@ function setupLabRay() {
     labRayList.push(["Darigan Avabot",35353,101,"https://images.neopets.com/items/avabot_darigan.gif",0]);
     labRayList.push(["Darigan Babaa",8208,101,"https://images.neopets.com/items/babaa_darigan.gif",0]);
     labRayList.push(["Darigan Beekadoodle",28118,101,"https://images.neopets.com/items/beekadoodle_darigan.gif",0]);
-    labRayList.push(["Valentine Baby Blu",64491,101,"https://images.neopets.com/items/babyblu_valentine.gif",0]);
+    labRayList.push(["Darigan Biyako",48785,101,"https://images.neopets.com/items/shpp_biyako_darigan.gif",0]);
     labRayList.push(["Darigan Bowla",43498,101,"https://images.neopets.com/items/bowla_darigan.gif",0]);
     labRayList.push(["Darigan Buzzer",16011,101,"https://images.neopets.com/items/buzzer_darigan.gif",0]);
     labRayList.push(["Darigan Candychan",52200,101,"https://images.neopets.com/items/candychan_darigan.gif",0]);
@@ -873,7 +875,7 @@ function setupLabRay() {
     labRayList.push(["Darigan Nuk",18071,101,"https://images.neopets.com/items/nuk_darigan.gif",0]);
     labRayList.push(["Darigan Pepito",28121,101,"https://images.neopets.com/items/pepito_darigan.gif",0]);
     labRayList.push(["Darigan Phnard",28120,101,"https://images.neopets.com/items/phnard_darigan.gif",0]);
-    labRayList.push(["White Baby Blu",8546,101,"https://images.neopets.com/items/baby_blu_white.gif",0]);
+    labRayList.push(["Darigan Quetzal",18760,101,"https://images.neopets.com/items/gpp_quetzal_darigan.gif",0]);
     labRayList.push(["Darigan Raindorf",21501,101,"https://images.neopets.com/items/raindorf_darigan.gif",0]);
     labRayList.push(["Darigan Skree",71614,101,"https://images.neopets.com/items/skree_darigan.gif",0]);
     labRayList.push(["Darigan Slorg",19960,101,"https://images.neopets.com/items/slorg_darigan.gif",0]);
@@ -925,7 +927,7 @@ function setupLabRay() {
     labRayList.push(["Devilpuss",970,70,"https://images.neopets.com/items/angelpuss_devilpuss.gif",0]);
     labRayList.push(["Dirt Symol",46085,101,"https://images.neopets.com/items/symol_dirt.gif",0]);
     labRayList.push(["Disco Acko",46466,101,"https://images.neopets.com/items/acko_disco.gif",0]);
-    labRayList.push(["Blue Baby Fireball",8552,101,"https://images.neopets.com/items/fireball_blue.gif",0]);
+    labRayList.push(["Disco Albat",60282,101,"https://images.neopets.com/items/disco_albat.gif",0]);
     labRayList.push(["Disco Angelpuss",8051,101,"https://images.neopets.com/items/angelpuss_disco.gif",0]);
     labRayList.push(["Disco Anubis",8178,101,"https://images.neopets.com/items/anubis_disco.gif",0]);
     labRayList.push(["Disco Babaa",60070,101,"https://images.neopets.com/items/babaa_disco.gif",0]);
@@ -947,7 +949,7 @@ function setupLabRay() {
     labRayList.push(["Disco Kadoatie",18073,101,"https://images.neopets.com/items/kadoatie_disco.gif",0]);
     labRayList.push(["Disco Kookith",18098,101,"https://images.neopets.com/items/kookith_disco.gif",0]);
     labRayList.push(["Disco Krawk",22785,101,"https://images.neopets.com/items/petpet_krawk_disco.gif",0]);
-    labRayList.push(["Magma Baby Fireball",52723,101,"",0]);
+    labRayList.push(["Disco Lil Frankie",34456,101,"https://images.neopets.com/items/lilfrankie_disco.gif",0]);
     labRayList.push(["Disco Meepit",13567,101,"https://images.neopets.com/items/meepit_disco.gif",0]);
     labRayList.push(["Disco Niptor",18523,101,"https://images.neopets.com/items/niptor_disco.gif",0]);
     labRayList.push(["Disco Nuranna",18548,101,"https://images.neopets.com/items/nuranna_disco.gif",0]);
@@ -1081,7 +1083,7 @@ function setupLabRay() {
     labRayList.push(["Faerie Babith",8542,101,"https://images.neopets.com/items/babith_faerie.gif",0]);
     labRayList.push(["Faerie Baby Blu",67210,101,"https://images.neopets.com/items/babyblu_faerie.gif",0]);
     labRayList.push(["Faerie Baby Fireball",672,101,"https://images.neopets.com/items/fireball_faerie.gif",0]);
-    labRayList.push(["Pink Baby Fireball",8557,101,"",0]);
+    labRayList.push(["Faerie Baby Space Fungus",24361,101,"https://images.neopets.com/items/faerie_baby_spacefungus.gif",0]);
     labRayList.push(["Faerie Babyca",42830,101,"https://images.neopets.com/items/babyca_faerie.gif",0]);
     labRayList.push(["Faerie Barlow",21904,101,"https://images.neopets.com/items/barlow_faerie.gif",0]);
     labRayList.push(["Faerie Bartamus",59639,101,"https://images.neopets.com/items/bartamus_faerie.gif",0]);
@@ -1095,18 +1097,18 @@ function setupLabRay() {
     labRayList.push(["Faerie Bowla",30760,101,"https://images.neopets.com/items/bowla_faerie.gif",0]);
     labRayList.push(["Faerie Cadro",16014,101,"https://images.neopets.com/items/cadro_faerie.gif",0]);
     labRayList.push(["Faerie Catamara",25826,101,"https://images.neopets.com/items/catamara_faerie.gif",0]);
-    labRayList.push(["Faerie Baby Space Fungus",24361,101,"",0]);
+    labRayList.push(["Faerie Chatter",16172,101,"https://images.neopets.com/items/diddler_faerie.gif",0]);
     labRayList.push(["Faerie Chumablah",20763,101,"https://images.neopets.com/items/chumablah_faerie.gif",0]);
     labRayList.push(["Faerie Cirrus",63520,101,"https://images.neopets.com/items/cirrus_faerie.gif",0]);
     labRayList.push(["Faerie Cobrall",27982,101,"https://images.neopets.com/items/cobrall_faerie.gif",0]);
     labRayList.push(["Faerie Cougi",69917,101,"https://images.neopets.com/items/petpet_faerie_cougi.gif",0]);
     labRayList.push(["Faerie Crabula",25828,101,"https://images.neopets.com/items/crabula_faerie.gif",0]);
     labRayList.push(["Faerie Cybit",27247,101,"https://images.neopets.com/items/cybit_faerie.gif",0]);
-    labRayList.push(["Darigan Biyako",48785,101,"",0]);
+    labRayList.push(["Faerie Dandan",22670,101,"https://images.neopets.com/items/shp_dandan_faerie.gif",0]);
     labRayList.push(["Faerie Darblat",68644,101,"https://images.neopets.com/items/darblat_faerie.gif",0]);
     labRayList.push(["Faerie Dartail",41713,101,"https://images.neopets.com/items/dartail_faerie.gif",0]);
     labRayList.push(["Faerie Djuti",43937,101,"https://images.neopets.com/items/djuti_faerie.gif",0]);
-    labRayList.push(["Island Carmariller",25590,101,"",0]);
+    labRayList.push(["Faerie Dofrey",21979,101,"https://images.neopets.com/items/palamoose_faerie.gif",0]);
     labRayList.push(["Faerie Doglefox",8153,101,"https://images.neopets.com/items/doglefox_faerie.gif",0]);
     labRayList.push(["Faerie Drackonack",16181,101,"https://images.neopets.com/items/drackonack_faerie.gif",0]);
     labRayList.push(["Faerie Dragoyle",62093,101,"https://images.neopets.com/items/Dragoyle_faerie.gif",0]);
@@ -1131,13 +1133,13 @@ function setupLabRay() {
     labRayList.push(["Faerie Ghoti",35638,101,"https://images.neopets.com/items/ghoti_faerie.gif",0]);
     labRayList.push(["Faerie Gobbler",40565,101,"https://images.neopets.com/items/gobbler_faerie.gif",0]);
     labRayList.push(["Faerie Goople",27245,101,"https://images.neopets.com/items/goople_faerie.gif",0]);
-    labRayList.push(["Faerie Chatter",16172,101,"",0]);
+    labRayList.push(["Faerie Grackle Bug",33720,101,"https://images.neopets.com/items/gracklebug_faerie.gif",0]);
     labRayList.push(["Faerie Graglop",54913,101,"https://images.neopets.com/items/graglop_faerie.gif",0]);
     labRayList.push(["Faerie Greeble",17817,101,"https://images.neopets.com/items/greeble_faerie.gif",0]);
     labRayList.push(["Faerie Griefer",73227,101,"https://images.neopets.com/items/griefer_faerie.gif",0]);
     labRayList.push(["Faerie Gruslen",17829,101,"https://images.neopets.com/items/gruslen_faerie.gif",0]);
     labRayList.push(["Faerie Gumblesh",59895,101,"https://images.neopets.com/items/gumblesh_faerie.gif",0]);
-    labRayList.push(["Faerie Dandan",22670,101,"",0]);
+    labRayList.push(["Faerie GX-4 Oscillabot",30757,101,"https://images.neopets.com/items/oscillabot_faerie.gif",0]);
     labRayList.push(["Faerie Harris",16921,101,"https://images.neopets.com/items/harris_faerie.gif",0]);
     labRayList.push(["Faerie Hasee",17839,101,"https://images.neopets.com/items/hasee_faerie.gif",0]);
     labRayList.push(["Faerie Hegelob",39616,101,"https://images.neopets.com/items/hegelob_faerie.gif",0]);
@@ -1210,7 +1212,7 @@ function setupLabRay() {
     labRayList.push(["Faerie Spyder",20880,101,"https://images.neopets.com/items/spyder_faerie.gif",0]);
     labRayList.push(["Faerie Stahkee",30758,101,"https://images.neopets.com/items/stahkee_faerie.gif",0]);
     labRayList.push(["Faerie Staragus",41526,101,"https://images.neopets.com/items/staragus_faerie.gif",0]);
-    labRayList.push(["Grey Dandan",70644,101,"",0]);
+    labRayList.push(["Faerie Swabby",24364,101,"https://images.neopets.com/items/faerie_swabby.gif",0]);
     labRayList.push(["Faerie Symol",46082,101,"https://images.neopets.com/items/symol_faerie.gif",0]);
     labRayList.push(["Faerie Talpidat",72057,101,"https://images.neopets.com/items/talpidat_faerie.gif",0]);
     labRayList.push(["Faerie Tanizard",50147,101,"https://images.neopets.com/items/tanizard_faerie.gif",0]);
@@ -1219,18 +1221,18 @@ function setupLabRay() {
     labRayList.push(["Faerie Teemyte",63143,101,"https://images.neopets.com/items/teemyte_faerie.gif",0]);
     labRayList.push(["Faerie Tenna",16185,101,"https://images.neopets.com/items/tenna_faerie.gif",0]);
     labRayList.push(["Faerie Tomamu",49177,101,"https://images.neopets.com/items/tomamu_faerie.gif",0]);
-    labRayList.push(["Faerie Dofrey",21979,101,"",0]);
+    labRayList.push(["Faerie Tootum",69918,101,"https://images.neopets.com/items/petpet_faerie_tootum.gif",0]);
     labRayList.push(["Faerie Trunkard",15290,101,"https://images.neopets.com/items/trunkard_faerie.gif",0]);
     labRayList.push(["Faerie Turmac",15277,101,"https://images.neopets.com/items/turmac_faerie.gif",0]);
     labRayList.push(["Faerie Tyrowbee",53567,101,"https://images.neopets.com/items/tyrowbee_faerie.gif",0]);
     labRayList.push(["Faerie Ukali",34083,101,"https://images.neopets.com/items/ukali_faerie.gif",0]);
-    labRayList.push(["Island Dofrey",21982,101,"",0]);
+    labRayList.push(["Faerie Ultra Pinceron",15258,101,"https://images.neopets.com/items/ultra_pince_fairy.gif",0]);
     labRayList.push(["Faerie Uniocto",8094,101,"https://images.neopets.com/items/uniocto_faerie.gif",0]);
     labRayList.push(["Faerie Urchull",50507,101,"https://images.neopets.com/items/urchull_faerie.gif",0]);
     labRayList.push(["Faerie Vacana",15252,101,"https://images.neopets.com/items/vacana_faerie.gif",0]);
-    labRayList.push(["Valentine Farnswap",61774,101,"",0]);
+    labRayList.push(["Faerie Vacumatic 9000",67159,101,"https://images.neopets.com/items/robo_petpet4_faerie.gif",0]);
     labRayList.push(["Faerie Walein",49051,101,"https://images.neopets.com/items/walein_faerie.gif",0]);
-    labRayList.push(["Faerie Grackle Bug",33720,101,"",0]);
+    labRayList.push(["Faerie Walking Carpet",27870,101,"https://images.neopets.com/items/walkingcarpet_faerie.gif",0]);
     labRayList.push(["Faerie Warf",8063,101,"https://images.neopets.com/items/warf_faerie.gif",0]);
     labRayList.push(["Faerie Weewoo",40450,101,"https://images.neopets.com/items/weewoo_faerie.gif",0]);
     labRayList.push(["Faerie Werhond",48577,101,"https://images.neopets.com/items/werhond_faerie.gif",0]);
@@ -1317,7 +1319,7 @@ function setupLabRay() {
     labRayList.push(["Fire Scarabug",16464,101,"https://images.neopets.com/items/scarabug_fire.gif",0]);
     labRayList.push(["Fire Seti",33109,101,"https://images.neopets.com/items/seti_fire.gif",0]);
     labRayList.push(["Fire Sharky",72401,101,"https://images.neopets.com/items/sharky_fire.gif",0]);
-    labRayList.push(["Stealthy Gwalla",56080,101,"",0]);
+    labRayList.push(["Fire Short Fuse",71615,101,"https://images.neopets.com/items/shortfuse_fire.gif",0]);
     labRayList.push(["Fire Slorg",19957,101,"https://images.neopets.com/items/slorg_fire.gif",0]);
     labRayList.push(["Fire Snorkle",3105,101,"https://images.neopets.com/items/snorkle_fire.gif",0]);
     labRayList.push(["Fire Snowickle",18874,101,"https://images.neopets.com/items/snowickle_fire.gif",0]);
@@ -1653,7 +1655,7 @@ function setupLabRay() {
     labRayList.push(["Grey Cirrus",9597,101,"https://images.neopets.com/items/cirrus_grey.gif",0]);
     labRayList.push(["Grey Cobrall",61611,101,"https://images.neopets.com/items/ddy18_cobrall_grey.gif",0]);
     labRayList.push(["Grey Crokabek",56641,101,"https://images.neopets.com/items/crokabek_grey.gif",0]);
-    labRayList.push(["Faerie GX-4 Oscillabot",30757,101,"https://images.neopets.com/items/oscillabot_faerie.gif",0]);
+    labRayList.push(["Grey Dandan",70644,101,"https://images.neopets.com/items/shp_dandan_grey.gif",0]);
     labRayList.push(["Grey Drackonack",28196,101,"https://images.neopets.com/items/drackonack_grey.gif",0]);
     labRayList.push(["Grey Dua",16049,101,"https://images.neopets.com/items/dua_grey.gif",0]);
     labRayList.push(["Grey Faellie",16394,101,"https://images.neopets.com/items/faellie_grey.gif",0]);
@@ -1685,7 +1687,7 @@ function setupLabRay() {
     labRayList.push(["Grey Plumpy",72999,101,"https://images.neopets.com/items/plumpy_grey.gif",0]);
     labRayList.push(["Grey Polarchuck",13469,101,"https://images.neopets.com/items/polarchuck_grey.gif",0]);
     labRayList.push(["Grey Raindorf",43125,101,"https://images.neopets.com/items/raindorf_grey.gif",0]);
-    labRayList.push(["Pink GX-4 Oscillabot",23247,101,"https://images.neopets.com/items/oscilladriod_pink.gif",0]);
+    labRayList.push(["Grey Roburg 3T3",22837,101,"https://images.neopets.com/items/roburg_grey.gif",0]);
     labRayList.push(["Grey Schnelly",70646,101,"https://images.neopets.com/items/schnelly_grey.gif",0]);
     labRayList.push(["Grey Slorg",9431,101,"https://images.neopets.com/items/slorg_grey.gif",0]);
     labRayList.push(["Grey Snorkle",13470,101,"https://images.neopets.com/items/snorkle_grey.gif",0]);
@@ -1696,7 +1698,7 @@ function setupLabRay() {
     labRayList.push(["Grey Tapira",43126,101,"https://images.neopets.com/items/tapira_grey.gif",0]);
     labRayList.push(["Grey Tenna",13479,101,"https://images.neopets.com/items/tenna_grey.gif",0]);
     labRayList.push(["Grey Trunkard",44788,101,"https://images.neopets.com/items/trunkard_grey.gif",0]);
-    labRayList.push(["Valentine GX-4 Oscillabot",59707,101,"https://images.neopets.com/items/oscillabot_valentinesday.gif",0]);
+    labRayList.push(["Grey Ultra Pinceron",15254,101,"https://images.neopets.com/items/ultra_pince_grey.gif",0]);
     labRayList.push(["Grey Vacana",36462,101,"https://images.neopets.com/items/vacana_grey.gif",0]);
     labRayList.push(["Grey Vullard",15247,101,"https://images.neopets.com/items/vullard_grey.gif",0]);
     labRayList.push(["Grey Warf",8079,101,"https://images.neopets.com/items/warf_grey.gif",0]);
@@ -1817,19 +1819,19 @@ function setupLabRay() {
     labRayList.push(["Invisible Warf",8067,101,"https://images.neopets.com/items/warf_invisible.gif",0]);
     labRayList.push(["Invisible Whinny",15217,101,"https://images.neopets.com/items/whinny_invisible.gif",0]);
     labRayList.push(["Island Acko",27678,101,"https://images.neopets.com/items/acko_pink.gif",0]);
-    labRayList.push(["Spoppy II",18153,101,"https://images.neopets.com/items/pets_spoppy.gif",0]);
+    labRayList.push(["Island Alkenore",15991,101,"https://images.neopets.com/items/alkanore_island.gif",0]);
     labRayList.push(["Island Angelpuss",8040,101,"https://images.neopets.com/items/angelpuss_island.gif",0]);
     labRayList.push(["Island Anubis",8174,101,"https://images.neopets.com/items/anubis_island.gif",0]);
     labRayList.push(["Island Arkmite",22355,101,"https://images.neopets.com/items/arkmite_island.gif",0]);
     labRayList.push(["Island Babaa",8199,101,"https://images.neopets.com/items/babaa_island.gif",0]);
-    labRayList.push(["Pink Karren",9605,101,"https://images.neopets.com/items/med_pp_karren_pink.gif",0]);
+    labRayList.push(["Island Baby Blu",8551,101,"https://images.neopets.com/items/baby_blu_island.gif",0]);
     labRayList.push(["Island Bearog",8580,101,"https://images.neopets.com/items/bearog_island.gif",0]);
     labRayList.push(["Island Blooky",30787,101,"https://images.neopets.com/items/blooky_island.gif",0]);
     labRayList.push(["Island Bloop",55655,101,"https://images.neopets.com/items/bloop_island.gif",0]);
     labRayList.push(["Island Buzzer",25588,101,"https://images.neopets.com/items/buzzer_island.gif",0]);
     labRayList.push(["Island Candychan",25591,101,"https://images.neopets.com/items/candychan_island.gif",0]);
-    labRayList.push(["Disco Lil Frankie",34456,101,"",0]);
-    labRayList.push(["Pink Melvie",13462,101,"https://images.neopets.com/items/petpet_melvie_pink.gif",0]);
+    labRayList.push(["Island Carmariller",25590,101,"https://images.neopets.com/items/caramiller_island.gif",0]);
+    labRayList.push(["Island Dofrey",21982,101,"https://images.neopets.com/items/palamoose_island.gif",0]);
     labRayList.push(["Island Eizzil",13999,101,"https://images.neopets.com/items/eizzil_island.gif",0]);
     labRayList.push(["Island Faellie",16384,101,"https://images.neopets.com/items/faellie_island.gif",0]);
     labRayList.push(["Island Feepit",17068,101,"https://images.neopets.com/items/feepit_island.gif",0]);
@@ -1881,7 +1883,7 @@ function setupLabRay() {
     labRayList.push(["Island Snuffly",22353,101,"https://images.neopets.com/items/snuffly_island.gif",0]);
     labRayList.push(["Island Spardel",18869,101,"https://images.neopets.com/items/spardel_island.gif",0]);
     labRayList.push(["Island Spyder",20748,101,"https://images.neopets.com/items/spyder_island.gif",0]);
-    labRayList.push(["Tamed Mini-Monster",55204,101,"",0]);
+    labRayList.push(["Island Stopngo 400",16215,101,"https://images.neopets.com/items/stopngo400_island.gif",0]);
     labRayList.push(["Island Symol",16211,101,"https://images.neopets.com/items/symol_island.gif",0]);
     labRayList.push(["Island Tasu",16194,101,"https://images.neopets.com/items/tasu_island.gif",0]);
     labRayList.push(["Island Taweret",36596,101,"https://images.neopets.com/items/taweret_island.gif",0]);
@@ -1942,7 +1944,7 @@ function setupLabRay() {
     labRayList.push(["Magaral",4776,55,"https://images.neopets.com/items/faerie_pet7.gif",0]);
     labRayList.push(["Magma Alabriss",52836,101,"https://images.neopets.com/items/alabriss_magma.gif",0]);
     labRayList.push(["Magma Babaa",60071,101,"https://images.neopets.com/items/babaa_magma.gif",0]);
-    labRayList.push(["Mutant Mortog",18139,101,"https://images.neopets.com/items/mutant_mortog.gif",0]);
+    labRayList.push(["Magma Baby Fireball",52723,101,"https://images.neopets.com/items/fireball_magma.gif",0]);
     labRayList.push(["Magma Bartamus",59638,101,"https://images.neopets.com/items/bartamus_magma.gif",0]);
     labRayList.push(["Magma Gwortz",52722,101,"https://images.neopets.com/items/gwortz_magma.gif",0]);
     labRayList.push(["Magma Magtile",54512,101,"https://images.neopets.com/items/magtile_magma.gif",0]);
@@ -2002,7 +2004,7 @@ function setupLabRay() {
     labRayList.push(["Maraquan Mazzew",10282,101,"https://images.neopets.com/items/mazzew_maraquan.gif",0]);
     labRayList.push(["Maraquan Noil",10062,101,"https://images.neopets.com/items/noil_maraquan.gif",0]);
     labRayList.push(["Maraquan Pofew",27794,101,"https://images.neopets.com/items/pofew_maraquan.gif",0]);
-    labRayList.push(["Pink N-4 Info Retrieval Bot",18215,101,"https://images.neopets.com/items/n4bot_pink.gif",0]);
+    labRayList.push(["Maraquan Quetzal",18761,101,"https://images.neopets.com/items/gpp_quetzal_maraquan.gif",0]);
     labRayList.push(["Maraquan Rock",30852,101,"https://images.neopets.com/items/rock_maraquan.gif",0]);
     labRayList.push(["Maraquan Slorg",19907,101,"https://images.neopets.com/items/slorg_maraquan.gif",0]);
     labRayList.push(["Maraquan Snarhook",10289,101,"https://images.neopets.com/items/snarhook_maraquan.gif",0]);
@@ -2048,7 +2050,7 @@ function setupLabRay() {
     labRayList.push(["Mutant Apis",8536,101,"https://images.neopets.com/items/apis_mutant.gif",0]);
     labRayList.push(["Mutant Aroota",45908,101,"https://images.neopets.com/items/aroota_mutant.gif",0]);
     labRayList.push(["Mutant Babaa",8190,101,"https://images.neopets.com/items/babaa_mutant.gif",0]);
-    labRayList.push(["Darigan Quetzal",18760,101,"",0]);
+    labRayList.push(["Mutant Baby Blu",27449,101,"https://images.neopets.com/items/babyblu_mutant.gif",0]);
     labRayList.push(["Mutant Babyca",8563,101,"https://images.neopets.com/items/babyca_mutant.gif",0]);
     labRayList.push(["Mutant Barlow",55952,101,"https://images.neopets.com/items/barlow_mutant.gif",0]);
     labRayList.push(["Mutant Bartamus",36777,101,"https://images.neopets.com/items/bartamus_mutant.gif",0]);
@@ -2106,7 +2108,7 @@ function setupLabRay() {
     labRayList.push(["Mutant Meepit",13564,101,"https://images.neopets.com/items/meepit_mutant.gif",0]);
     labRayList.push(["Mutant Miamouse",15886,101,"https://images.neopets.com/items/miamouse_mutant.gif",0]);
     labRayList.push(["Mutant Minitheus",45378,101,"https://images.neopets.com/items/minitheus_mutant.gif",0]);
-    labRayList.push(["Maraquan Quetzal",18761,101,"",0]);
+    labRayList.push(["Mutant Mortog",18139,101,"https://images.neopets.com/items/mutant_mortog.gif",0]);
     labRayList.push(["Mutant Naalala",41419,101,"https://images.neopets.com/items/naalala_mutant.gif",0]);
     labRayList.push(["Mutant Nedler",57001,101,"https://images.neopets.com/items/nedler_mutant.gif",0]);
     labRayList.push(["Mutant Niptor",18521,101,"https://images.neopets.com/items/niptor_mutant.gif",0]);
@@ -2121,7 +2123,7 @@ function setupLabRay() {
     labRayList.push(["Mutant Powtry",58496,101,"https://images.neopets.com/items/powtry_mutant.gif",0]);
     labRayList.push(["Mutant Psimouse",11058,101,"https://images.neopets.com/items/psimouse_mutant.gif",0]);
     labRayList.push(["Mutant Puppyblew",18835,101,"https://images.neopets.com/items/puppyblew_mutant.gif",0]);
-    labRayList.push(["Mutant Quetzal",18758,101,"",0]);
+    labRayList.push(["Mutant Quetzal",18758,101,"https://images.neopets.com/items/gpp_quetzal_mutant.gif",0]);
     labRayList.push(["Mutant Raindorf",27452,101,"https://images.neopets.com/items/raindorf_mutant.gif",0]);
     labRayList.push(["Mutant Rock",19645,101,"https://images.neopets.com/items/rock_mutant.gif",0]);
     labRayList.push(["Mutant Selket",30277,101,"https://images.neopets.com/items/selket_mutant.gif",0]);
@@ -2147,7 +2149,7 @@ function setupLabRay() {
     labRayList.push(["Mutant Urgoni",22077,101,"https://images.neopets.com/items/urgoni_mutant.gif",0]);
     labRayList.push(["Mutant Vacana",25402,101,"https://images.neopets.com/items/vacana_mutant.gif",0]);
     labRayList.push(["Mutant Walein",15238,101,"https://images.neopets.com/items/walein_mutant.gif",0]);
-    labRayList.push(["Blue Roburg 3T3",22838,101,"https://images.neopets.com/items/roburg_blue.gif",0]);
+    labRayList.push(["Mutant Walking Carpet",27871,101,"https://images.neopets.com/items/walkingcarpet_mutant.gif",0]);
     labRayList.push(["Mutant Warf",8068,101,"https://images.neopets.com/items/warf_mutant.gif",0]);
     labRayList.push(["Mutant Weewoo",15230,101,"https://images.neopets.com/items/weewoo_mutant.gif",0]);
     labRayList.push(["Mutant Werhond",63613,101,"https://images.neopets.com/items/werhond_mutant.gif",0]);
@@ -2155,7 +2157,7 @@ function setupLabRay() {
     labRayList.push(["Mutant Xepru",72000,101,"https://images.neopets.com/items/xepru_mutant.gif",0]);
     labRayList.push(["Mutant Yooyu",44573,101,"https://images.neopets.com/items/yooyu_mutant.gif",0]);
     labRayList.push(["Mutant Yullie",27451,101,"https://images.neopets.com/items/yullie_mutant.gif",0]);
-    labRayList.push(["Grey Roburg 3T3",22837,101,"",0]);
+    labRayList.push(["Mutant Zebba",60633,101,"https://images.neopets.com/items/Mutant-Zebba.gif",0]);
     labRayList.push(["Mutant Zomutt",15131,101,"https://images.neopets.com/items/zomutt_mutant.gif",0]);
     labRayList.push(["Muyang",59746,90,"https://images.neopets.com/items/muyang.gif",0]);
     labRayList.push(["N-4 Info Retrieval Bot",14685,94,"https://images.neopets.com/items/robo_petpet2.gif",0]);
@@ -2227,11 +2229,11 @@ function setupLabRay() {
     labRayList.push(["Pink Acko",34102,101,"https://images.neopets.com/items/acko_island.gif",0]);
     labRayList.push(["Pink Airax",8525,101,"https://images.neopets.com/items/airax_pink.gif",0]);
     labRayList.push(["Pink Albat",8531,101,"https://images.neopets.com/items/albat_pink.gif",0]);
-    labRayList.push(["Captive Shadow Wraith",41634,101,"",0]);
+    labRayList.push(["Pink Alkenore",15987,101,"https://images.neopets.com/items/petpet_alkenore_red.gif",0]);
     labRayList.push(["Pink Altachuck",39119,101,"https://images.neopets.com/items/altachuck_pink.gif",0]);
     labRayList.push(["Pink Angelpuss",8026,101,"https://images.neopets.com/items/angelpuss_pink.gif",0]);
     labRayList.push(["Pink Babaa",8192,101,"https://images.neopets.com/items/babaa_pink.gif",0]);
-    labRayList.push(["Fire Short Fuse",71615,101,"",0]);
+    labRayList.push(["Pink Baby Fireball",8557,101,"https://images.neopets.com/items/fireball_pink.gif",0]);
     labRayList.push(["Pink Baby Space Fungus",22002,101,"https://images.neopets.com/items/pink_baby_fungus.gif",1]);
     labRayList.push(["Pink Barbat",8568,101,"https://images.neopets.com/items/barbat_pink.gif",0]);
     labRayList.push(["Pink Bartamus",21952,101,"https://images.neopets.com/items/bartamus_pink.gif",0]);
@@ -2272,12 +2274,12 @@ function setupLabRay() {
     labRayList.push(["Pink Grobrin",4672,101,"https://images.neopets.com/items/grobrin_pink.gif",0]);
     labRayList.push(["Pink Gruslen",17827,101,"https://images.neopets.com/items/gruslen_pink.gif",0]);
     labRayList.push(["Pink Gwalla",37495,101,"https://images.neopets.com/items/gwalla_pink.gif",0]);
-    labRayList.push(["Island Stopngo 400",16215,101,"",0]);
+    labRayList.push(["Pink GX-4 Oscillabot",23247,101,"https://images.neopets.com/items/oscilladriod_pink.gif",0]);
     labRayList.push(["Pink Harris",9051,101,"https://images.neopets.com/items/harris_pink.gif",0]);
     labRayList.push(["Pink Hornsby",15909,101,"https://images.neopets.com/items/hornsby_pink.gif",0]);
     labRayList.push(["Pink Intesteen",25371,101,"https://images.neopets.com/items/intesteen_pink.gif",0]);
     labRayList.push(["Pink Kadoatie",18050,101,"https://images.neopets.com/items/kadoatie_pink.gif",0]);
-    labRayList.push(["Pink Stopngo 400",29571,101,"",0]);
+    labRayList.push(["Pink Karren",9605,101,"https://images.neopets.com/items/med_pp_karren_pink.gif",0]);
     labRayList.push(["Pink Kimbi",15961,101,"https://images.neopets.com/items/kimbi_pink.gif",0]);
     labRayList.push(["Pink Kookith",18083,101,"https://images.neopets.com/items/kookith_pink.gif",0]);
     labRayList.push(["Pink Krawk",18102,101,"https://images.neopets.com/items/krawk_pink.gif",0]);
@@ -2285,11 +2287,11 @@ function setupLabRay() {
     labRayList.push(["Pink Mallard",7916,101,"https://images.neopets.com/items/mallard_pink.gif",0]);
     labRayList.push(["Pink Marbluk",73266,101,"https://images.neopets.com/items/marbluk_pink.gif",0]);
     labRayList.push(["Pink Mazzew",18122,101,"https://images.neopets.com/items/mazzew_pink.gif",0]);
-    labRayList.push(["Blue Sutekh",16214,101,"",0]);
+    labRayList.push(["Pink Melvie",13462,101,"https://images.neopets.com/items/petpet_melvie_pink.gif",0]);
     labRayList.push(["Pink Meturf",18129,101,"https://images.neopets.com/items/meturf_pink.gif",0]);
     labRayList.push(["Pink Miamouse",16912,101,"https://images.neopets.com/items/miamouse_pink.gif",0]);
     labRayList.push(["Pink Mirgle",17154,101,"https://images.neopets.com/items/mirgle_pink.gif",0]);
-    labRayList.push(["Faerie Swabby",24364,101,"https://images.neopets.com/items/faerie_swabby.gif",0]);
+    labRayList.push(["Pink N-4 Info Retrieval Bot",18215,101,"https://images.neopets.com/items/n4bot_pink.gif",0]);
     labRayList.push(["Pink Navibot",4372,101,"https://images.neopets.com/items/navibot_pink.gif",0]);
     labRayList.push(["Pink Niptor",18526,101,"https://images.neopets.com/items/niptor_pink.gif",0]);
     labRayList.push(["Pink Noilkeet",18540,101,"https://images.neopets.com/items/noilkeet_pink.gif",0]);
@@ -2313,22 +2315,22 @@ function setupLabRay() {
     labRayList.push(["Pink Snuffly",18870,101,"https://images.neopets.com/items/snuffly_pink.gif",0]);
     labRayList.push(["Pink Spardel",18861,101,"https://images.neopets.com/items/spardel_pink.gif",0]);
     labRayList.push(["Pink Spyder",20881,101,"https://images.neopets.com/items/spyder_pink.gif",0]);
-    labRayList.push(["Blue Taigar",28387,101,"https://images.neopets.com/items/taiger_blue.gif",0]);
+    labRayList.push(["Pink Stopngo 400",29571,101,"https://images.neopets.com/items/stopngo_pink.gif",0]);
     labRayList.push(["Pink Swabby",31379,101,"https://images.neopets.com/items/swabby_pink.gif",0]);
     labRayList.push(["Pink Symol",8097,101,"https://images.neopets.com/items/symol_pink.gif",0]);
     labRayList.push(["Pink Tanizard",16199,101,"https://images.neopets.com/items/tanizard_pink.gif",0]);
     labRayList.push(["Pink Tasu",16193,101,"https://images.neopets.com/items/tasu_pink.gif",0]);
-    labRayList.push(["Red Taigar",28389,101,"https://images.neopets.com/items/taiger_red.gif",0]);
+    labRayList.push(["Pink Teemyte",14617,101,"https://images.neopets.com/items/pink_teemyte.gif",0]);
     labRayList.push(["Pink Tekkal",73270,101,"https://images.neopets.com/items/tekkal_pink.gif",0]);
     labRayList.push(["Pink Tralbak",25214,101,"https://images.neopets.com/items/tralbak_pink.gif",0]);
     labRayList.push(["Pink Trunkard",28697,101,"https://images.neopets.com/items/trunkard_pink.gif",0]);
     labRayList.push(["Pink Turtum",15268,101,"https://images.neopets.com/items/turtum_pink.gif",0]);
-    labRayList.push(["Pink Teemyte",14617,101,"https://images.neopets.com/items/pink_teemyte.gif",0]);
+    labRayList.push(["Pink Ultra Pinceron",15256,101,"https://images.neopets.com/items/ultra_pince_pink.gif",0]);
     labRayList.push(["Pink Uniocto",8082,101,"https://images.neopets.com/items/uniocto_pink.gif",0]);
-    labRayList.push(["Blue Tencals",30182,101,"",0]);
+    labRayList.push(["Pink Vaeolus",29074,101,"https://images.neopets.com/items/robo_petpet4_faerie.gif",0]);
     labRayList.push(["Pink Vullard",15249,101,"https://images.neopets.com/items/vullard_pink.gif",0]);
     labRayList.push(["Pink Wadjet",4303,101,"https://images.neopets.com/items/wadjet_pink.gif",0]);
-    labRayList.push(["Faerie Tootum",69918,101,"",0]);
+    labRayList.push(["Pink Walking Carpet",15234,101,"https://images.neopets.com/items/walkingcarpet_pink.gif",0]);
     labRayList.push(["Pink Warf",8060,101,"https://images.neopets.com/items/warf_pink.gif",0]);
     labRayList.push(["Pink Weewoo",14197,101,"https://images.neopets.com/items/weewoo_pink.gif",0]);
     labRayList.push(["Pink Wheelie",15226,101,"https://images.neopets.com/items/wheelie_pink.gif",0]);
@@ -2413,7 +2415,7 @@ function setupLabRay() {
     labRayList.push(["Pirate Walking Carpet",24245,101,"https://images.neopets.com/items/walkingcarpet_pirate.gif",0]);
     labRayList.push(["Pirate Warf",8080,101,"https://images.neopets.com/items/warf_pirate.gif",0]);
     labRayList.push(["Pirate Weewoo",14198,101,"https://images.neopets.com/items/weewoo_pirate.gif",0]);
-    labRayList.push(["Blue Ultra Pinceron",15257,101,"",0]);
+    labRayList.push(["Pirate Woolypapith",15196,101,"https://images.neopets.com/items/petpet_wooly_pirate.gif",0]);
     labRayList.push(["Pirate Yullie",15159,101,"https://images.neopets.com/items/yullie_pirate.gif",0]);
     labRayList.push(["Pirate Zomutt",15724,101,"https://images.neopets.com/items/zomutt_pirate.gif",0]);
     labRayList.push(["Plumpy",51828,101,"https://images.neopets.com/items/petpet_advc2012_plumpy_ap.gif",0]);
@@ -2512,7 +2514,7 @@ function setupLabRay() {
     labRayList.push(["Puppyblew",3165,66,"https://images.neopets.com/items/pets_blew.gif",0]);
     labRayList.push(["Purple Abominable Snowball",8497,101,"https://images.neopets.com/items/absnowball_purple.gif",0]);
     labRayList.push(["Purple Babaa",8195,101,"https://images.neopets.com/items/babaa_purple.gif",0]);
-    labRayList.push(["Faerie Ultra Pinceron",15258,101,"",0]);
+    labRayList.push(["Purple Baby Blu",36597,101,"https://images.neopets.com/items/babyblu_purple.gif",0]);
     labRayList.push(["Purple Beekadoodle",8582,101,"https://images.neopets.com/items/beakadoodle_purple.gif",0]);
     labRayList.push(["Purple Bloop",31525,101,"https://images.neopets.com/items/bloop_purple.gif",0]);
     labRayList.push(["Purple Bloopy",16000,101,"https://images.neopets.com/items/bloopy_purple.gif",0]);
@@ -2746,7 +2748,7 @@ function setupLabRay() {
     labRayList.push(["Red Splyke",18854,101,"https://images.neopets.com/items/splyke_red.gif",0]);
     labRayList.push(["Red Stego",16219,101,"https://images.neopets.com/items/stego_red.gif",0]);
     labRayList.push(["Red Symol",16202,101,"https://images.neopets.com/items/symol_red.gif",0]);
-    labRayList.push(["Grey Ultra Pinceron",15254,101,"",0]);
+    labRayList.push(["Red Taigar",28389,101,"https://images.neopets.com/items/taiger_red.gif",0]);
     labRayList.push(["Red Tapira",30941,101,"https://images.neopets.com/items/tapira_red.gif",0]);
     labRayList.push(["Red Teasqito",15187,101,"https://images.neopets.com/items/petpet_teasqito_red.gif",0]);
     labRayList.push(["Red Teemyte",22507,101,"https://images.neopets.com/items/teemyte_red.gif",0]);
@@ -2761,7 +2763,7 @@ function setupLabRay() {
     labRayList.push(["Red Uniocto",32735,101,"https://images.neopets.com/items/uniocto_red.gif",0]);
     labRayList.push(["Red Wadjet",15239,101,"https://images.neopets.com/items/wadjet_red.gif",0]);
     labRayList.push(["Red Wain",19059,101,"https://images.neopets.com/items/wain_red.gif",0]);
-    labRayList.push(["Pink Ultra Pinceron",15256,101,"",0]);
+    labRayList.push(["Red Walking Carpet",27868,101,"https://images.neopets.com/items/walkingcarpet_red.gif",0]);
     labRayList.push(["Red Weewoo",14205,101,"https://images.neopets.com/items/weewoo_red.gif",0]);
     labRayList.push(["Red Wheelie",21432,101,"https://images.neopets.com/items/wheelie_red.gif",0]);
     labRayList.push(["Red Wreathy",15175,101,"https://images.neopets.com/items/wreathy_red.gif",0]);
@@ -2838,7 +2840,7 @@ function setupLabRay() {
     labRayList.push(["Rollatron",9180,99,"https://images.neopets.com/items/petpet_robo_d.gif",0]);
     labRayList.push(["Romeep 3t3",16249,101,"https://images.neopets.com/items/petpet_romeep3t3.gif",0]);
     labRayList.push(["Rotawheel",13594,88,"https://images.neopets.com/items/petpet_robo_wheel.gif",0]);
-    labRayList.push(["Faerie Vacumatic 9000",67159,101,"",0]);
+    labRayList.push(["Rotoblur 4000",9639,99,"https://images.neopets.com/items/petpet_roto.gif",0]);
     labRayList.push(["Rotweilie",66217,101,"https://images.neopets.com/items/petpet_rotweilie.gif",0]);
     labRayList.push(["Royal Albat",62002,101,"https://images.neopets.com/items/albat_royal.gif",0]);
     labRayList.push(["Royal Angelpuss",44043,101,"https://images.neopets.com/items/angelpuss_royal.gif",0]);
@@ -3040,7 +3042,7 @@ function setupLabRay() {
     labRayList.push(["Split Nuranna",29433,101,"https://images.neopets.com/items/nuranna_split.gif",0]);
     labRayList.push(["Splyke",8013,85,"https://images.neopets.com/items/pets_splyke.gif",0]);
     labRayList.push(["Spoppy",10976,101,"https://images.neopets.com/items/pets_spoppy.gif",0]);
-    labRayList.push(["Pink Vaeolus",29074,101,"",0]);
+    labRayList.push(["Spoppy II",18153,101,"https://images.neopets.com/items/pets_spoppy.gif",0]);
     labRayList.push(["Spotted Abominable Snowball",8504,101,"https://images.neopets.com/items/absnowball_spotted.gif",0]);
     labRayList.push(["Spotted Acko",8511,101,"https://images.neopets.com/items/acko_spotted.gif",0]);
     labRayList.push(["Spotted Airax",7219,101,"https://images.neopets.com/items/airax_spotted.gif",0]);
@@ -3086,7 +3088,7 @@ function setupLabRay() {
     labRayList.push(["Spotted Tasu",41900,101,"https://images.neopets.com/items/tasu_spotted.gif",0]);
     labRayList.push(["Spotted Teemyte",31440,101,"https://images.neopets.com/items/teemyte_spotted.gif",0]);
     labRayList.push(["Spotted Warf",8075,101,"https://images.neopets.com/items/warf_spotted.gif",0]);
-    labRayList.push(["Blue Walking Carpet",27869,101,"https://images.neopets.com/items/walkingcarpet_blue.gif",0]);
+    labRayList.push(["Spring Apis",64732,101,"https://images.neopets.com/items/apis_sping.gif",0]);
     labRayList.push(["Spring Babaa",53033,101,"https://images.neopets.com/items/petpet_fony14_babaa_spring.gif",0]);
     labRayList.push(["Spring Faellie",56827,101,"https://images.neopets.com/items/petpet_fony15_faellie_spring.gif",0]);
     labRayList.push(["Spring Magaral",66539,101,"https://images.neopets.com/items/magaral_spring_fonY21.gif",0]);
@@ -3152,7 +3154,7 @@ function setupLabRay() {
     labRayList.push(["Stealthy Feepit",51917,101,"https://images.neopets.com/items/feepit_stealthy.gif",0]);
     labRayList.push(["Stealthy Ghostkerchief",53902,101,"https://images.neopets.com/items/ghostkerchief_stealthy.gif",0]);
     labRayList.push(["Stealthy Goldy",65916,101,"https://images.neopets.com/items/goldy_stealthy.gif",0]);
-    labRayList.push(["Checkered Walking Carpet",64889,101,"https://images.neopets.com/items/walkingcarpet_checkered.gif",0]);
+    labRayList.push(["Stealthy Gwalla",56080,101,"https://images.neopets.com/items/gwalla_stealth.gif",0]);
     labRayList.push(["Stealthy Jowlard",66886,101,"https://images.neopets.com/items/jowlard_stealthy.gif",0]);
     labRayList.push(["Stealthy Kookith",62361,101,"https://images.neopets.com/items/y18gmc_kookith_stealthy.gif",0]);
     labRayList.push(["Stealthy Magtile",54513,101,"https://images.neopets.com/items/magtile_stealthy.gif",0]);
@@ -3184,7 +3186,7 @@ function setupLabRay() {
     labRayList.push(["Taigar",8123,89,"https://images.neopets.com/items/gpp_taigar.gif",0]);
     labRayList.push(["Tainted Minion",64722,101,"https://images.neopets.com/items/petpet_shadow_minion.gif",0]);
     labRayList.push(["Talpidat",70710,98,"https://images.neopets.com/items/talpidat_petpet.gif",0]);
-    labRayList.push(["Faerie Walking Carpet",27870,101,"https://images.neopets.com/items/walkingcarpet_faerie.gif",0]);
+    labRayList.push(["Tamed Mini-Monster",55204,101,"https://images.neopets.com/items/minimonster.gif",0]);
     labRayList.push(["Tanamurx",21355,101,"https://images.neopets.com/items/petpet_tanamurx.gif",0]);
     labRayList.push(["Tanizard",5508,83,"https://images.neopets.com/items/isl_petpet3.gif",0]);
     labRayList.push(["Tapira",3001,80,"https://images.neopets.com/items/gpp_tapir.gif",0]);
@@ -3297,18 +3299,18 @@ function setupLabRay() {
     labRayList.push(["Urchull",3000,75,"https://images.neopets.com/items/urchull_brown.gif",0]);
     labRayList.push(["Urgoni",22073,95,"https://images.neopets.com/items/urgoni_red.gif",0]);
     labRayList.push(["Vacana",14272,89,"https://images.neopets.com/items/gpp_vacana.gif",0]);
-    labRayList.push(["Mutant Walking Carpet",27871,101,"https://images.neopets.com/items/walkingcarpet_mutant.gif",0]);
+    labRayList.push(["Vacumatic 9000",19329,99,"https://images.neopets.com/items/robo_petpet4.gif",0]);
     labRayList.push(["Vaeolus",3960,89,"https://images.neopets.com/items/veenix.gif",0]);
     labRayList.push(["Val",36195,101,"https://images.neopets.com/items/val.gif",0]);
     labRayList.push(["Valentine Acko",61775,101,"https://images.neopets.com/items/acko_valentine.gif",0]);
-    labRayList.push(["Pink Walking Carpet",15234,101,"https://images.neopets.com/items/walkingcarpet_pink.gif",0]);
+    labRayList.push(["Valentine Baby Blu",64491,101,"https://images.neopets.com/items/babyblu_valentine.gif",0]);
     labRayList.push(["Valentine Bearog",62766,101,"https://images.neopets.com/items/bearog_valentine.gif",0]);
     labRayList.push(["Valentine Bubblebee",70458,101,"https://images.neopets.com/items/bubblebee_valentine.gif",0]);
     labRayList.push(["Valentine Cirrus",59706,101,"https://images.neopets.com/items/cirrus_valentinesday.gif",0]);
     labRayList.push(["Valentine Clompkin",64493,101,"https://images.neopets.com/items/clompkin_valentine.gif",0]);
     labRayList.push(["Valentine Faellie",72707,101,"https://images.neopets.com/items/faellie_valentine.gif",0]);
-    labRayList.push(["Red Walking Carpet",27868,101,"https://images.neopets.com/items/walkingcarpet_red.gif",0]);
-    labRayList.push(["Pirate Woolypapith",15196,101,"https://images.neopets.com/items/petpet_wooly_pirate.gif",0]);
+    labRayList.push(["Valentine Farnswap",61774,101,"https://images.neopets.com/items/farnswip_valentine.gif",0]);
+    labRayList.push(["Valentine GX-4 Oscillabot",59707,101,"https://images.neopets.com/items/oscillabot_valentinesday.gif",0]);
     labRayList.push(["Valentine Kadoatie",62765,101,"https://images.neopets.com/items/kadoatie_valentine.gif",0]);
     labRayList.push(["Valentine Lyins",61777,101,"https://images.neopets.com/items/lyins_valentine.gif",0]);
     labRayList.push(["Valentine Magaral",64492,101,"https://images.neopets.com/items/magaral_valentine.gif",0]);
@@ -3372,7 +3374,7 @@ function setupLabRay() {
     labRayList.push(["White Acko",8521,101,"https://images.neopets.com/items/acko_white.gif",0]);
     labRayList.push(["White Airax",8522,101,"https://images.neopets.com/items/airax_white.gif",0]);
     labRayList.push(["White Anubis",8165,101,"https://images.neopets.com/items/anubis_white.gif",0]);
-    labRayList.push(["Mutant Zebba",60633,101,"https://images.neopets.com/items/Mutant-Zebba.gif",0]);
+    labRayList.push(["White Baby Blu",8546,101,"https://images.neopets.com/items/baby_blu_white.gif",0]);
     labRayList.push(["White Bika",21401,101,"https://images.neopets.com/items/bika_white.gif",0]);
     labRayList.push(["White Bilguss",8588,101,"https://images.neopets.com/items/bilguss_white.gif",0]);
     labRayList.push(["White Blibble",15995,101,"https://images.neopets.com/items/blibble_white.gif",0]);
