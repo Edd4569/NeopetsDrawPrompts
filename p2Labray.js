@@ -47,9 +47,12 @@ function PetLevelUp () {
     return updateP2();
 }
 function PetLevelDown () { 
-    outcome = "LevelDown";
     if (p2Level >= 2) {
         p2Level-=1;
+        outcome = `The ray produces a giant flash of light, but ${p2Name}  doesn't <i>looks</i> any different. When it can't even climb the Multi-level Scratching Post you bought it, 
+        you realize that malfunctioning lab ray actually decreased its level to: ${p2Level}`;
+    } else {
+        return Nothing();
     }
     return updateP2();
 }
@@ -126,8 +129,9 @@ function getZapCount() {
 
 function updateP2() {
     return`<div>${outcome}<br><br>${p2Type}<a tabindex='-1' target='_blank' href='${JNItemDBUrl}'><img src='${image}'class='searchimg'>
-    </a><br><div class="p2out">${p2Name}<img src='${neoImageUrl}'class='p2Im'><br><input type="radio"</div><br>Level:${p2Level}</div><br>`;
+    </a><br><div class="p2out">${p2Name}<img src='${neoImageUrl}'class='p2Im'><br>Level:${p2Level}</div><br>`;
 }
+//<input type="radio"
 
 let scientist = `https://images.neopets.com/games/petpetlab/scientist.gif`;
 let lab = `https://images.neopets.com/games/petpetlab/labray.gif`;
