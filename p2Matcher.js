@@ -186,7 +186,7 @@ function setUpArray()
     fullArray.push(["Bluna",[4, 18, 24, 36, 41, 47, 57]]);
     fullArray.push(["Blurgah",[2, 3, 6, 19, 31, 42, 52]]);
     fullArray.push(["Blurtle",[18, 20, 33, 41, 52]]);
-    fullArray.push(["Bogie",[44]]);
+    fullArray.push(["Bogie",[33, 44]]);
     fullArray.push(["Boween",[12, 16, 19, 23, 33, 40, 41, 42, 57, 58]]);
     fullArray.push(["Bowla",[1, 11, 18, 19, 23, 36, 41, 57]]);
     fullArray.push(["Bubblebee",[3, 1, 23, 33, 41, 50, 53, 55]]);
@@ -198,7 +198,7 @@ function setUpArray()
     fullArray.push(["C430 Autobot",[]]);
     fullArray.push(["Cadro",[3, 5, 18, 19, 21, 23, 24, 33, 36, 38, 41, 46, 54]]);
     fullArray.push(["Calabat",[57, 58]]);
-    fullArray.push(["Camelior",[24, 56]]);
+    fullArray.push(["Camelior",[6, 24, 56]]);
     fullArray.push(["Candy Vampire",[44]]);
     fullArray.push(["Candychan",[3, 6, 11, 20, 24, 28, 32, 33, 37, 38, 40, 43, 46, 50]]);
     fullArray.push(["Caprior",[43]]);
@@ -240,7 +240,7 @@ function setUpArray()
     fullArray.push(["Devilpuss",[]]);
     fullArray.push(["Ditsy",[]]);
     fullArray.push(["Djuti",[18, 37]]);
-    fullArray.push(["Dofrey",[2, 6, 18, 25, 28, 39, 41, 43, 47]]);
+    fullArray.push(["Dofrey",[2, 6, 18, 19, 25, 28, 39, 41, 43, 47]]);
     fullArray.push(["Doglefox",[1, 2, 3, 6, 1, 9, 10, 13, 18, 20, 22, 23, 25, 27, 33, 36, 37, 38, 39, 40, 42, 51, 52, 55, 57]]);
     fullArray.push(["Donksaur",[2, 3, 1, 19, 36, 38, 41, 55, 57]]);
     fullArray.push(["Drackobunny",[9, 11, 23, 41]]);
@@ -332,7 +332,7 @@ function setUpArray()
     fullArray.push(["Hasee",[1, 1, 11, 15, 18, 19, 28, 29, 32, 33, 34, 37, 38, 45, 46, 52, 54, 57]]);
     fullArray.push(["Haseepuss",[6]]);
     fullArray.push(["Hegelob",[18]]);
-    fullArray.push(["Hegie",[]]);
+    fullArray.push(["Hegie",[6]]);
     fullArray.push(["Hermiteese",[18, 40, 45, 56]]);
     fullArray.push(["Hippalop",[11, 23, 25, 33, 41, 55]]);
     fullArray.push(["Hoggir",[3]]);
@@ -353,7 +353,7 @@ function setUpArray()
     fullArray.push(["Juma",[15, 18, 37, 43, 54, 56]]);
     fullArray.push(["Kadoatie",[0, 1, 4, 6, 1, 9, 13, 18, 20, 21, 23, 25, 28, 29, 32, 33, 36, 37, 38, 39, 40, 41, 42, 43, 46, 47, 52, 53, 55, 57]]);
     fullArray.push(["Karren",[4, 9, 36, 41, 43, 57, 58]]);
-    fullArray.push(["Kateil",[3, 28, 34, 55]]);
+    fullArray.push(["Kateil",[3, 28, 34, 37, 55]]);
     fullArray.push(["Kazeriu",[1, 18, 19, 23, 31, 41]]);
     fullArray.push(["Kelpflake",[]]);
     fullArray.push(["Kepru",[18, 39, 49, 58]]);
@@ -414,10 +414,10 @@ function setUpArray()
     fullArray.push(["Naleap",[1, 9, 17, 18, 31, 42, 46, 57]]);
     fullArray.push(["Narwhool",[2, 41, 52, 57]]);
     fullArray.push(["Navibot",[3, 1, 14, 18, 19, 25, 36, 57]]);
-    fullArray.push(["Nebularis",[]]);
+    fullArray.push(["Nebularis",[6]]);
     fullArray.push(["Nedler",[3, 1, 23, 33, 41, 57, 58]]);
     fullArray.push(["Neotrak",[2, 3, 9]]);
-    fullArray.push(["Neucloop",[58]]);
+    fullArray.push(["Neucloop",[6, 58]]);
     fullArray.push(["Nik",[]]);
     fullArray.push(["Niptor",[1, 13, 16, 18, 19, 23, 28, 33, 36, 41, 46]]);
     fullArray.push(["Noak",[23, 25, 39, 49, 50]]);
@@ -425,7 +425,7 @@ function setUpArray()
     fullArray.push(["Noilkeet",[3, 18, 36, 47]]);
     fullArray.push(["Nuk",[1, 11, 23, 25, 52]]);
     fullArray.push(["Nupie",[54]]);
-    fullArray.push(["Nuranna",[1, 2, 1, 13, 18, 19, 23, 27, 36, 37, 41, 47, 52, 57]]);
+    fullArray.push(["Nuranna",[1, 2, 1, 13, 18, 19, 23, 27, 36, 37, 41, 47, 52, 54, 57]]);
     fullArray.push(["Octorna",[]]);
     fullArray.push(["Ombat",[18, 25, 40, 49]]);
     fullArray.push(["Ona",[0, 1, 4, 1, 12, 13, 14, 19, 20, 25, 27, 28, 29, 33, 34, 36, 37, 38, 39, 40, 42, 46, 47, 48, 52, 53, 55]]);
@@ -436,7 +436,7 @@ function setUpArray()
     fullArray.push(["Palmplat",[14]]);
     fullArray.push(["Pandaphant",[3, 5, 1, 17, 18, 23, 33, 38, 42, 43, 52, 53, 57, 58]]);
     fullArray.push(["Patamoose",[1, 13, 25, 31, 34]]);
-    fullArray.push(["Pawkeet",[3, 4, 1, 13, 20, 24, 33, 36, 38, 41, 45, 46, 48, 52, 57]]);
+    fullArray.push(["Pawkeet",[3, 4, 1, 13, 20, 24, 33, 36, 37, 38, 41, 45, 46, 48, 52, 57]]);
     fullArray.push(["Peadackle",[3, 23, 33, 36, 37, 41, 42, 57]]);
     fullArray.push(["Peedleedoo",[]]);
     fullArray.push(["Peo",[3, 1, 18, 23, 28, 33, 34, 38, 41, 57]]);
@@ -465,7 +465,7 @@ function setUpArray()
     fullArray.push(["Pwerko",[2, 3, 4, 12, 18, 23, 49, 56]]);
     fullArray.push(["Pygui",[3, 13, 38, 40, 57]]);
     fullArray.push(["Pyon",[]]);
-    fullArray.push(["Quadrapus",[1, 3, 23, 28, 36, 45, 55]]);
+    fullArray.push(["Quadrapus",[1, 3, 23, 28, 36, 45, 54, 55]]);
     fullArray.push(["Quadrone",[3, 19, 23, 41]]);
     fullArray.push(["Quetzal",[3, 11, 23, 32, 33, 43]]);
     fullArray.push(["Quilin",[6, 31, 54]]);
@@ -514,11 +514,11 @@ function setUpArray()
     fullArray.push(["Slorgclops",[3, 40, 41]]);
     fullArray.push(["Sludgy",[9, 21, 23, 34, 36, 38, 39, 43, 45, 46, 47]]);
     fullArray.push(["Slugawoo",[3, 4, 9, 28, 33, 41, 55, 57]]);
-    fullArray.push(["Slymook",[1, 21]]);
+    fullArray.push(["Slymook",[1, 21, 54]]);
     fullArray.push(["Smiley",[54]]);
     fullArray.push(["Snarhook",[3, 1, 13, 18, 23, 32, 33, 37, 38, 45, 52, 54]]);
-    fullArray.push(["Snauberack",[]]);
-    fullArray.push(["Snicklebeast",[2, 9, 19, 25, 28, 37, 38, 45, 46, 57]]);
+    fullArray.push(["Snauberack",[33]]);
+    fullArray.push(["Snicklebeast",[2, 9, 19, 25, 28, 37, 38, 45, 46, 56, 57]]);
     fullArray.push(["Snomorg",[39, 41, 52, 55, 57]]);
     fullArray.push(["Snoogy",[3, 9, 17, 36, 39, 41, 52, 57]]);
     fullArray.push(["Snorkle",[1, 3, 1, 8, 9, 11, 12, 18, 19, 20, 21, 23, 24, 25, 28, 33, 37, 38, 39, 40, 42, 45, 46, 52]]);
@@ -561,7 +561,7 @@ function setUpArray()
     fullArray.push(["Tekkal",[3, 23, 36, 41]]);
     fullArray.push(["Tencals",[3, 23, 41, 57]]);
     fullArray.push(["Tenna",[12, 13, 18, 19, 20, 24, 25, 28, 32, 33, 37, 39, 41, 45, 52, 55]]);
-    fullArray.push(["Tigermouse",[3, 9, 11, 16, 23, 40, 52, 57]]);
+    fullArray.push(["Tigermouse",[3, 9, 11, 16, 23, 37, 40, 52, 57]]);
     fullArray.push(["Tiny Giant Squid",[]]);
     fullArray.push(["Tomamu",[18, 42]]);
     fullArray.push(["Tootum",[18]]);
@@ -583,7 +583,7 @@ function setUpArray()
     fullArray.push(["Ultra Pinceron",[3, 18, 23, 24, 36]]);
     fullArray.push(["Unifox",[]]);
     fullArray.push(["Uniocto",[2, 1, 9, 11, 18, 19, 20, 23, 28, 33, 34, 36, 37, 39, 40, 41, 42, 46, 48, 49, 52, 57]]);
-    fullArray.push(["Urchull",[18]]);
+    fullArray.push(["Urchull",[18, 33]]);
     fullArray.push(["Urgoni",[3, 20, 23, 33, 42]]);
     fullArray.push(["Vacana",[11, 18, 24, 33]]);
     fullArray.push(["Vacumatic 9000",[18]]);
@@ -614,7 +614,7 @@ function setUpArray()
     fullArray.push(["Xepru",[8, 33, 39]]);
     fullArray.push(["Yackito",[]]);
     fullArray.push(["Yoakie",[56]]);
-    fullArray.push(["Yooyu",[1, 3, 1, 11, 18, 19, 23, 28, 33, 38, 40, 41, 42, 46, 52, 54, 57]]);
+    fullArray.push(["Yooyu",[1, 3, 1, 11, 18, 19, 23, 28, 32, 33, 38, 40, 41, 42, 46, 52, 54, 57]]);
     fullArray.push(["Yullie",[2, 1, 16, 18, 28, 33, 37, 38, 41, 46, 49]]);
     fullArray.push(["Zamillion",[]]);
     fullArray.push(["Zebba",[5, 28, 33]]);
