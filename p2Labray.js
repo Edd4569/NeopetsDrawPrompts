@@ -191,7 +191,27 @@ function randexec() {
   return (funcs[i])();
 }
 
+function getIDbyName(color, species) {
+    let name = color + " " + species;
+    console.log(name);
+    for(let i = 0; i<labRayList.length; i++) {
+        if(name.localeCompare(labRayList[i][0]) == 0) {
+            return labRayList[i][1];
+        }
+    }
+    for(let i = 0; i<labRayList.length; i++) {
+        if(species.localeCompare(labRayList[i][0]) == 0) {
+            return labRayList[i][1];
+        }
+    }
+    return -1;
+}
+
 function setupLabRay() {
+    if (labRayNameList.length >1 && labRayList.length >1) {
+        console.log("full lab list");
+        return;
+    }
     // List of Possible Names
     labRayNameList.push("1337");
     labRayNameList.push("Bhudda of Geraptiku");
@@ -3623,4 +3643,6 @@ function setupLabRay() {
     labRayList.push(["Zomutt",3762,101,"https://images.neopets.com/items/petpet_spooky_gothpup.gif",0]);
     labRayList.push(["Zoomik",20618,99,"https://images.neopets.com/items/petpet_jetpack.gif",0]);
     labRayList.push(["Zumagorn",14079,99,"https://images.neopets.com/items/pet_zumagorn.gif",0]);
+    labRayList.push(["Woodland Mortog",74215,101,"https://images.neopets.com/items/mortog_woodland.gif",0]);
+    labRayList.push(["Darigan Gruslen",74216,101,"https://images.neopets.com/items/gruslen_darigan.gif",0]);
 }
