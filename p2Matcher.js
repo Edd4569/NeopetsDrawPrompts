@@ -132,31 +132,31 @@ function setUpArray()
         console.log("full");
         return;
     }
-    fullArray.push(["Abominable Snowball",[3, 12, 18, 19, 37, 38, 39, 40, 41, 42, 45, 47, 57]]);
-    fullArray.push(["Acko",[2, 3, 6, 1, 13, 28, 36, 41, 47, 53, 55]]);
+    fullArray.push(["Abominable Snowball",[3, 12, 18, 19, 37, 38, 39, 40, 41, 42, 45, 47, 55, 57]]); // Base Color White (55)
+    fullArray.push(["Acko",[2, 3, 4, 6, 1, 13, 28, 36, 41, 47, 53, 55]]); // Base Color Brown (4)
     fullArray.push(["Ada",[]]);
     fullArray.push(["Adagio",[]]);
-    fullArray.push(["Airax",[3, 12, 16, 19, 36, 38, 47, 55]]);
-    fullArray.push(["Alabriss",[1, 2, 1, 16, 18, 19, 20, 30, 40, 54]]);
-    fullArray.push(["Albat",[12, 13, 19, 32, 36, 37, 40, 43, 46]]);
+    fullArray.push(["Airax",[3, 4, 12, 16, 19, 36, 38, 47, 55]]); // Base Color Brown (4)
+    fullArray.push(["Alabriss",[1, 2, 1, 16, 18, 19, 20, 30, 40, 54, 55]]); // Base Color White (55)
+    fullArray.push(["Albat",[4, 12, 13, 19, 32, 36, 37, 40, 43, 46]]);// Base Color Brown (4)
     fullArray.push(["Albot",[]]);
-    fullArray.push(["Alkenore",[2, 3, 1, 18, 19, 23, 28, 33, 36, 37, 40, 41, 49, 52]]);
-    fullArray.push(["Altachuck",[0, 9, 18, 33, 36, 37]]);
+    fullArray.push(["Alkenore",[2, 3, 1, 18, 19, 23, 28, 33, 36, 37, 40, 41, 49, 52, 57]]); // Base Color Yellow (57)
+    fullArray.push(["Altachuck",[0, 9, 18, 33, 36, 37, 55, 56]]);// Base Color White (55)
     fullArray.push(["Altalaphus",[]]);
-    fullArray.push(["Angelpuss",[1, 3, 4, 1, 8, 10, 11, 13, 14, 19, 23, 25, 27, 28, 33, 36, 37, 38, 40, 41, 42, 43, 46, 47, 50, 52]]);
-    fullArray.push(["Antwerph",[5, 16, 19, 25]]);
-    fullArray.push(["Anubis",[2, 4, 1, 9, 13, 18, 19, 20, 24, 27, 28, 32, 33, 38, 40, 41, 42, 43, 46, 52, 55, 58]]);
-    fullArray.push(["Apis",[1, 18, 25, 31, 33, 48, 52]]);
-    fullArray.push(["Arkmite",[1, 20, 24, 28, 37, 41, 46, 54, 57]]);
-    fullArray.push(["Aroota",[3, 10, 20, 33, 46, 49]]);
-    fullArray.push(["Avabot",[3, 4, 1, 11, 18, 23, 24, 41]]);
-    fullArray.push(["Babaa",[1, 2, 3, 4, 6, 1, 10, 11, 12, 13, 15, 18, 19, 20, 21, 24, 25, 27, 28, 29, 30, 32, 33, 36, 37, 38, 39, 40, 41, 43, 46, 47, 48, 49, 52, 56, 57]]);
+    fullArray.push(["Angelpuss",[1, 3, 4, 1, 8, 10, 11, 13, 14, 19, 23, 25, 27, 28, 33, 36, 37, 38, 40, 41, 42, 43, 46, 47, 50, 52, 55]]);// Base Color White (55)
+    fullArray.push(["Antwerph",[3, 5, 16, 19, 25]]);// Base Color Blue (3)
+    fullArray.push(["Anubis",[2, 4, 1, 9, 13, 18, 19, 20, 24, 27, 28, 32, 33, 38, 40, 41, 42, 43, 46, 52, 55, 58]]);// Base Color Blue (55)
+    fullArray.push(["Apis",[1, 18, 25, 31, 33, 48, 52, 57]]);// Base Color Yellow (57)
+    fullArray.push(["Arkmite",[1, 20, 23, 24, 28, 37, 41, 46, 54, 57]]);// Base Color Green (23)
+    fullArray.push(["Aroota",[3, 10, 20, 33, 46, 49, 57]]);// Base Color Yellow (57)
+    fullArray.push(["Avabot",[3, 4, 1, 11, 18, 23, 24, 41, 57]]);// Base Color Yellow (57)
+    fullArray.push(["Babaa",[1, 2, 3, 4, 6, 1, 10, 11, 12, 13, 15, 18, 19, 20, 21, 24, 25, 27, 28, 29, 30, 32, 33, 36, 37, 38, 39, 40, 41, 43, 46, 47, 48, 49, 52, 55, 56, 57]]);// Base Color White (55)
     fullArray.push(["Babik",[]]);
-    fullArray.push(["Babith",[1, 9, 18, 19, 20, 23, 31]]);
-    fullArray.push(["Baby Blu",[1, 18, 25, 28, 33, 37, 39, 40, 41, 47, 53, 55, 57]]);
-    fullArray.push(["Baby Fireball",[2, 3, 9, 18, 20, 23, 30, 36, 37, 38, 46, 57]]);
-    fullArray.push(["Baby Space Fungus",[3, 1, 18, 21, 23, 36, 37, 40, 41, 49, 57]]);
-    fullArray.push(["Babyca",[3, 6, 18, 32, 33, 37, 40, 41, 45, 52]]);
+    fullArray.push(["Babith",[1, 3, 9, 18, 19, 20, 23, 31]]);// Base Color Blue (3)
+    fullArray.push(["Baby Blu",[1, 3, 18, 25, 28, 33, 37, 39, 40, 41, 47, 53, 55, 57]]);// Base Color Blue (3)
+    fullArray.push(["Baby Fireball",[2, 3, 9, 18, 20, 23, 30, 36, 37, 38, 41, 46, 57]]);// Base Color Red (41)
+    fullArray.push(["Baby Space Fungus",[3, 1, 18, 21, 23, 36, 37, 40, 41, 49, 57]]);// Base Color Pink (36)
+    fullArray.push(["Babyca",[3, 6, 18, 32, 33, 36, 37, 40, 41, 45, 52]]);// Base Color Pink (36)
     fullArray.push(["Baraga",[]]);
     fullArray.push(["Barbat",[2, 3, 9, 23, 36, 47]]);
     fullArray.push(["Barlow",[1, 2, 1, 18, 23, 29, 33, 41, 49, 57]]);
@@ -176,7 +176,7 @@ function setUpArray()
     fullArray.push(["Bleamix",[]]);
     fullArray.push(["Blibble",[4, 13, 18, 23, 52, 55]]);
     fullArray.push(["Blobagus",[3, 1, 19, 24, 32, 38, 42, 54]]);
-    fullArray.push(["Blobikins",[6, 31, 56]]);
+    fullArray.push(["Blobikins",[6, 8, 31, 56]]);
     fullArray.push(["Blooky",[25, 28]]);
     fullArray.push(["Bloop",[3, 13, 18, 19, 23, 24, 28, 36, 39, 41, 47, 52, 57]]);
     fullArray.push(["Bloopy",[33, 39, 52]]);
@@ -294,7 +294,7 @@ function setUpArray()
     fullArray.push(["Gangee",[2, 3, 11, 23, 24, 33, 37, 38, 40, 41, 42, 46, 49, 55, 57]]);
     fullArray.push(["Ganuthor",[3, 4, 18, 20, 23, 42, 52]]);
     fullArray.push(["Garfir",[2]]);
-    fullArray.push(["Garooda",[3, 11, 13, 18, 36, 41, 52, 55, 57]]);
+    fullArray.push(["Garooda",[3, 11, 13, 18, 30, 36, 41, 52, 55, 57]]);
     fullArray.push(["Gathow",[2, 3, 15, 18, 23, 38, 46, 52, 55, 57]]);
     fullArray.push(["Geb",[3, 10, 13, 14, 18, 23, 25, 28, 32, 36, 46]]);
     fullArray.push(["Ghostkerchief",[2, 3, 1, 18, 23, 24, 28, 32, 33, 36, 37, 41, 42, 46, 47, 49, 50, 58]]);
@@ -545,7 +545,7 @@ function setUpArray()
     fullArray.push(["Surzard",[16, 37, 38, 49]]);
     fullArray.push(["Sutekh",[3]]);
     fullArray.push(["Swabby",[1, 18, 19, 32, 33, 36, 46, 57]]);
-    fullArray.push(["Symol",[0, 2, 3, 5, 6, 1, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 20, 21, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 47, 49, 50, 52, 54, 55, 56, 57, 58]]);
+    fullArray.push(["Symol",[0, 2, 3, 5, 6, 1, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 20, 21, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 47, 48, 49, 50, 52, 54, 55, 56, 57, 58]]);
     fullArray.push(["Taigar",[3, 23, 41, 57]]);
     fullArray.push(["Tainted Minion",[]]);
     fullArray.push(["Talpidat",[17, 18, 20, 46, 48]]);
