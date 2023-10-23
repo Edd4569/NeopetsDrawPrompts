@@ -42,7 +42,7 @@ function NameChange () {
 }
 function PetLevelUp () { 
     p2Level+=1;
-    outcome = `Nothing <i>looks</i> different about Fritz but you can sense something happened.<br>It becomes evident later when it tries to climb a tree but breaks off the branch instead. 
+    outcome = `Nothing <i>looks</i> different about ${p2Name} but you can sense something happened.<br>It becomes evident later when it tries to climb a tree but breaks off the branch instead. 
     The ray has increased its level to: ${p2Level} `;
     return updateP2();
 }
