@@ -3645,8 +3645,8 @@ function setupLabRay() {
     labRayList.push(["Zumagorn",14079,99,"https://images.neopets.com/items/pet_zumagorn.gif",0]);
     labRayList.push(["Woodland Mortog",74215,101,"https://images.neopets.com/items/mortog_woodland.gif",0]);
     labRayList.push(["Darigan Gruslen",74216,101,"https://images.neopets.com/items/gruslen_darigan.gif",0]);
-    labRayList.push(["Spring Symol",74328,101,"https://images.neopets.com/items/symol_spring.gif",0]);// Placeholder JN ID
-    labRayList.push(["Clay Blobikins",74329,101,"https://images.neopets.com/items/blobikins_clay.gif",0]);// Placeholder JN ID
-    labRayList.push(["Woodland Altachuck",74330,101,"https://images.neopets.com/items/altachuck_woodland.gif",0]);// Placeholder JN ID
-    labRayList.push(["Magma Garooda",74331,101,"https://images.neopets.com/items/garooda_magma.gif",0]);// Placeholder JN ID
+    labRayList.push(["Spring Symol",74330,101,"https://images.neopets.com/items/symol_spring.gif",0]);
+    labRayList.push(["Clay Blobikins",74331,101,"https://images.neopets.com/items/blobikins_clay.gif",0]);
+    labRayList.push(["Woodland Altachuck",74332,101,"https://images.neopets.com/items/altachuck_woodland.gif",0]);
+    labRayList.push(["Magma Garooda",74333,101,"https://images.neopets.com/items/garooda_magma.gif",0]);
 }
