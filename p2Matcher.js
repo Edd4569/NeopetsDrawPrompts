@@ -275,7 +275,7 @@ function setUpArray()
     fullArray.push(["Flippy",[]]);
     fullArray.push(["Flishy",[18, 28, 31, 37]]);
     fullArray.push(["Flizzardo",[3, 8, 25, 41, 57]]);
-    fullArray.push(["Floobix",[]]);
+    fullArray.push(["Floobix",[25]]); // 23
     fullArray.push(["Florta",[18, 54]]);
     fullArray.push(["Flosset",[5, 11, 23, 43, 55, 57]]);
     fullArray.push(["Floud",[3, 23, 32, 41, 57]]);
@@ -329,7 +329,7 @@ function setUpArray()
     fullArray.push(["GX-4 Oscillabot",[3, 18, 23, 24, 36, 38, 47, 53]]);
     fullArray.push(["Gypmu",[6, 25, 46, 52, 55, 56, 58]]);
     fullArray.push(["Harris",[1, 3, 6, 1, 9, 12, 13, 18, 19, 20, 23, 24, 25, 28, 32, 33, 36, 37, 38, 39, 40, 42, 45, 47, 52, 57]]);
-    fullArray.push(["Hasee",[1, 1, 11, 15, 18, 19, 28, 29, 32, 33, 34, 37, 38, 45, 46, 52, 54, 57]]);
+    fullArray.push(["Hasee",[1, 1, 11, 15, 18, 19, 25, 28, 29, 32, 33, 34, 37, 38, 45, 46, 52, 54, 57]]);
     fullArray.push(["Haseepuss",[6]]);
     fullArray.push(["Hegelob",[18]]);
     fullArray.push(["Hegie",[6]]);
@@ -544,7 +544,7 @@ function setUpArray()
     fullArray.push(["Sunutek",[1]]);
     fullArray.push(["Surzard",[16, 37, 38, 49]]);
     fullArray.push(["Sutekh",[3]]);
-    fullArray.push(["Swabby",[1, 18, 19, 32, 33, 36, 46, 57]]);
+    fullArray.push(["Swabby",[1, 18, 19, 25, 32, 33, 36, 46, 57]]);
     fullArray.push(["Symol",[0, 2, 3, 5, 6, 1, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 20, 21, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 47, 48, 49, 50, 52, 54, 55, 56, 57, 58]]);
     fullArray.push(["Taigar",[3, 23, 41, 57]]);
     fullArray.push(["Tainted Minion",[]]);

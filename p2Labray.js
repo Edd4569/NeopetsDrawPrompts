@@ -3649,4 +3649,8 @@ function setupLabRay() {
     labRayList.push(["Clay Blobikins",74331,101,"https://images.neopets.com/items/blobikins_clay.gif",0]);
     labRayList.push(["Woodland Altachuck",74332,101,"https://images.neopets.com/items/altachuck_woodland.gif",0]);
     labRayList.push(["Magma Garooda",74333,101,"https://images.neopets.com/items/garooda_magma.gif",0]);
+
+    labRayList.push(["Halloween Floobix",74378,101,"https://images.neopets.com/items/floobix_halloween.gif",0]);
+    labRayList.push(["Halloween Swabby",74376,101,"https://images.neopets.com/items/swabby_halloween.gif",0]);
+    labRayList.push(["Halloween Hasee",74377,101,"https://images.neopets.com/items/hasee_halloween.gif",0]);
 }
