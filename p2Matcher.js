@@ -509,9 +509,9 @@ function setUpArray()
     fullArray.push(["Sklyde",[3, 6, 12, 13, 18, 21, 28, 36, 40, 42, 43, 46]]);
     fullArray.push(["Skootle Bug",[]]);
     fullArray.push(["Skree",[11, 54]]);
-    fullArray.push(["Slogmok",[17, 18, 20, 33, 39, 54]]);
+    fullArray.push(["Slogmok",[17, 18, 20, 33, 39, 54, 56]]);
     fullArray.push(["Slorg",[0, 1, 2, 3, 4, 5, 6, 1, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58]]);
-    fullArray.push(["Slorgclops",[3, 40, 41]]);
+    fullArray.push(["Slorgclops",[3, 33, 40, 41]]);
     fullArray.push(["Sludgy",[9, 21, 23, 34, 36, 38, 39, 43, 45, 46, 47]]);
     fullArray.push(["Slugawoo",[3, 4, 9, 28, 33, 41, 55, 57]]);
     fullArray.push(["Slymook",[1, 21, 54]]);
