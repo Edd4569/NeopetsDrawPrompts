@@ -21,7 +21,7 @@ let p2Array = ["Abominable Snowball","Acko","Ada","Adagio","Airax","Alabriss","A
 "Mortog","Mummy Baby","Mundo","Muyang","N-4 Info Retrieval Bot","Naalala","Naleap","Narwhool","Navibot","Nebularis","Nedler","Neotrak","Neucloop",
 "Nik","Niptor","Noak","Noil","Noilkeet","Nuk","Nupie","Nuranna","Octorna","Ombat","Ona","Oop","Orbulon","Orp","Ownow","Palmplat","Pandaphant",
 "Patamoose","Pawkeet","Peadackle","Peedleedoo","Peo","Pepito","Petoot","Pfish","Phnard","Pickulsaur","Pikis","Pile of Soot","Pinceron","Pinklet",
-"Pirakeet","Piraket","Plathydon","Pofew","Polarchuck","Ponka","Pooka","Popblew","Poppit","Powtry","Primella","Psimouse","Puppyblew","Pwerko",
+"Pirakeet","Piraket","Plathydon", "Plumpy", "Pofew","Polarchuck","Ponka","Pooka","Popblew","Poppit","Powtry","Primella","Psimouse","Puppyblew","Pwerko",
 "Pygui","Pyon","Quadrapus","Quadrone","Quetzal","Quilin","Quintilc","Raindorf","Ramosan","Rashpid","Rav","Raverge","Razumi","Reptillior",
 "Roaderie 1000","Robocrush","Roburg 3T3","Rock","Rollatron","Romeep 3t3","Rotawheel","Rotoblur 4000","Rotweilie","Sandan","Sandpoint",
 "Sauropod","Scado","Scamander","Scarabug","Schmoonie","Schnelly","Scout Unit","Screal","Screwtop","Searex","Seece","Selket","Seti",
@@ -187,7 +187,7 @@ function setUpArray()
     fullArray.push(["Blurgah",[2, 3, 6, 19, 31, 42, 52]]);
     fullArray.push(["Blurtle",[18, 20, 33, 41, 52]]);
     fullArray.push(["Bogie",[33, 44]]);
-    fullArray.push(["Boween",[12, 16, 19, 23, 33, 40, 41, 42, 57, 58]]);
+    fullArray.push(["Boween",[1, 12, 16, 19, 23, 33, 40, 41, 42, 57, 58]]); // Base Color Blue (3)
     fullArray.push(["Bowla",[1, 11, 18, 19, 23, 36, 41, 57]]);
     fullArray.push(["Bubblebee",[3, 1, 23, 33, 41, 50, 53, 55]]);
     fullArray.push(["Bubbles",[14, 33, 40, 42, 57]]);
@@ -381,9 +381,9 @@ function setUpArray()
     fullArray.push(["Magtile",[20, 30, 50]]);
     fullArray.push(["Mallard",[3, 1, 9, 11, 15, 17, 18, 31, 36, 37, 41, 42, 43, 52, 55, 57]]);
     fullArray.push(["Manjeer",[4, 14, 18, 20, 43]]);
-    fullArray.push(["Marafin",[37]]);
+    fullArray.push(["Marafin",[1, 37]]);// Base Color Blue (3)
     fullArray.push(["Marbluk",[3, 23, 36, 57]]);
-    fullArray.push(["Marlock",[39, 46, 52]]);
+    fullArray.push(["Marlock",[39, 46, 52]]);// Base Color Yellow (57)
     fullArray.push(["Mastyxi",[3, 18, 23, 34]]);
     fullArray.push(["Mauket",[11, 17, 18, 20, 22, 25, 28, 43, 58]]);
     fullArray.push(["Mazzew",[0, 1, 2, 5, 6, 1, 11, 18, 19, 21, 22, 25, 28, 29, 32, 33, 36, 37, 38, 40, 42, 46, 50, 51, 55]]);
@@ -452,6 +452,7 @@ function setUpArray()
     fullArray.push(["Pirakeet",[3, 23, 41, 57]]);
     fullArray.push(["Piraket",[]]);
     fullArray.push(["Plathydon",[23, 28, 33, 42, 52, 55, 57]]);
+    fullArray.push(["Plumpy"[1,24,55]]) // Base Color White (55)
     fullArray.push(["Pofew",[3, 18, 23, 32, 57]]);
     fullArray.push(["Polarchuck",[0, 1, 3, 4, 12, 13, 14, 18, 24, 25, 28, 33, 36, 37, 38, 42, 45, 47, 49, 52]]);
     fullArray.push(["Ponka",[18, 20, 38]]);
@@ -501,7 +502,7 @@ function setUpArray()
     fullArray.push(["Seece",[25, 37, 43]]);
     fullArray.push(["Selket",[3, 18, 33, 55]]);
     fullArray.push(["Seti",[9, 18, 19, 23, 25, 34, 43, 46, 52]]);
-    fullArray.push(["Sharky",[18, 19, 20, 23, 41, 57]]);
+    fullArray.push(["Sharky",[1, 18, 19, 20, 23, 41, 57]]); // Base Color Blue (3)
     fullArray.push(["Shocket",[14, 23, 38, 57]]);
     fullArray.push(["Short Fuse",[19]]);
     fullArray.push(["Skelly",[17, 39, 46]]);
