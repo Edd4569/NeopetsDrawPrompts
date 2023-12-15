@@ -194,7 +194,7 @@ function setUpArray()
     fullArray.push(["Bubblisaur",[]]);
     fullArray.push(["Buzzer",[1, 8, 11, 19, 20, 24, 25, 28, 32, 33, 36, 37, 38, 39, 42, 46, 47, 52]]);
     fullArray.push(["Buzzler",[3, 23, 31, 41, 57]]);
-    fullArray.push(["Bython",[42, 57]]);
+    fullArray.push(["Bython",[7, 42, 57]]); // Base Color Purple (39)
     fullArray.push(["C430 Autobot",[]]);
     fullArray.push(["Cadro",[3, 5, 18, 19, 21, 23, 24, 33, 36, 38, 41, 46, 54]]);
     fullArray.push(["Calabat",[57, 58]]);

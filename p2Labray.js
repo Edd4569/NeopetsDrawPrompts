@@ -3661,5 +3661,6 @@ function setupLabRay() {
     labRayList.push(["Birthday Marafin",74453,101,"https://images.neopets.com/items/marafin_birthday.gif",0]);
     labRayList.push(["Birthday Boween",74452,101,"https://images.neopets.com/items/boween_birthday.gif",0]);
     labRayList.push(["Birthday Sharky",74451,101,"https://images.neopets.com/items/sharky_birthday.gif",0]);
+    labRayList.push(["Christmas Bython",74611,101,"https://images.neopets.com/items/bython_christmas.gif",0]);
 
 }
