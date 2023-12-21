@@ -524,7 +524,7 @@ function setUpArray()
     fullArray.push(["Snoogy",[3, 9, 17, 36, 39, 41, 52, 57]]);
     fullArray.push(["Snorkle",[1, 3, 1, 8, 9, 11, 12, 18, 19, 20, 21, 23, 24, 25, 28, 33, 37, 38, 39, 40, 42, 45, 46, 52]]);
     fullArray.push(["Snorlkin",[16, 19, 36, 40, 41]]);
-    fullArray.push(["Snowbunny",[3, 4, 6, 9, 10, 18, 20, 22, 23, 24, 25, 28, 29, 32, 36, 37, 38, 40, 42, 46, 47, 48, 49, 51, 52, 57]]);
+    fullArray.push(["Snowbunny",[3, 4, 6, 7, 9, 10, 18, 20, 22, 23, 24, 25, 28, 29, 32, 36, 37, 38, 40, 42, 46, 47, 48, 49, 51, 52, 57]]); // Base Color White (55)
     fullArray.push(["Snowickle",[1, 1, 18, 19, 20, 23, 28, 29, 32, 33, 34, 36, 39, 40, 41, 42, 45, 52, 55, 57]]);
     fullArray.push(["Snuffly",[2, 11, 14, 18, 20, 28, 33, 36, 46, 52]]);
     fullArray.push(["Soreen",[16, 23, 33]]);
@@ -539,7 +539,7 @@ function setUpArray()
     fullArray.push(["Spyrabor",[]]);
     fullArray.push(["Spyven",[3, 9, 19, 49]]);
     fullArray.push(["Stahkee",[18]]);
-    fullArray.push(["Staragus",[6, 18, 20, 34, 49]]);
+    fullArray.push(["Staragus",[6, 7, 18, 20, 34, 49]]); // Base Color Green (23)
     fullArray.push(["Stego",[2, 3, 21, 32, 39, 41, 55]]);
     fullArray.push(["Stopngo 400",[3, 28, 34, 36, 55, 57]]);
     fullArray.push(["Sunutek",[1]]);
