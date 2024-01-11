@@ -344,7 +344,7 @@ function setUpArray()
     fullArray.push(["Huggy",[3, 1, 20, 25, 38, 58]]);
     fullArray.push(["Huggy Bear",[]]);
     fullArray.push(["Hydruplit",[18, 19]]);
-    fullArray.push(["Icklesaur",[1, 3, 4, 9, 12, 38, 39, 55]]);
+    fullArray.push(["Icklesaur",[1, 3, 4, 7, 9, 12, 38, 39, 55]]); //Base Color pink 36
     fullArray.push(["Ignalce",[16, 17, 18, 39]]);
     fullArray.push(["Intesteen",[6, 18, 33, 36, 49, 52, 54]]);
     fullArray.push(["Jawshell",[44]]);
@@ -532,7 +532,7 @@ function setUpArray()
     fullArray.push(["Spardel",[2, 6, 1, 9, 10, 13, 18, 19, 20, 22, 23, 24, 25, 28, 32, 33, 36, 37, 39, 40, 47, 51, 52, 55, 58]]);
     fullArray.push(["Spirkle",[2, 3, 23, 42, 57]]);
     fullArray.push(["Splime",[18, 53]]);
-    fullArray.push(["Splyke",[2, 3, 24, 25, 41, 46, 58]]);
+    fullArray.push(["Splyke",[2, 3, 7, 24, 25, 41, 46, 58]]); //Base color brown (4)
     fullArray.push(["Spoppy",[]]);
     fullArray.push(["Sproing",[46]]);
     fullArray.push(["Spyder",[5, 6, 1, 12, 13, 18, 20, 21, 23, 24, 28, 29, 32, 33, 36, 38, 40, 42, 46, 49, 52, 53, 55, 57, 58]]);
@@ -567,7 +567,7 @@ function setUpArray()
     fullArray.push(["Tomamu",[18, 42]]);
     fullArray.push(["Tootum",[18]]);
     fullArray.push(["Tralbak",[23, 36, 43]]);
-    fullArray.push(["Triffin",[12, 23, 25, 33, 39, 41, 45, 48, 57]]);
+    fullArray.push(["Triffin",[7, 12, 23, 25, 33, 39, 41, 45, 48, 57]]); //Base Color Blue (3)
     fullArray.push(["Trumpadon",[2, 37, 39]]);
     fullArray.push(["Trunkard",[3, 1, 11, 18, 23, 24, 36, 40, 41]]);
     fullArray.push(["Tuceet",[52, 55]]);
