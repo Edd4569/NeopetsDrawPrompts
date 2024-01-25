@@ -3669,4 +3669,7 @@ function setupLabRay() {
     labRayList.push(["Christmas Icklesaur",74652,101,"https://images.neopets.com/items/icklesaur_christmas.gif",0]);
     labRayList.push(["Christmas Splyke",74651,101,"https://images.neopets.com/items/splyke_christmas.gif",0]);
     labRayList.push(["Christmas Triffin",74650,101,"https://images.neopets.com/items/triffin_christmas.gif",0]);
+   
+    labRayList.push(["Strawberry Plumpy",74797,101,"https://images.neopets.com/items/plumpy_strawberry.gif",0]);
+    labRayList.push(["Chocolate Albat",74800,101,"https://images.neopets.com/items/albat_chocolate.gif",0]);
 }

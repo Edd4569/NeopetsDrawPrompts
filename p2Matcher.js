@@ -1,4 +1,4 @@
-// We should pull this from jn... but lets just hardcode it for now
+// hardcoded yuck
 let p2Array = ["Abominable Snowball","Acko","Ada","Adagio","Airax","Alabriss","Albat","Albot","Alkenore","Altachuck","Altalaphus",
 "Angelpuss","Antwerph","Anubis","Apis","Arkmite","Aroota","Avabot","Babaa","Babik","Babith","Baby Blu","Baby Fireball","Baby Space Fungus",
 "Babyca","Baraga","Barbat","Barlow","Bartamus","Bat Boy","Batterfly","Bazatlan","Bearclops","Bearog","Beekadoodle","Beepallite","Belonthiss",
@@ -36,7 +36,7 @@ let p2Array = ["Abominable Snowball","Acko","Ada","Adagio","Airax","Alabriss","A
 "Whinny","Whoot","Wibreth","Woolypapith","Wreathy","Wuzzer","Wuzzle","Xampher","Xepru","Yackito","Yoakie","Yooyu","Yullie","Zamillion",
 "Zebba","Zebie","Zomutt","Zoomik","Zumagorn"];
 
-// should probably pull this too but for now this is okay
+// hardcoded :( 
 let ppColors = ["8-Bit","Birthday","Black","Blue","Brown","Checkered","Chocolate","Christmas","Clay","Cloud","Custard","Darigan",
 "Desert","Disco","Dung","Elderly","Electric","Eventide","Faerie","Fire","Ghost","Glowing","Gold","Green","Grey",
 "Halloween","Ice","Invisible","Island","Jelly","Magma","Maractite","Maraquan","Mutant","Orange","Picnic","Pink",
@@ -138,7 +138,7 @@ function setUpArray()
     fullArray.push(["Adagio",[]]);
     fullArray.push(["Airax",[3, 4, 12, 16, 19, 36, 38, 47, 55]]); // Base Color Brown (4)
     fullArray.push(["Alabriss",[1, 2, 1, 16, 18, 19, 20, 30, 40, 54, 55]]); // Base Color White (55)
-    fullArray.push(["Albat",[4, 12, 13, 19, 32, 36, 37, 40, 43, 46]]);// Base Color Brown (4)
+    fullArray.push(["Albat",[4, 6, 12, 13, 19, 32, 36, 37, 40, 43, 46]]);// Base Color Brown (4)
     fullArray.push(["Albot",[]]);
     fullArray.push(["Alkenore",[2, 3, 1, 18, 19, 23, 28, 33, 36, 37, 40, 41, 49, 52, 57]]); // Base Color Yellow (57)
     fullArray.push(["Altachuck",[0, 9, 18, 33, 36, 37, 55, 56]]);// Base Color White (55)
@@ -452,7 +452,7 @@ function setUpArray()
     fullArray.push(["Pirakeet",[3, 23, 41, 57]]);
     fullArray.push(["Piraket",[]]);
     fullArray.push(["Plathydon",[23, 28, 33, 42, 52, 55, 57]]);
-    fullArray.push(["Plumpy"[1,24,55]]) // Base Color White (55)
+    fullArray.push(["Plumpy"[1,24, 51, 55]]) // Base Color White (55)
     fullArray.push(["Pofew",[3, 18, 23, 32, 57]]);
     fullArray.push(["Polarchuck",[0, 1, 3, 4, 12, 13, 14, 18, 24, 25, 28, 33, 36, 37, 38, 42, 45, 47, 49, 52]]);
     fullArray.push(["Ponka",[18, 20, 38]]);
