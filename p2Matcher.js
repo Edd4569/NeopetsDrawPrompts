@@ -599,7 +599,7 @@ function setUpArray()
     fullArray.push(["Warf",[1, 3, 4, 6, 1, 8, 12, 13, 14, 18, 20, 23, 24, 25, 27, 28, 32, 33, 36, 37, 38, 39, 40, 42, 46, 47, 49, 52]]);
     fullArray.push(["Weeble",[]]);
     fullArray.push(["Weebly",[]]);
-    fullArray.push(["Weewoo",[3, 1, 9, 11, 13, 18, 19, 23, 24, 32, 33, 36, 37, 38, 40, 41, 42, 43, 45, 46, 55, 57]]);
+    fullArray.push(["Weewoo",[1, 3, 9, 11, 13, 18, 19, 22, 23, 24, 32, 33, 36, 37, 38, 40, 41, 42, 43, 45, 46, 55, 57]]); // Base Color Brown (4)
     fullArray.push(["Werhond",[18, 19, 30, 33, 52, 57]]);
     fullArray.push(["Wheelie",[3, 4, 18, 23, 36, 41, 55]]);
     fullArray.push(["Wheelie Bot",[]]);
