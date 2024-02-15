@@ -3666,6 +3666,8 @@ function setupLabRay() {
     labRayList.push(["Christmas Triffin",74650,101,"https://images.neopets.com/items/triffin_christmas.gif",0]);   
     labRayList.push(["Strawberry Plumpy",74797,101,"https://images.neopets.com/items/plumpy_strawberry.gif",0]);
     labRayList.push(["Chocolate Albat",74800,101,"https://images.neopets.com/items/albat_chocolate.gif",0]);
-
     labRayList.push(["Gold Weewoo",75079,101,"https://images.neopets.com/items/weewoo_gold.gif",1]);
+    labRayList.push(["Valentine Schnelly",75220,101,"https://images.neopets.com/items/schnelly_valentine.gif",0]);
+    labRayList.push(["Valentine Kookith",75221,101,"https://images.neopets.com/items/kookith_valentine.gif",0]);
+    labRayList.push(["Valentine Candychan",75222,101,"https://images.neopets.com/items/candychan_valentine.gif",0]);
 }

@@ -200,7 +200,7 @@ function setUpArray()
     fullArray.push(["Calabat",[57, 58]]);
     fullArray.push(["Camelior",[6, 24, 56]]);
     fullArray.push(["Candy Vampire",[44]]);
-    fullArray.push(["Candychan",[3, 6, 11, 20, 24, 28, 32, 33, 37, 38, 40, 43, 46, 50]]);
+    fullArray.push(["Candychan",[3, 6, 11, 20, 24, 28, 32, 33, 37, 38, 40, 43, 46, 50, 53]]); //red
     fullArray.push(["Caprior",[43]]);
     fullArray.push(["Captive Shadow Wraith",[]]);
     fullArray.push(["Carma",[9, 13, 19, 20, 32, 52]]);
@@ -363,7 +363,7 @@ function setUpArray()
     fullArray.push(["Khura",[]]);
     fullArray.push(["Kiiyak",[38, 43]]);
     fullArray.push(["Kimbi",[2, 3, 4, 11, 28, 36, 38, 52]]);
-    fullArray.push(["Kookith",[1, 3, 4, 6, 1, 12, 13, 19, 20, 22, 23, 24, 25, 26, 29, 33, 36, 37, 38, 39, 40, 42, 46, 47, 50, 51, 52]]);
+    fullArray.push(["Kookith",[1, 3, 4, 6, 1, 12, 13, 19, 20, 22, 23, 24, 25, 26, 29, 33, 36, 37, 38, 39, 40, 42, 46, 47, 50, 51, 52, 53]]); //yellow
     fullArray.push(["Kora",[]]);
     fullArray.push(["Krawk",[3, 4, 9, 11, 12, 13, 16, 18, 20, 24, 25, 33, 34, 36, 37, 38, 40, 41, 42, 49, 55, 57]]);
     fullArray.push(["Krawkadon",[3, 28, 33]]);
@@ -494,7 +494,7 @@ function setUpArray()
     fullArray.push(["Scamander",[3, 8, 10, 14, 18, 25, 36, 38, 55]]);
     fullArray.push(["Scarabug",[2, 4, 19, 23, 27, 36, 41, 43, 55, 57]]);
     fullArray.push(["Schmoonie",[18, 23, 50]]);
-    fullArray.push(["Schnelly",[1, 1, 13, 18, 24, 38, 52, 54, 55]]);
+    fullArray.push(["Schnelly",[1, 1, 13, 18, 24, 38, 52, 53, 54, 55]]); //black
     fullArray.push(["Scout Unit",[]]);
     fullArray.push(["Screal",[25, 30, 49, 55]]);
     fullArray.push(["Screwtop",[18]]);
