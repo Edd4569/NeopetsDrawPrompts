@@ -21,6 +21,8 @@
                     <button onclick="randomP2()" type="button" class="btn btn-primary">Random P2!</button>
                     <button onclick="uniqueP2()" type="button" class="btn btn-primary">Nonexistent Petpet Color/Species Combo!</button>
                     <button onclick="p2labRay()" type="button" class="btn btn-primary">The Petpet Laboratory!</button>
+                    <button id="Mystery-Solving" type="button" class="btn btn-warning">Mystery Solving Hub</button>
+                    <button id="TradingPost" type="button" class="btn btn-success">Baby Paintbrush Calculator</button>
                   </blockquote>
                   <br>
                   <figcaption class="blockquote-footer" id="idDescription"></figcaption>
@@ -80,6 +82,9 @@
           let url = onRestart(1);
           document.getElementById("drawP").innerHTML = p2LabRayGreeting(1) + url + '<br>' +'<button onclick="Zap()" type="button" class="btn btn-primary">Zap the poor Petpet!</button><br>';
         }
+        document.getElementById("Mystery-Solving").onclick = function () {location.href = "https://edd4569.github.io/Mystery-Solving/";};
+        document.getElementById("TradingPost").onclick = function () {location.href = "https://edd4569.github.io/tradingpost/";};
+</script>
     </script>
   </body>
 </html>
