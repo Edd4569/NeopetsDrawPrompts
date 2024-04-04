@@ -3670,4 +3670,7 @@ function setupLabRay() {
     labRayList.push(["Valentine Schnelly",75220,101,"https://images.neopets.com/items/schnelly_valentine.gif",0]);
     labRayList.push(["Valentine Kookith",75221,101,"https://images.neopets.com/items/kookith_valentine.gif",0]);
     labRayList.push(["Valentine Candychan",75222,101,"https://images.neopets.com/items/candychan_valentine.gif",0]);
+    labRayList.push(["Spring Urgoni",75374,101,"https://images.neopets.com/items/urgoni_spring.gif",0])
+    labRayList.push(["Woodland Noil",75373,101,"https://images.neopets.com/items/noil_woodland.gif",0])
+    labRayList.push(["Spring Cirrus",75372,101,"https://images.neopets.com/items/cirrus_spring.gif",0])
 }

@@ -214,7 +214,7 @@ function setUpArray()
     fullArray.push(["Chomper",[44]]);
     fullArray.push(["Chuchuana",[2, 33, 36, 38]]);
     fullArray.push(["Chumablah",[1, 18, 24, 34, 46, 55]]);
-    fullArray.push(["Cirrus",[3, 1, 11, 14, 18, 23, 24, 39, 41, 42, 53, 57]]);
+    fullArray.push(["Cirrus",[3, 1, 11, 14, 18, 23, 24, 39, 41, 42, 48, 53, 57]]); // white
     fullArray.push(["Clompkin",[18, 20, 33, 38, 53]]);
     fullArray.push(["Cobrall",[3, 13, 17, 18, 19, 24, 25, 32, 33, 36, 39, 41, 42, 45, 46, 47, 49, 50, 55, 57]]);
     fullArray.push(["Cofferling",[1]]);
@@ -421,7 +421,7 @@ function setUpArray()
     fullArray.push(["Nik",[]]);
     fullArray.push(["Niptor",[1, 13, 16, 18, 19, 23, 28, 33, 36, 41, 46]]);
     fullArray.push(["Noak",[23, 25, 39, 49, 50]]);
-    fullArray.push(["Noil",[0, 1, 3, 6, 1, 19, 20, 22, 23, 24, 25, 28, 31, 32, 33, 38, 39, 40, 42, 43, 46, 52, 53, 55, 58]]);
+    fullArray.push(["Noil",[0, 1, 3, 6, 1, 19, 20, 22, 23, 24, 25, 28, 31, 32, 33, 38, 39, 40, 42, 43, 46, 52, 53, 55, 56, 58]]); //yellow
     fullArray.push(["Noilkeet",[3, 18, 36, 47]]);
     fullArray.push(["Nuk",[1, 11, 23, 25, 52]]);
     fullArray.push(["Nupie",[54]]);
@@ -585,7 +585,7 @@ function setUpArray()
     fullArray.push(["Unifox",[]]);
     fullArray.push(["Uniocto",[2, 1, 9, 11, 18, 19, 20, 23, 28, 33, 34, 36, 37, 39, 40, 41, 42, 46, 48, 49, 52, 57]]);
     fullArray.push(["Urchull",[18, 33]]);
-    fullArray.push(["Urgoni",[3, 20, 23, 33, 42]]);
+    fullArray.push(["Urgoni",[3, 20, 23, 33, 42, 48]]); //red
     fullArray.push(["Vacana",[11, 18, 24, 33]]);
     fullArray.push(["Vacumatic 9000",[18]]);
     fullArray.push(["Vaeolus",[20, 28, 36, 39]]);
