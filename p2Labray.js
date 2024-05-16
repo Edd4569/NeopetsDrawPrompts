@@ -111,7 +111,7 @@ function P2Avatar() {
     </tbody></table>`;
 }
 
-var functionProbabilities = [ 13, 26, 12, 7, 10 ,30, 1 ]; // 20%, 70% and 10%
+var functionProbabilities = [ 13, 26, 12, 7, 10 ,30, 1 ];
 var funcs = [ Change, NameChange, PetLevelUp, PetLevelDown, PileOfSoot, Nothing, Disappear ]; // the functions array
 
 function onLabRayP2Button(setup) {
@@ -3643,34 +3643,43 @@ function setupLabRay() {
     labRayList.push(["Zomutt",3762,101,"https://images.neopets.com/items/petpet_spooky_gothpup.gif",0]);
     labRayList.push(["Zoomik",20618,99,"https://images.neopets.com/items/petpet_jetpack.gif",0]);
     labRayList.push(["Zumagorn",14079,99,"https://images.neopets.com/items/pet_zumagorn.gif",0]);
+    // Roughly in the order of release after here
     labRayList.push(["Woodland Mortog",74215,101,"https://images.neopets.com/items/mortog_woodland.gif",0]);
     labRayList.push(["Darigan Gruslen",74216,101,"https://images.neopets.com/items/gruslen_darigan.gif",0]);
     labRayList.push(["Spring Symol",74330,101,"https://images.neopets.com/items/symol_spring.gif",0]);
     labRayList.push(["Clay Blobikins",74331,101,"https://images.neopets.com/items/blobikins_clay.gif",0]);
     labRayList.push(["Woodland Altachuck",74332,101,"https://images.neopets.com/items/altachuck_woodland.gif",0]);
     labRayList.push(["Magma Garooda",74333,101,"https://images.neopets.com/items/garooda_magma.gif",0]);
-    labRayList.push(["Halloween Floobix",74378,101,"https://images.neopets.com/items/floobix_halloween.gif",0]);
     labRayList.push(["Halloween Swabby",74376,101,"https://images.neopets.com/items/swabby_halloween.gif",0]);
-    labRayList.push(["Halloween Hasee",74377,101,"https://images.neopets.com/items/hasee_halloween.gif",0]);    
+    labRayList.push(["Halloween Hasee",74377,101,"https://images.neopets.com/items/hasee_halloween.gif",0]);
+    labRayList.push(["Halloween Floobix",74378,101,"https://images.neopets.com/items/floobix_halloween.gif",0]);
     labRayList.push(["Mutant Slorgclops",74397,101,"https://images.neopets.com/items/slorgclops_mutant.gif",0]);
     labRayList.push(["Woodland Slogmok",74398,101,"https://images.neopets.com/items/slogmok_woodland.gif",0]);
-    labRayList.push(["Birthday Plumpy",74456,101,"https://images.neopets.com/items/plumpy_birthday.gif",0]);
-    labRayList.push(["Birthday Marafin",74453,101,"https://images.neopets.com/items/marafin_birthday.gif",0]);
     labRayList.push(["Birthday Boween",74452,101,"https://images.neopets.com/items/boween_birthday.gif",0]);
-    labRayList.push(["Birthday Sharky",74451,101,"https://images.neopets.com/items/sharky_birthday.gif",0]);
-    labRayList.push(["Christmas Bython",74611,101,"https://images.neopets.com/items/bython_christmas.gif",0]);    
+    labRayList.push(["Birthday Marafin",74453,101,"https://images.neopets.com/items/marafin_birthday.gif",0]);
+    labRayList.push(["Birthday Plumpy",74456,101,"https://images.neopets.com/items/plumpy_birthday.gif",0]);
+    labRayList.push(["Christmas Bython",74611,101,"https://images.neopets.com/items/bython_christmas.gif",0]);
     labRayList.push(["Christmas Staragus",74636,101,"https://images.neopets.com/items/staragus_christmas.gif",0]);
-    labRayList.push(["Christmas Snowbunny",74637,101,"https://images.neopets.com/items/snowbunny_christmas.gif",0]);    
-    labRayList.push(["Christmas Icklesaur",74652,101,"https://images.neopets.com/items/icklesaur_christmas.gif",0]);
+    labRayList.push(["Christmas Snowbunny",74637,101,"https://images.neopets.com/items/snowbunny_christmas.gif",0]);
+    labRayList.push(["Christmas Triffin",74650,101,"https://images.neopets.com/items/triffin_christmas.gif",0]);
     labRayList.push(["Christmas Splyke",74651,101,"https://images.neopets.com/items/splyke_christmas.gif",0]);
-    labRayList.push(["Christmas Triffin",74650,101,"https://images.neopets.com/items/triffin_christmas.gif",0]);   
+    labRayList.push(["Christmas Icklesaur",74652,101,"https://images.neopets.com/items/icklesaur_christmas.gif",0]);
     labRayList.push(["Strawberry Plumpy",74797,101,"https://images.neopets.com/items/plumpy_strawberry.gif",0]);
     labRayList.push(["Chocolate Albat",74800,101,"https://images.neopets.com/items/albat_chocolate.gif",0]);
     labRayList.push(["Gold Weewoo",75079,101,"https://images.neopets.com/items/weewoo_gold.gif",1]);
     labRayList.push(["Valentine Schnelly",75220,101,"https://images.neopets.com/items/schnelly_valentine.gif",0]);
     labRayList.push(["Valentine Kookith",75221,101,"https://images.neopets.com/items/kookith_valentine.gif",0]);
     labRayList.push(["Valentine Candychan",75222,101,"https://images.neopets.com/items/candychan_valentine.gif",0]);
-    labRayList.push(["Spring Urgoni",75374,101,"https://images.neopets.com/items/urgoni_spring.gif",0])
-    labRayList.push(["Woodland Noil",75373,101,"https://images.neopets.com/items/noil_woodland.gif",0])
-    labRayList.push(["Spring Cirrus",75372,101,"https://images.neopets.com/items/cirrus_spring.gif",0])
+    labRayList.push(["Spring Cirrus",75372,101,"https://images.neopets.com/items/cirrus_spring.gif",0]);
+    labRayList.push(["Woodland Noil",75373,101,"https://images.neopets.com/items/noil_woodland.gif",0]);
+    labRayList.push(["Spring Urgoni",75374,101,"https://images.neopets.com/items/urgoni_spring.gif",0]);
+    labRayList.push(["Grey Dragoyle",75573,101,"https://images.neopets.com/items/dragoyle_grey.gif",0]);
+    labRayList.push(["Grey Slogmok",75574,101,"https://images.neopets.com/items/slogmok_grey.gif",0]);
+    labRayList.push(["Grey Ukali",75575,101,"https://images.neopets.com/items/ukali_grey.gif",0]);
+    labRayList.push(["Picnic Geb",75645,101,"https://images.neopets.com/items/geb_picnic.gif",0]);
+    labRayList.push(["Fire Cofferling",75646,101,"https://images.neopets.com/items/cofferling_fire.gif",0]);
+    labRayList.push(["Tuffala",75687,101,"https://images.neopets.com/items/tuffala.gif",0]);
+    labRayList.push(["Tyrannian Albat",75702,101,"https://images.neopets.com/items/albat_tyrannian.gif",0]);
+    labRayList.push(["Tyrannian Barlow",75703,101,"https://images.neopets.com/items/barlow_tyrannian.gif",0]);
+    labRayList.push(["Tyrannian Walein",75703,101,"https://images.neopets.com/items/walein_tyrannian.gif",0]);
 }
