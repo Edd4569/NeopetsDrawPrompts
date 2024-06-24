@@ -3682,4 +3682,14 @@ function setupLabRay() {
     labRayList.push(["Tyrannian Albat",75702,101,"https://images.neopets.com/items/albat_tyrannian.gif",0]);
     labRayList.push(["Tyrannian Barlow",75703,101,"https://images.neopets.com/items/barlow_tyrannian.gif",0]);
     labRayList.push(["Tyrannian Walein",75703,101,"https://images.neopets.com/items/walein_tyrannian.gif",0]);
+    labRayList.push(["Fuzztik",75969,101,"https://images.neopets.com/items/space_petpet_9.gif",0]);
+    labRayList.push(["Neetle",75970,101,"https://images.neopets.com/items/space_petpet_8.gif",0]);
+    labRayList.push(["White Neetle",75971,101,"https://images.neopets.com/items/space_petpet_17.gif",0]);
+    labRayList.push(["Wormo",75972,101,"https://images.neopets.com/items/space_petpet_3.gif",0]);
+    labRayList.push(["Triclopstar",75973,101,"https://images.neopets.com/items/space_petpet_6.gif",0]);
+    labRayList.push(["Spotted Schnelly",75882,101,"https://images.neopets.com/items/schnelly_spotted.gif",0]);
+    labRayList.push(["Ghost Kazeriu",75881,101,"https://images.neopets.com/items/kazeriu_ghost.gif",0]);
+    labRayList.push(["Red Gallion",75880,101,"https://images.neopets.com/items/gallion_red.gif",0]);
+    labRayList.push(["Black Kadoatie",75879,101, "https://images.neopets.com/items/kadoatie_black.gif",0]);
+    labRayList.push(["Grey Scamander",75854,101,"https://images.neopets.com/items/petpetscamander_grey.gif",0]);
 }
