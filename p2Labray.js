@@ -3692,4 +3692,23 @@ function setupLabRay() {
     labRayList.push(["Red Gallion",75880,101,"https://images.neopets.com/items/gallion_red.gif",0]);
     labRayList.push(["Black Kadoatie",75879,101, "https://images.neopets.com/items/kadoatie_black.gif",0]);
     labRayList.push(["Grey Scamander",75854,101,"https://images.neopets.com/items/petpetscamander_grey.gif",0]);
+    labRayList.push(["Grey Doglefox",76497,101,"https://images.neopets.com/items/g93cm0emjb.gif",0]);
+    labRayList.push(["Grey Bowla",76504,101,"https://images.neopets.com/items/2fb2h8nb30.gif",0]);
+    labRayList.push(["Red Doglefox",76532,101,"https://images.neopets.com/items/2ehln12ani.gif",0]);
+    labRayList.push(["Void Cirrus",76531,101,"https://images.neopets.com/items/bj904gek28.gif",0]);
+    labRayList.push(["Void Melton",76534,101, "https://images.neopets.com/items/age8gf388m.gif",0]);
+    labRayList.push(["Void Baby Fireball",76533, 101,"https://images.neopets.com/items/dfm5ed5k64.gif",0]);
+    labRayList.push(["Void Psimouse",76535, 101,"https://images.neopets.com/items/2n5c0c04d5.gif",0]);
+    labRayList.push(["Void Minitheus",76536, 101,"https://images.neopets.com/items/gkb32ldea4.gif",0]);
+    labRayList.push(["Void Blobagus",76540, 101,"https://images.neopets.com/items/2jdb461i30.gif",0]);
+    labRayList.push(["Mutant Filamen",76555, 101,"https://images.neopets.com/items/filamen_mutant.gif",0]);
+    labRayList.push(["Mutant Meowclops",76554, 101,"https://images.neopets.com/items/meowclops_mutant.gif",0]);
+    labRayList.push(["Mutant Yoakie",76553, 101,"https://images.neopets.com/items/yoakie_mutant.gif",0]);
+    labRayList.push(["Mutant Altalaphus",76552, 101,"https://images.neopets.com/items/altalaphus_mutant.gif",0]);
+    labRayList.push(["Oversized Walein",76621, 101,"https://images.neopets.com/items/9e27ig5bge.gif",0]);
+    labRayList.push(["Void Baby Space Fungus",76634, 101,"https://images.neopets.com/items/void_baby_space_fungus.gif",0]);
+    labRayList.push(["Chocolate Geb",76677, 101,"https://images.neopets.com/items/geb_chocolate.gif",1]);
+    labRayList.push(["Chocolate Walking Carpet",76676, 101,"https://images.neopets.com/items/walkingcarpet_chocolate.gif",1]);
+    labRayList.push(["Chocolate Plumpy",76675, 101,"https://images.neopets.com/items/plumpy_chocolate.gif",1]);
+    labRayList.push(["Chocolate Faellie",76673, 101,"https://images.neopets.com/items/faellie_chocolate.gif",1]);
 }
