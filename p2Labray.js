@@ -101,7 +101,7 @@ function onRestart(clearOutcome) {
 }
 
 function P2Avatar() {
-    return `<table width="400" cellpadding="3" cellspacing="0" border="0" align="center">
+    return `<table class="responsive-table" cellpadding="2" cellspacing="0" border="0" align="center">
     <tbody><tr>
     <td bgcolor="#ffffcc" align="center" colspan="2"><strong>Something Has Happened!</strong></td>
     </tr><tr>

@@ -1,124 +1,90 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src=p2Matcher.js></script>
-    <script src=p2Labray.js></script>
-    <title>Edd's Neopets Stuff!</title>
-  </head>
-  <body>
-    <div class="col-sm-12">
-        <div class="card">
-            <div class="card-body text-center">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="p2Matcher.js"></script>
+      <script src="p2Labray.js"></script>
+      <title>Edd's Neopets Stuff!</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <!-- Navbar (only visible on mobile) -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+                  <li class="nav-item">
+                     <button onclick="randomP2()" class="btn btn-primary w-100 my-1">Random P2!</button>
+                  </li>
+                  <li class="nav-item">
+                     <button onclick="uniqueP2()" class="btn btn-primary w-100 my-1">Nonexistent Petpet Color/Species Combo!</button>
+                  </li>
+                  <li class="nav-item">
+                     <button onclick="p2labRay()" class="btn btn-primary w-100 my-1">The Petpet Laboratory!</button>
+                  </li>
+                  <li class="nav-item">
+                     <button id="Mystery-Solving" class="btn btn-warning w-100 my-1">Mystery Solving Hub</button>
+                  </li>
+                  <li class="nav-item">
+                     <button id="TradingPost" class="btn btn-success w-100 my-1">Baby Paintbrush Calculator</button>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="container mt-4">
+         <div class="col-sm-12">
+            <div class="card">
+               <div class="card-body text-center">
                   <h1>Neopets Goodies!</h1>
-                  <br>
-                  <blockquote class="blockquote">
-                    <button onclick="randomP2()" type="button" class="btn btn-primary">Random P2!</button>
-                    <button onclick="uniqueP2()" type="button" class="btn btn-primary">Nonexistent Petpet Color/Species Combo!</button>
-                    <button onclick="p2labRay()" type="button" class="btn btn-primary">The Petpet Laboratory!</button>
-                    <button id="Mystery-Solving" type="button" class="btn btn-warning">Mystery Solving Hub</button>
-                    <button id="TradingPost" type="button" class="btn btn-success">Baby Paintbrush Calculator</button>
-                  </blockquote>
+                  <div class="container button-container">
+                     <button onclick="randomP2()" class="btn btn-primary">Random P2!</button>
+                     <button onclick="uniqueP2()" class="btn btn-primary">Nonexistent Petpet Color/Species Combo!</button>
+                     <button onclick="p2labRay()" class="btn btn-primary">The Petpet Laboratory!</button>
+                     <button id="Mystery-Solving" class="btn btn-warning">Mystery Solving Hub</button>
+                     <button id="TradingPost" class="btn btn-success">Baby Paintbrush Calculator</button>
+                  </div>
                   <br>
                   <figcaption class="blockquote-footer" id="idDescription"></figcaption>
+               </div>
             </div>
-        </div>
-    </div>
-    <div class="col-sm-12">
-        <div class="card">
-            <div class="text-center">
-                <br>
+         </div>
+         <div class="col-sm-12 mt-4">
+            <div class="card">
+               <div class="text-center">
+                  <br>
                   <div id="drawP"></div>
+               </div>
             </div>
-        </div>
-    </div>
-    <footer>
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        
-        <p>© 1999-2023 Neopets, Inc. All rights reserved.<br> Unofficially powered by the Jellyneo Item Database.
-            <a href="https://items.jellyneo.net/"target="_blank" rel="noopener noreferrer"> <img src="https://www.jellyneo.net/images/articles/idbicon.png" alt="JNIDBLOGO" /></a></p>
+         </div>
+      </div>
+      <footer>
+         <br>
+         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            <p>© 1999-2023 Neopets, Inc. All rights reserved.<br> Unofficially powered by the Jellyneo Item Database.
+               <a href="https://items.jellyneo.net/" target="_blank" rel="noopener noreferrer">
+               <img src="https://www.jellyneo.net/images/articles/idbicon.png" alt="JNIDBLOGO" />
+               </a>
+            </p>
             <figcaption class="blockquote-footer">
-              <br>This is an unauthorized fan site (v9.17.2024)
-              <p>Questions? Concerns? Ideas? DM @eddwith3ds on discord</p>
+               <br>This is an unauthorized fan site (v9.18.2024)
+               <p>Questions? Concerns? Ideas? DM @eddwith3ds on discord</p>
             </figcaption>
-    </div>
-</footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script>
-        function randomP2() {
-          clearOutcome();
-          setupLabRay();
-          let url = jnLinkFormat(getDrawPrompt());
-          document.getElementById("drawP").innerHTML = url;
-          document.getElementById("idDescription").textContent = `Will generate a real or fake Petpet Color/Species`;
-        }
-        function uniqueP2() {
-          document.getElementById("idDescription").innerHTML =`Should generate a Petpet Color/Species combo that doesn't exist on site<br>(unless TNT releases a new combo before I can update)`;
-          clearOutcome();
-          setUpArray();
-          let url = jnLinkFormat(getUniqueDrawPrompt());
-          document.getElementById("drawP").innerHTML = url;
-        }
-        function p2labRay() {
-          document.getElementById("idDescription").textContent =`The Petpet Laboratory is in beta.`;
-          setupLabRay();
-          let url = onLabRayP2Button(1);
-          document.getElementById("drawP").innerHTML = p2LabRayGreeting(1) + url + '<br>' +'<button onclick="Zap()" type="button" class="btn btn-primary">Zap the poor Petpet!</button><br>';
-        }
-        function Zap() {
-          setupLabRay();
-          let url = onLabRayP2Button(0);
-          let z = getZapCount();
-          let newText = p2LabRayGreeting(0) + url + '<br>' + '<button onclick="Zap()" type="button" class="btn btn-primary">Zap the poor Petpet!</button>';
-          newText += `   <button onclick="Restart()" type="button" class="btn btn-danger">Restart!</button><br>`+ z;
-          document.getElementById("drawP").innerHTML = newText;
-        }
-        function Restart() {
-          let url = onRestart(1);
-          document.getElementById("drawP").innerHTML = p2LabRayGreeting(1) + url + '<br>' +'<button onclick="Zap()" type="button" class="btn btn-primary">Zap the poor Petpet!</button><br>';
-        }
-        document.getElementById("Mystery-Solving").onclick = function () {location.href = "https://edd4569.github.io/Mystery-Solving/";};
-        document.getElementById("TradingPost").onclick = function () {location.href = "https://edd4569.github.io/tradingpost/";};
-</script>
-    </script>
-  </body>
+         </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+      <script>
+          document.getElementById("Mystery-Solving").onclick = function () {location.href = "https://edd4569.github.io/Mystery-Solving/";};
+          document.getElementById("TradingPost").onclick = function () {location.href = "https://edd4569.github.io/tradingpost/";};
+      </script>
+   </body>
 </html>
-
-<style>
-.searchimg { 
-  cursor: pointer; 
-  height: 20px !important; 
-  width: 20px !important; 
-}
-.namBox {
-  width: 75%;
-}
-.p2out {
-  border: 1px solid #000000;
-  padding: 4px;
-  background-color: #fff;
-  max-width: 92px;
-  max-height: 92px;
-  aspect-ratio: 1 / 1;
-  text-align: center;
-  margin: auto;
-  width: 50%;
-}
-.search-helper { 
-  margin-top: 0; 
-  margin-bottom: 0; 
-}
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-footer {
-  margin-top: auto;
-}
-</style>
