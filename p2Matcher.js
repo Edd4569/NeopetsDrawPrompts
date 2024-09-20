@@ -158,7 +158,7 @@ function setUpArray()
     fullArray.push(["Baby Space Fungus",[3, 7, 18, 21, 23, 36, 37, 40, 41, 49, 54, 58]]);// Base Color Pink (36)
     fullArray.push(["Babyca",[3, 6, 18, 32, 33, 36, 37, 40, 41, 45, 52]]);// Base Color Pink (36)
     fullArray.push(["Baraga",[]]);
-    fullArray.push(["Barbat",[2, 3, 9, 23, 36, 47]]);
+    fullArray.push(["Barbat",[2, 3, 9, 23, 36, 37, 47]]);
     fullArray.push(["Barlow",[1, 2, 7, 18, 23, 29, 33, 41, 49, 52, 58]]); // Base Color "Blue"(3)
     fullArray.push(["Bartamus",[2, 3, 6, 12, 13, 14, 17, 18, 20, 23, 30, 31, 33, 36, 37, 38, 40, 41, 43, 59]]);
     fullArray.push(["Bat Boy",[]]);

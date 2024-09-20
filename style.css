@@ -10,7 +10,7 @@
   border: 1px solid #000000;
   padding: 4px;
   background-color: #fff;
-  max-width: 92px;
+  max-width: 100px;
   aspect-ratio: 1 / 1;
   text-align: center;
   margin: auto;
@@ -37,6 +37,15 @@ footer {
   margin: 10px 0 10px 10px;
 }
 
+.p2Name {
+  min-height: 3lh;
+}
+
+.drawP {
+  max-height: 2dvh;
+  min-height: 2dvh;
+}
+
 @media screen and (max-width: 768px) {
   .responsive-table {
       width: fit-content;
@@ -47,6 +56,12 @@ footer {
   .navbar {
     display: none; 
   }
+  .grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(10, auto);
+    gap: 10px; 
+  } 
   .button-container {
     display: flex;
     flex-direction: row;
@@ -59,4 +74,46 @@ footer {
   .button-container {
     display: none;
   }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive columns */
+    gap: 10px; /* Space between the cards */
+  }
+}
+
+.zapHeader {
+  min-height: 300px;
+}
+
+.zapResults {
+  min-height: 3lh;
+}
+
+.item-card {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 100px;
+}
+
+.item-card img {
+  width: 80px;
+  height: 80px;
+}
+
+.exclusive {
+  background-color: #fff0a1;
+}
+
+.non-exclusive {
+  background-color: white;
+}
+
+.grayscale {
+  filter: grayscale(100%) !important;
+}
+
+#abc {
+  display: none;
 }

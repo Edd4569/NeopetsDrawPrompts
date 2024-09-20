@@ -13,6 +13,7 @@ let JNItemDBUrl = url.replace("%s",jnId);
 let outcome = "";
 let p2Level = 1;
 let zapCount = 0;
+let totalZapCount = 0;
 let hasAvatar = 0;
 
 function clearOutcome() {
@@ -27,30 +28,31 @@ function Change () {
     neoImageUrl = temp[3];
     JNItemDBUrl = url.replace("%s",jnId);
     if(temp[4]) {
-        outcome = `Holy cow! Is that a special Petpet? It surely is. You're quite the lucky one.`;
+        outcome = `<div class="zapResults">Holy cow! Is that a special Petpet? It surely is. You're quite the lucky one.</div>`;
     } else {
-        outcome = `Whoa... did it actually work? Sure looks like it. Your Petpet has been transformed. Imagine that.`;
+        outcome = `<div class="zapResults">Whoa... did it actually work? Sure looks like it. Your Petpet has been transformed. Imagine that.</div>`;
     }
+    toggleGreyscaleById(jnId);
     return updateP2();
 }
 function NameChange () {
     let newName = Math.floor(Math.random() *labRayNameList.length); 
     oldName = p2Name;
     p2Name = labRayNameList[newName];
-    outcome  = `${oldName} shall now be known as ${p2Name}. How nice.`;
+    outcome  = `<div class="zapResults">${oldName} shall now be known as ${p2Name}. How nice.</div>`;
     return updateP2();
 }
 function PetLevelUp () { 
     p2Level+=1;
-    outcome = `Nothing <i>looks</i> different about ${p2Name} but you can sense something happened.<br>It becomes evident later when it tries to climb a tree but breaks off the branch instead. 
-    The ray has increased its level to: ${p2Level} `;
+    outcome = `<div class="zapResults">Nothing <i>looks</i> different about ${p2Name} but you can sense something happened.<br>It becomes evident later when it tries to climb a tree but breaks off the branch instead. 
+    The ray has increased its level to: ${p2Level}</div>`;
     return updateP2();
 }
 function PetLevelDown () { 
     if (p2Level >= 2) {
         p2Level-=1;
-        outcome = `The ray produces a giant flash of light, but ${p2Name}  doesn't <i>looks</i> any different. When it can't even climb the Multi-level Scratching Post you bought it, 
-        you realize that malfunctioning lab ray actually decreased its level to: ${p2Level}`;
+        outcome = `<div class="zapResults">The ray produces a giant flash of light, but ${p2Name}  doesn't <i>looks</i> any different. When it can't even climb the Multi-level Scratching Post you bought it, 
+        you realize that malfunctioning lab ray actually decreased its level to: ${p2Level}</div>`;
     } else {
         return Nothing();
     }
@@ -63,9 +65,9 @@ function PileOfSoot () {
     p2Rarity = 101;
     neoImageUrl = "https://images.neopets.com/items/petpetlab_soot.gif";
     JNItemDBUrl = url.replace("%s",jnId);
-    
-    outcome = `Your eyes recover quite quickly after the giant explosion, but that's more than you can say for your Petpet. 
-    The Kookith is kind enough to sweep up ${p2Name} for you and you head home.`
+    toggleGreyscaleById(jnId);
+    outcome = `<div class="zapResults">Your eyes recover quite quickly after the giant explosion, but that's more than you can say for your Petpet. 
+    The Kookith is kind enough to sweep up ${p2Name} for you and you head home.</div>`
     if(!hasAvatar) {
         hasAvatar = 1;
         outcome += P2Avatar();
@@ -73,13 +75,13 @@ function PileOfSoot () {
     return updateP2();
 }
 function Nothing () { 
-    outcome = `But... nothing happens.  It makes a kind of 'zzrrrppptttt' sound before shutting down completely.<br>
-    The creepy Kookith shoos you away and appears quite angry, so you hightail it out of there before he shoots some miniature laser beam at you or something.`;
+    outcome = `<div class="zapResults">But... nothing happens.  It makes a kind of 'zzrrrppptttt' sound before shutting down completely.<br>
+    The creepy Kookith shoos you away and appears quite angry, so you hightail it out of there before he shoots some miniature laser beam at you or something.</div>`;
     return updateP2();
 }
 function Disappear () { 
-    outcome =`Your fears that the Kookith didn't actually know what the heck he was doing are confirmed when ${p2Name} suddenly disappears, leaving no trace. 
-    <br> None. Nada. Zip. Ziltch. <br> <b>Have another Slorg... Take better care of it this time.</b>`
+    outcome =`<div class="zapResults">Your fears that the Kookith didn't actually know what the heck he was doing are confirmed when ${p2Name} suddenly disappears, leaving no trace. 
+    <br> None. Nada. Zip. Ziltch. <br> <b>Have another Slorg... Take better care of it this time.</b></div>`
     onRestart(0);
     return updateP2();
 }
@@ -120,16 +122,17 @@ function onLabRayP2Button(setup) {
     } else {
         oldName = p2Name;
         zapCount+=1;
+        totalZapCount+=1;
         return randexec();
     }
 }
 function getZapCount() { 
-    return `ZapCount: ${zapCount}`;
+    return `ZapCount: ${zapCount} | Total:${totalZapCount}`;
 }
 
 function updateP2() {
-    return`<div>${outcome}<br><br>${p2Type}<a tabindex='-1' target='_blank' href='${JNItemDBUrl}'><img src='${image}'class='searchimg'>
-    </a><br><div class="p2out">${p2Name}<img src='${neoImageUrl}'class='p2Im'><br>Level:${p2Level}</div><br>`;
+    return`<div>${outcome}${p2Type}<a tabindex='-1' target='_blank' href='${JNItemDBUrl}'><img src='${image}'class='searchimg'>
+    </a><br><div class="p2out"><div class="p2Name">${p2Name}</div><img src='${neoImageUrl}'class='p2Im'><br>Level:${p2Level}</div><br>`;
 }
 //<input type="radio"
 
@@ -142,12 +145,12 @@ function p2LabRayGreeting(first) {
         You make your way to the hole in the wall of the Scientist's laboratory and it's quite evident that you and your pets will never fit through that small opening.  
         After a few moments, a small Kookith emerges.<br><br><div align="center"><img src="${scientist}" width="150" height="150" alt="" border="0"></div><br>`;
     }
-    return `The creepy Kookith quickly grabs ${oldName} and runs straight into the laboratory. Since you and your pet are too big to follow, 
+    return `<div class="zapHeader">The creepy Kookith quickly grabs ${oldName} and runs straight into the laboratory.<br>Since you and your pet are too big to follow, 
     you poke your head in the door to witness the fate of the little Petpet.
     <div align="center"><img src="${lab}" width="150" height="150" alt="" border="0"></div><br>
     The Kookith begins wildly pushing buttons on the console, which looks to be made of cardboard and... 
     Achyfi cans?! This can't be right! You begin formulating a plan to rescue your Petpet and run far, far away, but it's too late. The ray has already been fired...
-    <br><br><br><br>`;
+    </div>`;
 }
 
 function getLabRayText(item) {
@@ -209,7 +212,6 @@ function getIDbyName(color, species) {
 
 function setupLabRay() {
     if (labRayNameList.length >1 && labRayList.length >1) {
-        console.log("full lab list");
         return;
     }
     // List of Possible Names
@@ -1224,7 +1226,7 @@ function setupLabRay() {
     labRayList.push(["Faerie Selket",20680,101,"https://images.neopets.com/items/selket_faerie.gif",0]);
     labRayList.push(["Faerie Seti",16264,101,"https://images.neopets.com/items/seti_faerie.gif",0]);
     labRayList.push(["Faerie Sharky",72056,101,"https://images.neopets.com/items/sharky_faerie.gif",0]);
-    labRayList.push(["Faerie Sklyde",24363,101,"https://images.neopets.com/items/sklyde_faerie.gif",0]);
+    labRayList.push(["Faerie Sklyde",24363,101,"https://images.neopets.com/items/faerie_sklyde.gif",0]);
     labRayList.push(["Faerie Slogmok",50557,101,"https://images.neopets.com/items/slogmok_faerie.gif",0]);
     labRayList.push(["Faerie Slorg",19958,101,"https://images.neopets.com/items/slorg_faerie.gif",0]);
     labRayList.push(["Faerie Snarhook",18902,101,"https://images.neopets.com/items/snarhook_faerie.gif",0]);
@@ -3338,7 +3340,7 @@ function setupLabRay() {
     labRayList.push(["Valentine Kadoatie",62765,101,"https://images.neopets.com/items/kadoatie_valentine.gif",0]);
     labRayList.push(["Valentine Lyins",61777,101,"https://images.neopets.com/items/lyins_valentine.gif",0]);
     labRayList.push(["Valentine Magaral",64492,101,"https://images.neopets.com/items/magaral_valentine.gif",0]);
-    labRayList.push(["Valentine Noil",59705,101,"https://images.neopets.com/items/noil_valentine.gif",0]);
+    labRayList.push(["Valentine Noil",59705,101,"https://images.neopets.com/items/noil_valentinesday.gif",0]);
     labRayList.push(["Valentine Ona",70456,101,"https://images.neopets.com/items/ona_valentine.gif",0]);
     labRayList.push(["Valentine Pandaphant",69227,101,"https://images.neopets.com/items/val_pandaphant.gif",0]);
     labRayList.push(["Valentine Rock",59708,101,"https://images.neopets.com/items/rock_valentinesday.gif",0]);
@@ -3469,7 +3471,7 @@ function setupLabRay() {
     labRayList.push(["Woodland Babaa",54486,101,"https://images.neopets.com/items/babaa_woodland.gif",0]);
     labRayList.push(["Woodland Blobikins",55297,101,"https://images.neopets.com/items/blobikins_woodland.gif",0]);
     labRayList.push(["Woodland Camelior",72203,101,"https://images.neopets.com/items/camelior_woodland.gif",0]);
-    labRayList.push(["Woodland Dandan",72878,101,"https://images.neopets.com/items/dandan_woodland.gif",0]);
+    labRayList.push(["Woodland Dandan",72878,101,"https://images.neopets.com/items/shp_dandan_woodland.gif",0]);
     labRayList.push(["Woodland Eizzil",72239,101,"https://images.neopets.com/items/eizzil_woodland.gif",0]);
     labRayList.push(["Woodland Epuni",53695,101,"https://images.neopets.com/items/epuni_woodland.gif",0]);
     labRayList.push(["Woodland Feloreena",54487,101,"https://images.neopets.com/items/feloreena_woodland.gif",0]);
@@ -3711,4 +3713,7 @@ function setupLabRay() {
     labRayList.push(["Chocolate Walking Carpet",76676, 101,"https://images.neopets.com/items/walkingcarpet_chocolate.gif",1]);
     labRayList.push(["Chocolate Plumpy",76675, 101,"https://images.neopets.com/items/plumpy_chocolate.gif",1]);
     labRayList.push(["Chocolate Faellie",76673, 101,"https://images.neopets.com/items/faellie_chocolate.gif",1]);
+    labRayList.push(["Pirate Barbat",76692, 101,"https://images.neopets.com/items/barbat_pirate.gif",0]);
+    createItemGrid(labRayList);
+    toggleGreyscaleById(2914);
 }
