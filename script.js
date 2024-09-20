@@ -26,9 +26,9 @@ function Zap() {
   setupLabRay();
   let url = onLabRayP2Button(0);
   let z = getZapCount();
-  let newText = p2LabRayGreeting(0) + url + '<button onclick="Zap()" type="button" class="btn btn-primary">Zap the poor Petpet!</button>';
+  let newText = p2LabRayGreeting(0) + url + '<div class=buttonBox><button onclick="Zap()" type="button" class="btn btn-primary">Zap the poor Petpet!</button>';
   newText += `   <button onclick="Restart()" type="button" class="btn btn-danger">Restart!</button>`;
-  newText += `   <button onclick="toggleHideGreyscaleCards()" type="button" class="btn btn-info">Show/Hide!</button><br>` + z;
+  newText += `   <button onclick="toggleHideGreyscaleCards()" type="button" class="btn btn-info">Show/Hide!</button><br></div>` + z;
   document.getElementById("drawP").innerHTML = newText;
   document.getElementById("abc").style.display = 'block';
 }

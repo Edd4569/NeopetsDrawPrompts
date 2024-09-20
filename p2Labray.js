@@ -196,7 +196,6 @@ function randexec() {
 
 function getIDbyName(color, species) {
     let name = color + " " + species;
-    console.log(name);
     for(let i = 0; i<labRayList.length; i++) {
         if(name.localeCompare(labRayList[i][0]) == 0) {
             return labRayList[i][1];

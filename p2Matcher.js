@@ -129,7 +129,6 @@ function getUniqueDrawPrompt()
 function setUpArray()
 {
     if(fullArray.length >1 ) {
-        console.log("full");
         return;
     }
     fullArray.push(["Abominable Snowball",[3, 12, 18, 19, 37, 38, 39, 40, 41, 42, 45, 47, 56, 58]]); // Base Color White (56)
