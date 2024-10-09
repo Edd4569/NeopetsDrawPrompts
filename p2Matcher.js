@@ -168,7 +168,7 @@ function setUpArray()
     fullArray.push(["Beekadoodle",[11, 20, 23, 33, 34, 36, 39, 41, 59]]);
     fullArray.push(["Beepallite",[]]);
     fullArray.push(["Belonthiss",[18, 33]]);
-    fullArray.push(["Bika",[8, 14, 23, 31, 33, 36, 42, 56]]);
+    fullArray.push(["Bika",[8, 14, 16, 23, 31, 33, 36, 42, 56]]);
     fullArray.push(["Bikiwan",[9, 52]]);
     fullArray.push(["Bilguss",[13, 18, 23, 37, 38, 47, 56, 58]]);
     fullArray.push(["Biyako",[11, 34, 37]]);
@@ -203,7 +203,7 @@ function setUpArray()
     fullArray.push(["Caprior",[43]]);
     fullArray.push(["Captive Shadow Wraith",[]]);
     fullArray.push(["Carma",[9, 13, 19, 20, 32, 52]]);
-    fullArray.push(["Carmariller",[3, 7, 11, 17, 20, 23, 28, 37, 39, 40, 41, 42]]);
+    fullArray.push(["Carmariller",[3, 7, 11, 17, 20, 23, 28, 37, 39, 40, 41, 42, 57]]);
     fullArray.push(["Catamara",[3, 18, 19, 20, 23, 24, 38, 58]]);
     fullArray.push(["Charnie",[16, 23, 37, 39, 58]]);
     fullArray.push(["Chatter",[18]]);
@@ -263,7 +263,7 @@ function setUpArray()
     fullArray.push(["Feepit",[10, 13, 18, 19, 21, 23, 24, 28, 33, 36, 38, 42, 46, 47, 49, 50, 58]]);
     fullArray.push(["Felf",[20, 56]]);
     fullArray.push(["Felly",[3, 17, 19, 25, 33, 40, 41, 52, 58]]);
-    fullArray.push(["Feloreena",[1, 7, 18, 19, 24, 33, 39, 43, 52, 57]]);
+    fullArray.push(["Feloreena",[1, 7, 11, 18, 19, 24, 33, 39, 43, 52, 57]]);
     fullArray.push(["Filamen",[1, 33, 24]]); // Base Color Yellow(58)
     fullArray.push(["Fir",[3, 4, 7, 24, 33, 37, 43, 46, 52, 56]]);
     fullArray.push(["Fleeper",[]]);
@@ -351,7 +351,7 @@ function setUpArray()
     fullArray.push(["Jinjah",[3, 19, 25, 37, 38, 41]]);
     fullArray.push(["Jowlard",[50, 58]]);
     fullArray.push(["Juma",[15, 18, 37, 43, 55, 57]]);
-    fullArray.push(["Kadoatie",[0, 1, 2, 4, 6, 7, 9, 13, 18, 20, 21, 23, 25, 28, 29, 32, 33, 36, 37, 38, 39, 40, 41, 42, 43, 46, 47, 52, 53, 56, 58]]); // Base Color Blue (3)
+    fullArray.push(["Kadoatie",[0, 1, 2, 4, 6, 7, 9, 13, 18, 20, 21, 23, 24, 25, 28, 29, 32, 33, 36, 37, 38, 39, 40, 41, 42, 43, 46, 47, 52, 53, 56, 58]]); // Base Color Blue (3)
     fullArray.push(["Karren",[4, 9, 36, 41, 43, 58, 59]]);
     fullArray.push(["Kateil",[3, 28, 34, 37, 56]]);
     fullArray.push(["Kazeriu",[1, 18, 19, 20, 23, 31, 41]]); // Base Color Purple (39)
@@ -500,7 +500,7 @@ function setUpArray()
     fullArray.push(["Screal",[25, 30, 49, 56]]);
     fullArray.push(["Screwtop",[18]]);
     fullArray.push(["Searex",[3, 18, 39, 58]]);
-    fullArray.push(["Seece",[25, 37, 43]]);
+    fullArray.push(["Seece",[16, 25, 37, 43]]);
     fullArray.push(["Selket",[3, 18, 33, 56]]);
     fullArray.push(["Seti",[9, 18, 19, 23, 25, 34, 43, 46, 52]]);
     fullArray.push(["Sharky",[1, 18, 19, 20, 23, 41, 58]]); // Base Color Blue (3)
@@ -615,7 +615,7 @@ function setUpArray()
     fullArray.push(["Wreathy",[3, 4, 36, 41, 55]]);
     fullArray.push(["Wuzzer",[]]);
     fullArray.push(["Wuzzle",[20, 21, 46, 49]]);
-    fullArray.push(["Xampher",[1, 6]]);
+    fullArray.push(["Xampher",[1, 6, 18]]);
     fullArray.push(["Xepru",[8, 33, 39]]);
     fullArray.push(["Yackito",[]]);
     fullArray.push(["Yoakie",[33, 57]]); // Base Color Blue (3)
