@@ -147,7 +147,7 @@ function setUpArray()
     fullArray.push(["Anubis",[2, 4, 7, 9, 13, 18, 19, 20, 24, 27, 28, 32, 33, 38, 40, 41, 42, 43, 46, 52, 56, 59]]);// Base Color Blue (56)
     fullArray.push(["Apis",[7, 18, 25, 31, 33, 48, 52, 58]]);// Base Color Yellow (58)
     fullArray.push(["Arkmite",[7, 20, 23, 24, 28, 37, 41, 46, 55, 58]]);// Base Color Green (23)
-    fullArray.push(["Aroota",[3, 10, 20, 33, 46, 49, 58]]);// Base Color Yellow (58)
+    fullArray.push(["Aroota",[3, 10, 20, 33, 46, 49, 57, 58]]);// Base Color Yellow (58)
     fullArray.push(["Avabot",[3, 4, 7, 11, 18, 23, 24, 41, 58]]);// Base Color Yellow (58)
     fullArray.push(["Babaa",[1, 2, 3, 4, 6, 7, 10, 11, 12, 13, 15, 18, 19, 20, 21, 24, 25, 27, 28, 29, 30, 32, 33, 36, 37, 38, 39, 40, 41, 43, 46, 47, 48, 49, 52, 56, 57, 58]]);// Base Color White (56)
     fullArray.push(["Babik",[]]);
@@ -483,7 +483,7 @@ function setUpArray()
     fullArray.push(["Roaderie 1000",[]]);
     fullArray.push(["Robocrush",[18]]);
     fullArray.push(["Roburg 3T3",[3, 23, 24, 41]]);
-    fullArray.push(["Rock",[3, 4, 6, 7, 10, 12, 13, 15, 18, 19, 21, 23, 25, 28, 32, 33, 34, 36, 37, 38, 39, 43, 46, 47, 50, 52, 53, 57]]);
+    fullArray.push(["Rock",[3, 4, 6, 7, 10, 12, 13, 15, 18, 19, 21, 23, 25, 28, 32, 33, 34, 36, 37, 38, 39, 43, 46, 47, 48, 50, 52, 53, 57]]);
     fullArray.push(["Rollatron",[]]);
     fullArray.push(["Romeep 3t3",[]]);
     fullArray.push(["Rotawheel",[3, 13, 23, 28, 41, 58]]);

@@ -3919,6 +3919,8 @@ function setupLabRay() {
     labRayList.push(["Brown Rock",77729,101,"https://images.neopets.com/items/rock_brown.gif",0]);
     labRayList.push(["Black Talpidat",78012,101,"https://images.neopets.com/items/talpidat_black.gif",0]);
     labRayList.push(["Black Miamouse",78017,101,"https://images.neopets.com/items/miamouse_black.gif",0]);
+    labRayList.push(["Spring Rock",78282,101,"https://images.neopets.com/items/rock_spring.gif",0]);
+    labRayList.push(["Woodland Aroota",78281,101,"https://images.neopets.com/items/aroota_woodland.gif",0]);
     createItemGrid(labRayList);
     toggleGreyscaleById(2914);
 }
