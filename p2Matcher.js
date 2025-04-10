@@ -8,7 +8,7 @@ let p2Array = ['Abominable Snowball','Acko','Ada','Adagio','Airax','Alabriss','A
     'Combobot','Cougi','Crabby','Crabula','Crocalu','Crokabek','Crystacat','Cubett','Cuttlebot','Cybit','Cyodrake','Dal','Daloop','Dandan',
     'Darblat','Darpinch','Dartail','Deaver','Delfin','Devilpuss','Ditsy','Djuti','Dofrey','Doglefox','Donksaur','Drackobunny','Drackonack',
     'Dragoyle','Dribblet','Droolik','Drugal','Dua','Duocorn','Eelika','Eizzil','Epuni','Erge','Erisim','Ettaphant','Eustabee','Faellie',
-    'Fangy','Farnswap','Feepit','Felf','Felly','Feloreena','Filamen','Fir','Fleeper','Flerper','Fleurbik','Flightning Bug','Flipperbot',
+    'Fangy','Farnswap','Feepit','Felf','Felly','Feloreena','Filamen','Fir','Fleeper','Flerper','Fleurbik','Flightning Bug','Flipflap','Flipperbot',
     'Flippy','Flishy','Flizzardo','Floobix','Florta','Flosset','Floud','Flowper','Flurm','Foobug','Frillabon','Frogarott','Frogler','Froiler',
     'Frowny','Fungree','Furwitch','Fuzztik','Gabar','Gallion','Gangee','Ganuthor','Garfir','Garooda','Gathow','Geb','Ghostkerchief',
     'Ghostkerfish','Ghoti','Gikerot','Gio','Globilol','Gnar','Gobbler','Goldy','Goople','Goulblee','Goy','Goyalbotnik','Grackle Bug',
@@ -171,7 +171,7 @@ function setUpArray()
     fullArray.push(["Bergher",[]]);
     fullArray.push(["Bika",[8, 14, 16, 23, 31, 33, 36, 42, 56]]);
     fullArray.push(["Bikiwan",[9, 52]]);
-    fullArray.push(["Bilguss",[13, 18, 23, 37, 38, 47, 56, 58]]);
+    fullArray.push(["Bilguss",[13, 18, 23, 32, 37, 38, 47, 56, 58]]);
     fullArray.push(["Biyako",[11, 34, 37]]);
     fullArray.push(["Bleamix",[]]);
     fullArray.push(["Blibble",[4, 13, 18, 23, 52, 56]]);
@@ -271,6 +271,7 @@ function setUpArray()
     fullArray.push(["Flerper",[18, 28, 41]]);
     fullArray.push(["Fleurbik",[]]);
     fullArray.push(["Flightning Bug",[]]);
+    fullArray.push(["Flipflap",[]]);
     fullArray.push(["Flipperbot",[]]);
     fullArray.push(["Flippy",[]]);
     fullArray.push(["Flishy",[18, 28, 31, 37]]);
@@ -437,7 +438,7 @@ function setUpArray()
     fullArray.push(["Ownow",[3, 18, 19, 20, 38, 42, 47, 56]]);
     fullArray.push(["Palmplat",[14]]);
     fullArray.push(["Pandaphant",[3, 5, 7, 17, 18, 23, 33, 38, 42, 43, 52, 53, 58, 59]]);
-    fullArray.push(["Patamoose",[7, 13, 25, 31, 34]]);
+    fullArray.push(["Patamoose",[7, 13, 25, 31, 33, 34]]);
     fullArray.push(["Pawkeet",[3, 4, 7, 13, 20, 24, 33, 36, 37, 38, 41, 45, 46, 48, 52, 58]]);
     fullArray.push(["Peadackle",[3, 23, 33, 36, 37, 41, 42, 58]]);
     fullArray.push(["Peedleedoo",[]]);
