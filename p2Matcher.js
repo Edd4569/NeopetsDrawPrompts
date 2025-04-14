@@ -305,7 +305,7 @@ function setUpArray()
     fullArray.push(["Gikerot",[34, 39]]);
     fullArray.push(["Gio",[]]);
     fullArray.push(["Globilol",[]]);
-    fullArray.push(["Gnar",[2]]);
+    fullArray.push(["Gnar",[2,24]]);
     fullArray.push(["Gobbler",[0, 1, 17, 18, 20, 23, 24, 36, 37, 38, 39, 40, 41, 43, 52, 57, 58, 59]]);
     fullArray.push(["Goldy",[2, 10, 19, 20, 24, 25, 38, 50, 55, 56]]);
     fullArray.push(["Goople",[18, 19, 20, 28, 33, 38, 49, 55]]);
@@ -518,7 +518,7 @@ function setUpArray()
     fullArray.push(["Slorgclops",[3, 33, 40, 41]]);
     fullArray.push(["Sludgy",[9, 21, 23, 34, 36, 38, 39, 43, 45, 46, 47]]);
     fullArray.push(["Slugawoo",[3, 4, 9, 28, 33, 41, 56, 58]]);
-    fullArray.push(["Slymook",[1, 21, 55]]);
+    fullArray.push(["Slymook",[1, 21, 24, 55]]);
     fullArray.push(["Smiley",[55]]);
     fullArray.push(["Snarhook",[3, 7, 13, 18, 23, 32, 33, 37, 38, 45, 52, 55]]);
     fullArray.push(["Snauberack",[33]]);

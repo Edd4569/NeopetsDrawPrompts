@@ -3923,7 +3923,9 @@ function setupLabRay() {
     labRayList.push(["Woodland Aroota",78281,101,"https://images.neopets.com/items/aroota_woodland.gif",0]);    
     labRayList.push(["Mutant Patamoose",78492,101,"https://images.neopets.com/items/c354b3c416.gif",0]);
     labRayList.push(["Maraquan Bilguss",78502,101,"https://images.neopets.com/items/9643add0b6.gif",0]);     
-    labRayList.push(["Flipflap",78503,101,"https://images.neopets.com/items/flipflap_blue.gif",0]);     
+    labRayList.push(["Flipflap",78503,101,"https://images.neopets.com/items/flipflap_blue.gif",0]);
+    labRayList.push(["Grey Gnar",78547,101,"https://images.neopets.com/items/gnar_grey.gif",0]);     
+    labRayList.push(["Grey Slymook",78503,101,"https://images.neopets.com/items/slymook_grey.gif",0]);
     createItemGrid(labRayList);
     toggleGreyscaleById(2914);
 }
