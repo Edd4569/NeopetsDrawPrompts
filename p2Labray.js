@@ -3926,6 +3926,7 @@ function setupLabRay() {
     labRayList.push(["Flipflap",78503,101,"https://images.neopets.com/items/flipflap_blue.gif",0]);
     labRayList.push(["Grey Gnar",78547,101,"https://images.neopets.com/items/gnar_grey.gif",0]);     
     labRayList.push(["Grey Slymook",78503,101,"https://images.neopets.com/items/slymook_grey.gif",0]);
+    labRayList.push(["Tyrannian Niptor",78873,101,"https://images.neopets.com/items/petpet_niptor_tyrannian.gif",1]);
     createItemGrid(labRayList);
     toggleGreyscaleById(2914);
 }

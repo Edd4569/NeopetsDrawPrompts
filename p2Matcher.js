@@ -422,7 +422,7 @@ function setUpArray()
     fullArray.push(["Neotrak",[2, 3, 9]]);
     fullArray.push(["Neucloop",[6, 59]]);
     fullArray.push(["Nik",[]]);
-    fullArray.push(["Niptor",[7, 13, 16, 18, 19, 23, 28, 33, 36, 41, 46]]);
+    fullArray.push(["Niptor",[7, 13, 16, 18, 19, 23, 28, 33, 36, 41, 46, 52]]);
     fullArray.push(["Noak",[23, 25, 39, 49, 50]]);
     fullArray.push(["Noil",[0, 1, 3, 6, 7, 19, 20, 22, 23, 24, 25, 28, 31, 32, 33, 38, 39, 40, 42, 43, 46, 52, 53, 56, 57, 59]]); //yellow
     fullArray.push(["Noilkeet",[3, 18, 36, 47]]);
