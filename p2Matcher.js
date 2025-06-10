@@ -16,7 +16,7 @@ let p2Array = ['Abominable Snowball','Acko','Ada','Adagio','Airax','Alabriss','A
     'Gwortz','GX-4 Haseebot','GX-4 Oscillabot','Gypmu','Harris','Hasee','Haseepuss','Hegelob','Hegie','Hermiteese','Hippalop','Hoggir','Hooklen',
     'Hoovle','Hopso','Hornsby','Horus','Huggy','Huggy Bear','Hydruplit','Icklesaur','Ignalce','Intesteen','Jawshell','Jinjah','Jowlard','Juma',
     'Kadoatie','Karren','Kateil','Kazeriu','Kelpflake','Kepru','Khamette','Khnum','Khonsu','Khura','Kiiyak','Kimbi','Kookith','Kora','Krawk','Krawkadon',
-    'Krikket','Leeble','Lellefisk','Lil Frankie','Liobits','Lizark','Lurman','Lutra','Lyins','Magaral','Magmut','Magtile','Mallard','Manjeer',
+    'Krikket','Leeble','Lellefisk','Lil Frankie','Liobits','Lizark','Lumidrax','Lurman','Lutra','Lyins','Magaral','Magmut','Magtile','Mallard','Manjeer',
     'Marafin','Marbluk','Marlock','Mastyxi','Mauket','Mazzew','Mechanized Laboratory Assistant','Meekins','Meepit','Melton','Melvie','Meowclops',
     'Meturf','Miamouse','Mibblie','Millipod','Mimbi','Minitheus','Mirgle','Moink','Moltenna','Moltenore','Momba','Morkou','Mortog','Mummy Baby',
     'Mundo','Muyang','N-4 Info Retrieval Bot','Naalala','Naleap','Narwhool','Navibot','Nebularis','Nedler','Neetle','Neotrak','Neucloop','Nik',
@@ -217,7 +217,7 @@ function setUpArray()
     fullArray.push(["Cirrus",[3, 7, 11, 14, 18, 23, 24, 39, 41, 42, 48, 53, 54, 58]]); // white
     fullArray.push(["Clompkin",[18, 20, 33, 38, 53]]);
     fullArray.push(["Cobrall",[3, 13, 17, 18, 19, 24, 25, 32, 33, 36, 39, 41, 42, 45, 46, 47, 49, 50, 56, 58]]);
-    fullArray.push(["Cofferling",[7, 19]]); // Base Color "Brown"(4)
+    fullArray.push(["Cofferling",[35, 7, 19]]); // Base Color "Brown"(4)
     fullArray.push(["Combobot",[]]);
     fullArray.push(["Cougi",[3, 18, 58]]);
     fullArray.push(["Crabby",[20]]);
@@ -375,6 +375,7 @@ function setUpArray()
     fullArray.push(["Lil Frankie",[13, 16, 37]]);
     fullArray.push(["Liobits",[]]);
     fullArray.push(["Lizark",[7, 14, 18, 25, 33, 40]]);
+    fullArray.push(["Lumidrax",[]]);
     fullArray.push(["Lurman",[]]);
     fullArray.push(["Lutra",[1, 36, 39, 56]]);
     fullArray.push(["Lyins",[3, 7, 12, 19, 20, 23, 37, 38, 39, 41, 42, 53, 58]]);
@@ -516,7 +517,7 @@ function setUpArray()
     fullArray.push(["Slogmok",[17, 18, 20, 24, 33, 39, 55, 57]]); // Base Color "Brown"(4)
     fullArray.push(["Slorg",[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 47, 48, 49, 50, 51, 52, 53, 55, 56, 57, 58, 59]]);
     fullArray.push(["Slorgclops",[3, 33, 40, 41]]);
-    fullArray.push(["Sludgy",[9, 21, 23, 34, 36, 38, 39, 43, 45, 46, 47]]);
+    fullArray.push(["Sludgy",[9, 21, 23, 34, 36, 38, 39, 43, 45, 46, 47, 57]]); // Base Color "Brown"(4)
     fullArray.push(["Slugawoo",[3, 4, 9, 28, 33, 41, 56, 58]]);
     fullArray.push(["Slymook",[1, 21, 24, 55]]);
     fullArray.push(["Smiley",[55]]);
@@ -532,7 +533,7 @@ function setUpArray()
     fullArray.push(["Snuffly",[2, 11, 14, 18, 20, 28, 33, 36, 46, 52]]);
     fullArray.push(["Soreen",[16, 23, 33]]);
     fullArray.push(["Spallard",[]]);
-    fullArray.push(["Spardel",[2, 6, 7, 9, 10, 13, 18, 19, 20, 22, 23, 24, 25, 28, 32, 33, 36, 37, 39, 40, 47, 51, 52, 56, 59]]);
+    fullArray.push(["Spardel",[2, 4, 6, 7, 9, 10, 13, 18, 19, 20, 22, 23, 24, 25, 28, 32, 33, 36, 37, 39, 40, 47, 51, 52, 56, 59]]);
     fullArray.push(["Spirkle",[2, 3, 23, 42, 58]]);
     fullArray.push(["Splime",[18, 53]]);
     fullArray.push(["Splyke",[2, 3, 7, 24, 25, 41, 46, 59]]); //Base color brown (4)
