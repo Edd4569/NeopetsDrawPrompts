@@ -16,6 +16,7 @@ function createItemGrid(items) {
         const img = document.createElement('img');
         img.src = imageurl;
         img.alt = name;
+        img.loading = "lazy";
         img.setAttribute('data-id', id);
         img.classList.add('grayscale');
 
