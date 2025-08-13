@@ -5,6 +5,7 @@ function randomP2() {
   let url = jnLinkFormat(getDrawPrompt());
   document.getElementById("drawP").innerHTML = url;
   document.getElementById("idDescription").textContent = `Will generate a real or fake Petpet Color/Species`;
+  document.getElementById("abc").style.display = 'none';
 }
 
 function uniqueP2() {
@@ -13,13 +14,14 @@ function uniqueP2() {
   setUpArray();
   let url = jnLinkFormat(getUniqueDrawPrompt());
   document.getElementById("drawP").innerHTML = url;
+  document.getElementById("abc").style.display = 'none';
  }
 
 function p2labRay() {
   document.getElementById("idDescription").textContent =`The Petpet Laboratory is in beta.`;
   setupLabRay();
   let url = onLabRayP2Button(1);
-  document.getElementById("drawP").innerHTML = p2LabRayGreeting(1) + url +'<button onclick="Zap()" type="button" class="btn btn-primary"> Petpet!</button><br><br>';
+  document.getElementById("drawP").innerHTML = p2LabRayGreeting(1) + url +'<button onclick="Zap()" type="button" class="btn btn-primary">Zap the poor Petpet!</button><br><br>';
 }
 
 function Zap() {
