@@ -3934,7 +3934,7 @@ function setupLabRay() {
 	labRayList.push(["Disco Greeble",79473,101,"https://images.neopets.com/items/greeble_disco.gif",0]);
 	labRayList.push(["Crabby-bot Petpet",79481,101,"https://images.neopets.com/items/1kcc1i9g56.gif",0]);
 	labRayList.push(["Scorf",79638,101,"https://images.neopets.com/items/petpet_scorf.gif",0]);
-	labRayList.push(["Grey Yooyu",79641,101,"yooyu_grey.gif",0]);
+	labRayList.push(["Grey Yooyu",79641,101,"https://images.neopets.com/items/yooyu_grey.gif",0]);
 	labRayList.push(["Void Doglefox",80121,101,"https://images.neopets.com/items/c1b57zc441.gif",0]);
 	createItemGrid(labRayList);
 	toggleGreyscaleById(2914);
