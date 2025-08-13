@@ -5,7 +5,7 @@ let p2Array = ['Abominable Snowball','Acko','Ada','Adagio','Airax','Alabriss','A
     'Blorpulous','Blugar','Bluna','Blurgah','Blurtle','Bogie','Boween','Bowla','Bubblebee','Bubbles','Bubblisaur','Buzzer','Buzzler',
     'Bython','C430 Autobot','Cadro','Calabat','Camelior','Candy Vampire','Candychan','Caprior','Captive Shadow Wraith','Carma','Carmariller',
     'Catamara','Charnie','Chatter','Cheerlub','Chezzoom','Chiruck','Chomper','Chuchuana','Chumablah','Cirrus','Clompkin','Cobrall','Cofferling',
-    'Combobot','Cougi','Crabby','Crabula','Crocalu','Crokabek','Crystacat','Cubett','Cuttlebot','Cybit','Cyodrake','Dal','Daloop','Dandan',
+    'Combobot','Cougi','Crabby', 'Crabby-bot Petpet','Crabula','Crocalu','Crokabek','Crystacat','Cubett','Cuttlebot','Cybit','Cyodrake','Dal','Daloop','Dandan',
     'Darblat','Darpinch','Dartail','Deaver','Delfin','Devilpuss','Ditsy','Djuti','Dofrey','Doglefox','Donksaur','Drackobunny','Drackonack',
     'Dragoyle','Dribblet','Droolik','Drugal','Dua','Duocorn','Eelika','Eizzil','Epuni','Erge','Erisim','Ettaphant','Eustabee','Faellie',
     'Fangy','Farnswap','Feepit','Felf','Felly','Feloreena','Filamen','Fir','Fleeper','Flerper','Fleurbik','Flightning Bug','Flipflap','Flipperbot',
@@ -25,7 +25,7 @@ let p2Array = ['Abominable Snowball','Acko','Ada','Adagio','Airax','Alabriss','A
     'Pinklet','Pirakeet','Piraket','Plathydon','Plumpy','Pofew','Polarchuck','Ponka','Pooka','Popblew','Poppit','Powtry','Primella','Psimouse',
     'Puppyblew','Pwerko','Pygui','Pyon','Quadrapus','Quadrone','Quetzal','Quilin','Quintilc','Raindorf','Ramosan','Rashpid','Rav','Raverge',
     'Razumi','Reptillior','Roaderie 1000','Robocrush','Roburg 3T3','Rock','Rollatron','Romeep 3t3','Rotawheel','Rotoblur 4000','Rotweilie',
-    'Sandan','Sandpoint','Sauropod','Scado','Scamander','Scarabug','Schmoonie','Schnelly','Scout Unit','Screal','Screwtop','Searex','Seece',
+    'Sandan','Sandpoint','Sauropod','Scado','Scamander','Scarabug','Schmoonie','Schnelly','Scorf','Scout Unit','Screal','Screwtop','Searex','Seece',
     'Selket','Seti','Sharky','Shocket','Short Fuse','Skelly','Skindle','Sklyde','Skootle Bug','Skree','Slogmok','Slorg','Slorgclops','Sludgy',
     'Slugawoo','Slymook','Smiley','Snarhook','Snauberack','Snicklebeast','Snomorg','Snoogy','Snorkle','Snorlkin','Snowbunny','Snowickle','Snuffly',
     'Soreen','Spallard','Spardel','Spirkle','Splime','Splyke','Spoppy','Sproing','Spyder','Spyrabor','Spyven','Stahkee','Staragus','Stego',
@@ -221,6 +221,7 @@ function setUpArray()
     fullArray.push(["Combobot",[]]);
     fullArray.push(["Cougi",[3, 18, 58]]);
     fullArray.push(["Crabby",[20]]);
+    fullArray.push(["Crabby-bot Petpet",[]]);
     fullArray.push(["Crabula",[2, 3, 12, 18, 33, 37, 42, 46, 52, 58]]);
     fullArray.push(["Crocalu",[20, 23]]);
     fullArray.push(["Crokabek",[3, 9, 24, 33, 36, 42, 56]]);
@@ -241,7 +242,7 @@ function setUpArray()
     fullArray.push(["Ditsy",[]]);
     fullArray.push(["Djuti",[18, 37]]);
     fullArray.push(["Dofrey",[2, 6, 7, 18, 19, 25, 28, 39, 41, 43, 47]]);
-    fullArray.push(["Doglefox",[1, 2, 3, 6, 7, 9, 10, 13, 18, 20, 22, 23, 24, 25, 27, 33, 36, 37, 38, 39, 40, 41, 42, 51, 52, 56, 58, 61]]); //base color brown (4)
+    fullArray.push(["Doglefox",[1, 2, 3, 6, 7, 9, 10, 13, 18, 20, 22, 23, 24, 25, 27, 33, 36, 37, 38, 39, 40, 41, 42, 51, 52, 54, 56, 58, 61]]); //base color brown (4)
     fullArray.push(["Donksaur",[2, 3, 7, 19, 36, 38, 41, 56, 58]]);
     fullArray.push(["Drackobunny",[9, 11, 23, 41]]);
     fullArray.push(["Drackonack",[0, 3, 18, 19, 23, 24, 36, 38, 56, 58]]);
@@ -316,7 +317,7 @@ function setUpArray()
     fullArray.push(["Graffle",[]]);
     fullArray.push(["Graglop",[18, 28]]);
     fullArray.push(["Gratlik",[]]);
-    fullArray.push(["Greeble",[2, 18, 20, 23, 25, 33, 36, 40, 41, 55, 56, 58]]);
+    fullArray.push(["Greeble",[2, 13, 18, 20, 23, 25, 33, 36, 40, 41, 55, 56, 58]]);
     fullArray.push(["Green Tentacle",[]]);
     fullArray.push(["Gremble",[3, 20, 23, 36, 41, 46, 58]]);
     fullArray.push(["Griefer",[18, 32, 38]]);
@@ -499,6 +500,7 @@ function setUpArray()
     fullArray.push(["Scarabug",[2, 4, 19, 23, 27, 36, 41, 43, 56, 58]]);
     fullArray.push(["Schmoonie",[18, 23, 50]]);
     fullArray.push(["Schnelly",[1, 7, 13, 18, 24, 25, 38, 47, 52, 53, 55, 56]]); //Bae Color Black (2)
+    fullArray.push(["Scorf",[]]);
     fullArray.push(["Scout Unit",[]]);
     fullArray.push(["Screal",[25, 30, 49, 56]]);
     fullArray.push(["Screwtop",[18]]);
@@ -622,7 +624,7 @@ function setUpArray()
     fullArray.push(["Xepru",[8, 33, 39]]);
     fullArray.push(["Yackito",[]]);
     fullArray.push(["Yoakie",[33, 57]]); // Base Color Blue (3)
-    fullArray.push(["Yooyu",[1, 3, 7, 11, 18, 19, 23, 28, 32, 33, 38, 40, 41, 42, 46, 52, 55, 58]]);
+    fullArray.push(["Yooyu",[1, 3, 7, 11, 18, 19, 23, 24, 28, 32, 33, 38, 40, 41, 42, 46, 52, 55, 58]]);
     fullArray.push(["Yullie",[2, 7, 16, 18, 28, 33, 37, 38, 41, 46, 49]]);
     fullArray.push(["Zamillion",[]]);
     fullArray.push(["Zebba",[5, 28, 33]]);
