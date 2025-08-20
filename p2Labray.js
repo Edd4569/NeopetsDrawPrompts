@@ -1,6 +1,6 @@
 let labRayList = [];
 let labRayNameList =[];
-let image = "https://images.neopets.com/items/toy_plushie_negg_fish.gif";
+let image = "https://www.jellyneo.net/images/articles/idbicon.png";
 let url = "https://items.jellyneo.net/item/%s/";
 
 let p2Type = "Slorg";
@@ -131,7 +131,7 @@ function getZapCount() {
 }
 
 function updateP2() {
-    return`<div>${outcome}${p2Type}<a tabindex='-1' target='_blank' href='${JNItemDBUrl}'><img src='${image}'class='searchimg'>
+    return`<div>${outcome}${p2Type}<a tabindex='-1' target='_blank' href='${JNItemDBUrl}'><img src='${image}'class='img-inline-text'>
     </a><br><div class="p2out"><div class="p2Name">${p2Name}</div><img src='${neoImageUrl}'class='p2Im'><br>Level:${p2Level}</div><br>`;
 }
 //<input type="radio"
@@ -3936,6 +3936,7 @@ function setupLabRay() {
 	labRayList.push(["Scorf",79638,101,"https://images.neopets.com/items/petpet_scorf.gif",0]);
 	labRayList.push(["Grey Yooyu",79641,101,"https://images.neopets.com/items/yooyu_grey.gif",0]);
 	labRayList.push(["Void Doglefox",80121,101,"https://images.neopets.com/items/c1b57zc441.gif",0]);
-	createItemGrid(labRayList);
+	labRayList.push(["Toothygrin",80364,101,"https://images.neopets.com/items/d814ck47e8.gif",0]);
+    createItemGrid(labRayList);
 	toggleGreyscaleById(2914);
 }

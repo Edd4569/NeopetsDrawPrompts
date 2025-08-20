@@ -122,3 +122,8 @@ footer {
   padding: 10px;
   border: 1px solid #ccc;
 }
+
+.img-inline-text {
+  height: 20px;
+  vertical-align: middle;
+}

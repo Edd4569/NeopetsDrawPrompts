@@ -30,7 +30,7 @@ let p2Array = ['Abominable Snowball','Acko','Ada','Adagio','Airax','Alabriss','A
     'Slugawoo','Slymook','Smiley','Snarhook','Snauberack','Snicklebeast','Snomorg','Snoogy','Snorkle','Snorlkin','Snowbunny','Snowickle','Snuffly',
     'Soreen','Spallard','Spardel','Spirkle','Splime','Splyke','Spoppy','Sproing','Spyder','Spyrabor','Spyven','Stahkee','Staragus','Stego',
     'Stopngo 400','Sunutek','Surzard','Sutekh','Swabby','Symol','Taigar','Tainted Minion','Talpidat','Tamed Mini-Monster','Tanamurx','Tanizard',
-    'Tapira','Tasu','Taweret','Teasqito','Teek','Teemyte','Tekkal','Tencals','Tenna','Tigermouse','Tiny Giant Squid','Tomamu','Tootum','Tralbak',
+    'Tapira','Tasu','Taweret','Teasqito','Teek','Teemyte','Tekkal','Tencals','Tenna','Tigermouse','Tiny Giant Squid','Tomamu','Toothygrin','Tootum','Tralbak',
     'Triclopstar','Triffin','Trumpadon','Trunkard','Tuceet','Tuffala','Turdle','Turmac','Turnali','Turtmid','Turtum','Tyrowbee','Uggatrip','Uggazew',
     'Ukali','Ultra Mega Bot 2000','Ultra Pinceron','Unifox','Uniocto','Urchull','Urgoni','Vacana','Vacumatic 9000','Vaeolus','Val','Valteek','Vullard',
     'Wadjet','Wain','Walein','Walking Carpet','Warf','Weeble','Weebly','Weewoo','Werhond','Wheelie','Wheelie Bot','Wherfy','Whinny','Whoot','Wibreth',
@@ -571,6 +571,7 @@ function setUpArray()
     fullArray.push(["Tigermouse",[3, 9, 11, 16, 23, 37, 40, 52, 58]]);
     fullArray.push(["Tiny Giant Squid",[]]);
     fullArray.push(["Tomamu",[18, 42]]);
+    fullArray.push(["Toothygrin",[]]);
     fullArray.push(["Tootum",[18]]);
     fullArray.push(["Tralbak",[23, 36, 43]]);
     fullArray.push(["Triclopstar",[]]); //Base Color Yellow(58)
