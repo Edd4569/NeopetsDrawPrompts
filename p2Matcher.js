@@ -157,7 +157,7 @@ function setUpArray()
     fullArray.push(["Baby Space Fungus",[3, 7, 18, 21, 23, 36, 37, 40, 41, 49, 54, 58]]);// Base Color Pink (36)
     fullArray.push(["Babyca",[3, 6, 18, 32, 33, 36, 37, 40, 41, 45, 52]]);// Base Color Pink (36)
     fullArray.push(["Baraga",[]]);
-    fullArray.push(["Barbat",[2, 3, 9, 23, 36, 37, 47]]);
+    fullArray.push(["Barbat",[2, 3, 9, 23, 33, 36, 37, 47]]);
     fullArray.push(["Barlow",[1, 2, 7, 18, 23, 29, 33, 41, 49, 52, 58]]); // Base Color "Blue"(3)
     fullArray.push(["Bartamus",[2, 3, 6, 12, 13, 14, 17, 18, 20, 23, 30, 31, 33, 36, 37, 38, 40, 41, 43, 59]]);
     fullArray.push(["Bat Boy",[]]);
@@ -188,13 +188,13 @@ function setUpArray()
     fullArray.push(["Blurtle",[18, 20, 33, 41, 52]]);
     fullArray.push(["Bogie",[33, 44]]);
     fullArray.push(["Boween",[1, 12, 16, 19, 23, 33, 40, 41, 42, 58, 59]]); // Base Color Blue (3)
-    fullArray.push(["Bowla",[1, 11, 18, 19, 23, 24, 36, 41, 58]]);
+    fullArray.push(["Bowla",[1, 11, 18, 19, 23, 24, 33, 36, 41, 58]]);
     fullArray.push(["Bubblebee",[3, 7, 23, 33, 41, 50, 53, 56]]);
     fullArray.push(["Bubbles",[14, 33, 40, 42, 58]]);
     fullArray.push(["Bubblisaur",[]]);
     fullArray.push(["Buzzer",[7, 8, 11, 19, 20, 24, 25, 28, 32, 33, 36, 37, 38, 39, 42, 46, 47, 52]]);
     fullArray.push(["Buzzler",[3, 23, 31, 41, 58]]);
-    fullArray.push(["Bython",[7,25, 42, 58]]); // Base Color Purple (39)
+    fullArray.push(["Bython",[7, 25, 33, 42, 58]]); // Base Color Purple (39)
     fullArray.push(["C430 Autobot",[]]);
     fullArray.push(["Cadro",[3, 5, 18, 19, 21, 23, 24, 33, 36, 38, 41, 46, 55]]);
     fullArray.push(["Calabat",[58, 59]]);
@@ -466,7 +466,7 @@ function setUpArray()
     fullArray.push(["Poppit",[3, 7, 18, 23, 37, 41, 42]]);
     fullArray.push(["Powtry",[6, 33, 45, 48, 58]]);
     fullArray.push(["Primella",[18, 23, 34, 41, 56, 58]]);
-    fullArray.push(["Psimouse",[3, 12, 28, 33, 41, 54]]);
+    fullArray.push(["Psimouse",[3, 12, 20, 28, 33, 41, 54]]);
     fullArray.push(["Puppyblew",[4, 7, 18, 19, 23, 25, 28, 33, 36, 37, 38, 46, 47, 52, 58]]);
     fullArray.push(["Pwerko",[2, 3, 4, 12, 18, 23, 49, 57]]);
     fullArray.push(["Pygui",[3, 13, 38, 40, 58]]);
@@ -555,7 +555,7 @@ function setUpArray()
     fullArray.push(["Symol",[0, 2, 3, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 20, 21, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34,35, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 47, 48, 49, 50, 52,53, 55, 56, 57, 58, 59]]);// base color brown(4)
     fullArray.push(["Taigar",[3, 23, 41, 58]]);
     fullArray.push(["Tainted Minion",[]]);
-    fullArray.push(["Talpidat",[2, 17, 18, 20, 46, 48]]); //base color blue (3)
+    fullArray.push(["Talpidat",[2, 17, 18, 20, 33, 46, 48]]); //base color blue (3)
     fullArray.push(["Tamed Mini-Monster",[]]);
     fullArray.push(["Tanamurx",[]]);
     fullArray.push(["Tanizard",[13, 18, 19, 36, 38, 45]]);
