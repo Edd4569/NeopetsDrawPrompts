@@ -3942,6 +3942,18 @@ function setupLabRay() {
 	labRayList.push(["Mutant Bowla",80469,101,"https://images.neopets.com/items/bowla_mutant.gif",0]);
 	labRayList.push(["Mutant Barbat",80470,101,"https://images.neopets.com/items/barbat_mutant.gif",0]);
 	labRayList.push(["Ghost Psimouse",80493,101,"https://images.neopets.com/items/2lac1h5m96.gif",0]);
+    labRayList.push(["Custard Bubbles",80609,101,"https://images.neopets.com/items/0lkfcnl1m6.gif",0]);
+	labRayList.push(["Custard Tigermouse",80606,101,"https://images.neopets.com/items/060e3m9adh.gif",0]);
+	labRayList.push(["Yooyu Fossil",80580,101,"https://images.neopets.com/items/b375a28cb0.gif",0]);
+	labRayList.push(["Seffyling",80579,101,"https://images.neopets.com/items/bb12514530.gif",0]);
+	labRayList.push(["Chocolate Sludgy",80851,101,"https://images.neopets.com/items/sludgy_chocolate.gif",1]);
+	labRayList.push(["Chocolate Frillabon",80850,101,"https://images.neopets.com/items/frillabon_chocolate.gif",1]);
+	labRayList.push(["Chocolate Selket",80849,101,"https://images.neopets.com/items/selket_chocolate.gif",1]);
+	labRayList.push(["Faerie Slymook",80921,101,"https://images.neopets.com/items/slymook_faerie.gif",0]);
+	labRayList.push(["Faerie Candychan", 80920,101,"https://images.neopets.com/items/candychan_faerie.gif",0]);
+	labRayList.push(["Faerie Hippalop",80997,101,"https://images.neopets.com/items/7c2a9f1d08.gif",0]);
+	labRayList.push(["Faerie Lurman",80995,101,"https://images.neopets.com/items/petpet_lurman_faerie.gif",0]);
+	labRayList.push(["Faerie Bearog",80996,101,"https://images.neopets.com/items/f5a91ce37.gif",0]);
 	createItemGrid(labRayList);
 	toggleGreyscaleById(2914);
 }
