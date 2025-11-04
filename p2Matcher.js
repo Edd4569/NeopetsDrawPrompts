@@ -41,7 +41,8 @@ let ppColors = ["8-Bit","Birthday","Black","Blue","Brown","Checkered","Chocolate
     "Desert","Disco","Dung","Elderly","Electric","Eventide","Faerie","Fire","Ghost","Glowing","Gold","Green","Grey",
     "Halloween","Ice","Invisible","Island","Jelly","Magma","Maractite","Maraquan","Mutant","Orange","Picnic","Pink",
     "Pirate","Plushie","Purple","Rainbow","Red","Robot","Royal","Sand","Sketch","Snow","Spotted","Spring","Starry",
-    "Stealthy","Strawberry","Tyrannian","Valentine","Void","Water","White","Woodland","Yellow","Zombie","Oversized","25th Anniversary","Fossil"]
+    "Stealthy","Strawberry","Tyrannian","Valentine","Void","Water","White","Woodland","Yellow","Zombie","Oversized","25th Anniversary","Fossil",
+    "Tattoo"]
 
 function getDrawPrompt(specPick, colorPick)
 {
@@ -164,7 +165,7 @@ function setUpArray()
     fullArray.push(["Batterfly",[2, 33]]);
     fullArray.push(["Bazatlan",[13, 43]]);
     fullArray.push(["Bearclops",[]]);
-    fullArray.push(["Bearog",[2, 3, 6, 9, 18, 23, 28, 33, 36, 41, 52, 53]]);
+    fullArray.push(["Bearog",[2, 3, 6, 9, 18, 23, 28, 33, 34, 36, 39, 41, 52, 53]]);
     fullArray.push(["Beekadoodle",[11, 20, 23, 33, 34, 36, 39, 41, 59]]);
     fullArray.push(["Beepallite",[]]);
     fullArray.push(["Belonthiss",[18, 33]]);
@@ -272,12 +273,12 @@ function setUpArray()
     fullArray.push(["Flerper",[18, 28, 41]]);
     fullArray.push(["Fleurbik",[]]);
     fullArray.push(["Flightning Bug",[]]);
-    fullArray.push(["Flipflap",[]]);
+    fullArray.push(["Flipflap",[2]]);
     fullArray.push(["Flipperbot",[]]);
     fullArray.push(["Flippy",[]]);
     fullArray.push(["Flishy",[18, 28, 31, 37]]);
     fullArray.push(["Flizzardo",[3, 8, 25, 41, 58]]);
-    fullArray.push(["Floobix",[25]]); // 23
+    fullArray.push(["Floobix",[18, 25]]); // 23
     fullArray.push(["Florta",[18, 55]]);
     fullArray.push(["Flosset",[5, 11, 23, 43, 56, 58]]);
     fullArray.push(["Floud",[3, 23, 32, 41, 58]]);
@@ -381,7 +382,7 @@ function setUpArray()
     fullArray.push(["Lutra",[1, 36, 39, 56]]);
     fullArray.push(["Lyins",[3, 7, 12, 19, 20, 23, 37, 38, 39, 41, 42, 53, 58]]);
     fullArray.push(["Magaral",[9, 18, 19, 28, 37, 38, 40, 46, 48, 53]]);
-    fullArray.push(["Magmut",[6, 28, 31, 58]]);
+    fullArray.push(["Magmut",[6, 25, 28, 31, 58]]);
     fullArray.push(["Magtile",[20, 30, 50]]);
     fullArray.push(["Mallard",[3, 7, 11, 15, 17, 18, 31, 36, 37, 41, 42, 43, 52, 56, 58]]);
     fullArray.push(["Manjeer",[4, 14, 18, 20, 43]]);
@@ -482,7 +483,7 @@ function setUpArray()
     fullArray.push(["Rav",[]]);
     fullArray.push(["Raverge",[]]);
     fullArray.push(["Razumi",[18, 43]]);
-    fullArray.push(["Reptillior",[3, 9, 36, 40, 42, 58]]);
+    fullArray.push(["Reptillior",[3, 9, 25, 36, 40, 42, 58]]);
     fullArray.push(["Roaderie 1000",[]]);
     fullArray.push(["Robocrush",[18]]);
     fullArray.push(["Roburg 3T3",[3, 23, 24, 41]]);
@@ -518,7 +519,7 @@ function setUpArray()
     fullArray.push(["Skootle Bug",[]]);
     fullArray.push(["Skree",[11, 55]]);
     fullArray.push(["Slogmok",[17, 18, 20, 24, 33, 39, 55, 57]]); // Base Color "Brown"(4)
-    fullArray.push(["Slorg",[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 47, 48, 49, 50, 51, 52, 53, 55, 56, 57, 58, 59]]);
+    fullArray.push(["Slorg",[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 47, 48, 49, 50, 51, 52, 53, 55, 56, 57, 58, 59, 63]]);
     fullArray.push(["Slorgclops",[3, 33, 40, 41]]);
     fullArray.push(["Sludgy",[6, 9, 21, 23, 34, 36, 38, 39, 43, 45, 46, 47, 57]]); // Base Color "Brown"(4)
     fullArray.push(["Slugawoo",[3, 4, 9, 28, 33, 41, 56, 58]]);
@@ -553,7 +554,7 @@ function setUpArray()
     fullArray.push(["Surzard",[16, 37, 38, 49]]);
     fullArray.push(["Sutekh",[3]]);
     fullArray.push(["Swabby",[1, 18, 19, 25, 32, 33, 36, 46, 58]]);
-    fullArray.push(["Symol",[0, 2, 3, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 20, 21, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34,35, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 47, 48, 49, 50, 52,53, 55, 56, 57, 58, 59]]);// base color brown(4)
+    fullArray.push(["Symol",[0, 2, 3, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 20, 21, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34,35, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 47, 48, 49, 50, 52,53, 55, 56, 57, 58, 59, 61]]);// base color brown(4)
     fullArray.push(["Taigar",[3, 23, 41, 58]]);
     fullArray.push(["Tainted Minion",[]]);
     fullArray.push(["Talpidat",[2, 17, 18, 20, 33, 46, 48]]); //base color blue (3)
@@ -613,7 +614,7 @@ function setUpArray()
     fullArray.push(["Werhond",[18, 19, 30, 33, 52, 58]]);
     fullArray.push(["Wheelie",[3, 4, 18, 23, 36, 41, 56]]);
     fullArray.push(["Wheelie Bot",[]]);
-    fullArray.push(["Wherfy",[1, 17, 18, 24, 38, 46, 50, 59]]);
+    fullArray.push(["Wherfy",[1, 11, 17, 18, 24, 38, 46, 50, 57, 59]]);
     fullArray.push(["Whinny",[1, 13, 19, 23, 24, 27, 28, 36, 43, 58]]);
     fullArray.push(["Whoot",[18, 20, 23, 25, 33]]);
     fullArray.push(["Wibreth",[1, 18, 19, 28]]);
