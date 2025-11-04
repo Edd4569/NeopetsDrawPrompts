@@ -3954,7 +3954,7 @@ function setupLabRay() {
 	labRayList.push(["Faerie Hippalop",80997,101,"https://images.neopets.com/items/7c2a9f1d08.gif",0]);
 	labRayList.push(["Faerie Lurman",80995,101,"https://images.neopets.com/items/petpet_lurman_faerie.gif",0]);
 	labRayList.push(["Faerie Bearog",80996,101,"https://images.neopets.com/items/f5a91ce37.gif",0]);
-	labRayList.push(["Tattoo Slorg",81497,101,"https://items.jellyneo.net/layout/imgs/itemdb/bg.png",1]);
+	labRayList.push(["Tattoo Slorg",81497,101,"https://images.neopets.com/items/e0f9c3a547.gif",1]);
 	labRayList.push(["Halloween Reptillior",81442,101,"https://images.neopets.com/items/reptillior_halloween.gif",0]);
 	labRayList.push(["Halloween Magmut",81443,101,"https://images.neopets.com/items/magmut_halloween.gif",0]);
 	labRayList.push(["25th Anniversary Symol",81365,"https://images.neopets.com/items/symol_25thanniversary.gif",0]);
