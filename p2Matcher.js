@@ -42,7 +42,7 @@ let ppColors = ["8-Bit","Birthday","Black","Blue","Brown","Checkered","Chocolate
     "Halloween","Ice","Invisible","Island","Jelly","Magma","Maractite","Maraquan","Mutant","Orange","Picnic","Pink",
     "Pirate","Plushie","Purple","Rainbow","Red","Robot","Royal","Sand","Sketch","Snow","Spotted","Spring","Starry",
     "Stealthy","Strawberry","Tyrannian","Valentine","Void","Water","White","Woodland","Yellow","Zombie","Oversized","25th Anniversary","Fossil",
-    "Tattoo"]
+    "Tattoo", "Alien"];
 
 function getDrawPrompt(specPick, colorPick)
 {
@@ -155,7 +155,7 @@ function setUpArray()
     fullArray.push(["Babith",[7, 3, 9, 18, 19, 20, 23, 31]]);// Base Color Blue (3)
     fullArray.push(["Baby Blu",[7, 3, 18, 25, 28, 33, 37, 39, 40, 41, 47, 53, 56, 58]]);// Base Color Blue (3)
     fullArray.push(["Baby Fireball",[2, 3, 9, 18, 20, 23, 30, 36, 37, 38, 41, 46, 54, 58]]);// Base Color Red (41)
-    fullArray.push(["Baby Space Fungus",[3, 7, 18, 21, 23, 36, 37, 40, 41, 49, 54, 58]]);// Base Color Pink (36)
+    fullArray.push(["Baby Space Fungus",[3, 7, 18, 21, 23, 36, 37, 39, 40, 41, 49, 54, 58]]);// Base Color Pink (36)
     fullArray.push(["Babyca",[3, 6, 18, 32, 33, 36, 37, 40, 41, 45, 52]]);// Base Color Pink (36)
     fullArray.push(["Baraga",[]]);
     fullArray.push(["Barbat",[2, 3, 9, 23, 33, 36, 37, 47]]);
@@ -189,11 +189,11 @@ function setUpArray()
     fullArray.push(["Blurtle",[18, 20, 33, 41, 52]]);
     fullArray.push(["Bogie",[33, 44]]);
     fullArray.push(["Boween",[1, 12, 16, 19, 23, 33, 40, 41, 42, 58, 59]]); // Base Color Blue (3)
-    fullArray.push(["Bowla",[1, 11, 18, 19, 23, 24, 33, 36, 41, 58]]);
+    fullArray.push(["Bowla",[1, 7, 11, 18, 19, 23, 24, 33, 36, 41, 58]]);
     fullArray.push(["Bubblebee",[3, 7, 23, 33, 41, 50, 53, 56]]);
     fullArray.push(["Bubbles",[10, 14, 33, 40, 42, 58]]);
     fullArray.push(["Bubblisaur",[]]);
-    fullArray.push(["Buzzer",[7, 8, 11, 19, 20, 24, 25, 28, 32, 33, 36, 37, 38, 39, 42, 46, 47, 52]]);
+    fullArray.push(["Buzzer",[7, 8, 11, 19, 20, 23, 24, 25, 28, 32, 33, 36, 37, 38, 39, 42, 46, 47, 52]]);
     fullArray.push(["Buzzler",[3, 23, 31, 41, 58]]);
     fullArray.push(["Bython",[7, 25, 33, 42, 58]]); // Base Color Purple (39)
     fullArray.push(["C430 Autobot",[]]);
@@ -273,14 +273,14 @@ function setUpArray()
     fullArray.push(["Flerper",[18, 28, 41]]);
     fullArray.push(["Fleurbik",[]]);
     fullArray.push(["Flightning Bug",[]]);
-    fullArray.push(["Flipflap",[2]]);
+    fullArray.push(["Flipflap",[2, 40]]);
     fullArray.push(["Flipperbot",[]]);
     fullArray.push(["Flippy",[]]);
     fullArray.push(["Flishy",[18, 28, 31, 37]]);
     fullArray.push(["Flizzardo",[3, 8, 25, 41, 58]]);
     fullArray.push(["Floobix",[18, 25]]); // 23
     fullArray.push(["Florta",[18, 55]]);
-    fullArray.push(["Flosset",[5, 11, 23, 43, 56, 58]]);
+    fullArray.push(["Flosset",[5, 11, 23,36, 43, 56, 58]]);
     fullArray.push(["Floud",[3, 23, 32, 41, 58]]);
     fullArray.push(["Flowper",[1, 3, 23, 32, 33, 56]]);
     fullArray.push(["Flurm",[]]);
@@ -318,7 +318,7 @@ function setUpArray()
     fullArray.push(["Graffle",[]]);
     fullArray.push(["Graglop",[18, 28]]);
     fullArray.push(["Gratlik",[]]);
-    fullArray.push(["Greeble",[2, 13, 18, 20, 23, 25, 33, 36, 40, 41, 55, 56, 58]]);
+    fullArray.push(["Greeble",[2, 13, 18, 20, 23, 25, 33, 36, 40, 41, 42, 55, 56, 58]]);
     fullArray.push(["Green Tentacle",[]]);
     fullArray.push(["Gremble",[3, 20, 23, 36, 41, 46, 58]]);
     fullArray.push(["Griefer",[18, 32, 38]]);
@@ -394,7 +394,7 @@ function setUpArray()
     fullArray.push(["Mazzew",[0, 1, 2, 5, 6, 7, 11, 18, 19, 21, 22, 25, 28, 29, 32, 33, 36, 37, 38, 40, 42, 46, 50, 51, 56]]);
     fullArray.push(["Mechanized Laboratory Assistant",[]]);
     fullArray.push(["Meekins",[3, 23, 27, 33, 34, 38, 39, 40, 41, 47]]);
-    fullArray.push(["Meepit",[1, 3, 6, 7, 11, 13, 14, 18, 19, 20, 21, 22, 23, 24, 25, 28, 29, 33, 37, 39, 41, 42, 43, 46, 49, 50, 51, 52, 56, 58, 59, 61]]);
+    fullArray.push(["Meepit",[1, 3, 6, 7, 11, 13, 14, 18, 19, 20, 21, 22, 23, 24, 25, 28, 29, 33, 37, 39, 41, 42, 43, 46, 49, 50, 51, 52, 56, 58, 59, 61, 64]]);
     fullArray.push(["Melton",[3, 20, 21, 31, 54]]);
     fullArray.push(["Melvie",[1, 3, 18, 19, 36, 37, 58]]);
     fullArray.push(["Meowclops",[3, 7, 9, 11, 18, 20, 23, 24, 25, 32, 33, 37, 38, 40, 41, 42, 45, 46, 47, 49, 52, 56]]); // Base Color black (2)
@@ -436,7 +436,7 @@ function setUpArray()
     fullArray.push(["Ombat",[18, 25, 40, 49]]);
     fullArray.push(["Ona",[0, 1, 4, 7, 12, 13, 14, 19, 20, 25, 27, 28, 29, 33, 34, 36, 37, 38, 39, 40, 42, 46, 47, 48, 52, 53, 56]]);
     fullArray.push(["Oop",[]]);
-    fullArray.push(["Orbulon",[7, 17, 18]]);
+    fullArray.push(["Orbulon",[7, 17, 18, 42]]);
     fullArray.push(["Orp",[44]]);
     fullArray.push(["Ownow",[3, 18, 19, 20, 38, 42, 47, 56]]);
     fullArray.push(["Palmplat",[14]]);
@@ -458,9 +458,9 @@ function setUpArray()
     fullArray.push(["Pirakeet",[3, 23, 41, 58]]);
     fullArray.push(["Piraket",[]]);
     fullArray.push(["Plathydon",[23, 28, 33, 42, 52, 56, 58]]);
-    fullArray.push(["Plumpy"[1, 6, 24, 51, 56]]) // Base Color White (56)
+    fullArray.push(["Plumpy"[1, 6, 7, 24, 51, 56]]) // Base Color White (56)
     fullArray.push(["Pofew",[3, 18, 23, 32, 58]]);
-    fullArray.push(["Polarchuck",[0, 1, 3, 4, 12, 13, 14, 18, 24, 25, 28, 33, 36, 37, 38, 42, 45, 47, 49, 52]]);
+    fullArray.push(["Polarchuck",[0, 1, 3, 4, 12, 13, 14, 18, 24, 25, 26, 28, 33, 36, 37, 38, 42, 45, 47, 49, 52]]);
     fullArray.push(["Ponka",[18, 20, 38]]);
     fullArray.push(["Pooka",[]]);
     fullArray.push(["Popblew",[]]);
@@ -468,7 +468,7 @@ function setUpArray()
     fullArray.push(["Powtry",[6, 33, 45, 48, 58]]);
     fullArray.push(["Primella",[18, 23, 34, 41, 56, 58]]);
     fullArray.push(["Psimouse",[3, 12, 20, 28, 33, 41, 54]]);
-    fullArray.push(["Puppyblew",[4, 7, 18, 19, 23, 25, 28, 33, 36, 37, 38, 46, 47, 52, 58]]);
+    fullArray.push(["Puppyblew",[1, 4, 7, 18, 19, 23, 25, 28, 33, 36, 37, 38, 46, 47, 52, 58]]);
     fullArray.push(["Pwerko",[2, 3, 4, 12, 18, 23, 49, 57]]);
     fullArray.push(["Pygui",[3, 13, 38, 40, 58]]);
     fullArray.push(["Pyon",[]]);
@@ -486,7 +486,7 @@ function setUpArray()
     fullArray.push(["Reptillior",[3, 9, 25, 36, 40, 42, 58]]);
     fullArray.push(["Roaderie 1000",[]]);
     fullArray.push(["Robocrush",[18]]);
-    fullArray.push(["Roburg 3T3",[3, 23, 24, 41]]);
+    fullArray.push(["Roburg 3T3",[3, 23, 24, 39, 41]]);
     fullArray.push(["Rock",[3, 4, 6, 7, 10, 12, 13, 15, 18, 19, 21, 23, 25, 28, 32, 33, 34, 36, 37, 38, 39, 43, 46, 47, 48, 50, 52, 53, 57]]);
     fullArray.push(["Rollatron",[]]);
     fullArray.push(["Romeep 3t3",[]]);
@@ -501,7 +501,7 @@ function setUpArray()
     fullArray.push(["Scarabug",[2, 4, 19, 23, 27, 36, 41, 43, 56, 58]]);
     fullArray.push(["Schmoonie",[18, 23, 50]]);
     fullArray.push(["Schnelly",[1, 7, 13, 18, 24, 25, 38, 47, 52, 53, 55, 56]]); //Bae Color Black (2)
-    fullArray.push(["Scorf",[]]);
+    fullArray.push(["Scorf",[7]]);
     fullArray.push(["Scout Unit",[]]);
     fullArray.push(["Screal",[25, 30, 49, 56]]);
     fullArray.push(["Screwtop",[18]]);
@@ -529,7 +529,7 @@ function setUpArray()
     fullArray.push(["Snauberack",[33]]);
     fullArray.push(["Snicklebeast",[2, 9, 19, 25, 28, 37, 38, 45, 46, 57, 58]]);
     fullArray.push(["Snomorg",[39, 41, 52, 56, 58]]);
-    fullArray.push(["Snoogy",[3, 9, 17, 36, 39, 41, 52, 58]]);
+    fullArray.push(["Snoogy",[3, 9, 17, 34, 36, 39, 41, 52, 58]]);
     fullArray.push(["Snorkle",[1, 3, 7, 8, 9, 11, 12, 18, 19, 20, 21, 23, 24, 25, 28, 33, 37, 38, 39, 40, 42, 45, 46, 52]]);
     fullArray.push(["Snorlkin",[16, 19, 36, 40, 41]]);
     fullArray.push(["Snowbunny",[3, 4, 6, 7, 9, 10, 18, 20, 22, 23, 24, 25, 28, 29, 32, 36, 37, 38, 40, 42, 46, 47, 48, 49, 51, 52, 58]]); // Base Color White (56)
@@ -630,7 +630,7 @@ function setUpArray()
     fullArray.push(["Yooyu",[1, 3, 7, 11, 18, 19, 23, 24, 28, 32, 33, 38, 40, 41, 42, 46, 52, 55, 58, 62]]);
     fullArray.push(["Yullie",[2, 7, 16, 18, 28, 33, 37, 38, 41, 46, 49]]);
     fullArray.push(["Zamillion",[]]);
-    fullArray.push(["Zebba",[5, 28, 33]]);
+    fullArray.push(["Zebba",[5, 7, 28, 33]]);
     fullArray.push(["Zebie",[3, 6, 7, 9, 10, 19, 21, 38, 41, 43, 46, 52, 58]]);
     fullArray.push(["Zomutt",[4, 11, 18, 25, 33, 37, 42, 46]]); // base color grey (24)
     fullArray.push(["Zoomik",[]]);
