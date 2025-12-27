@@ -105,7 +105,6 @@ function onRestart(clearOutcome) {
 function P2Avatar() {
     return `<table class="responsive-table" cellpadding="2" cellspacing="0" border="0" align="center">
     <tbody><tr>
-    <td bgcolor="#ffffcc" align="center" colspan="2"><strong>Something Has Happened!</strong></td>
     </tr><tr>
     <td width="50"><img src="https://images.neopets.com/neoboards/avatars/petpetlabray.gif" width="50" height="50" alt="" border="0"></td>
     <td>You are now eligible to use '<strong>Petpet Laboratory</strong>' as an avatar on the <a href="//www.neopets.com/neoboards/"><strong>NeoBoards</strong></a>!</td>
@@ -151,15 +150,6 @@ function p2LabRayGreeting(first) {
     The Kookith begins wildly pushing buttons on the console, which looks to be made of cardboard and... 
     Achyfi cans?! This can't be right! You begin formulating a plan to rescue your Petpet and run far, far away, but it's too late. The ray has already been fired...
     </div>`;
-}
-
-function getLabRayText(item) {
-    let print = 'You should draw a';
-    if (item.charAt(0) == 'A' ||item.charAt(0) == 'E'|| item.charAt(0) == 'I'|| item.charAt(0) == 'O') {
-        print += 'n';
-    }
-    print += " " +item + "! ";
-    return print;
 }
 
 function randomP2Picker() {
@@ -3968,7 +3958,7 @@ function setupLabRay() {
 	labRayList.push(["Purple Baby Space Fungus",81518,101,"https://images.neopets.com/items/purple_baby_space_fungus.gif",0]);
 	labRayList.push(["Birthday Puppyblew",81834,101,"https://images.neopets.com/items/2e9b8a4d60.gif",0]);
 	labRayList.push(["Pink Flosset",81843,101,"https://images.neopets.com/items/flosset_pink.gif",0]);
-	labRayList.push(["Robot Greeble",81842,101,"https://images.neopets.com/items/greeble_robot.gif0",Robot]);
+	labRayList.push(["Robot Greeble",81842,101,"https://images.neopets.com/items/greeble_robot.gif",0]);
 	labRayList.push(["Green Buzzer",81848,101,"https://images.neopets.com/items/buzzer_green.gif",0]);
 	labRayList.push(["Rainbow Flipflap",81846,101,"https://images.neopets.com/items/flipflap_rainbow.gif",0]);
 	labRayList.push(["Ice Polarchuck",82026,101,"https://images.neopets.com/items/polarchuck_ice.gif",0]);

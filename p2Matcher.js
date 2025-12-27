@@ -74,7 +74,6 @@ function jnLinkFormat(i) {
     }
 }
 
-
 function getText(item) {
     let print = 'You should draw a';
     if (item.charAt(0) == 'A' ||item.charAt(0) == 'E'|| item.charAt(0) == 'I'|| item.charAt(0) == 'O') {
