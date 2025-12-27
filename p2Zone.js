@@ -1,7 +1,7 @@
 function createItemGrid(items) {
     const gridContainer = document.getElementById('grid');
     items.forEach(item => {
-        const [name, id, r, imageURL, isExclusive] = item;
+        const [name, id, r, imageurl, isExclusive] = item;
 
         const card = document.createElement('div');
         card.classList.add('item-card');
@@ -14,7 +14,7 @@ function createItemGrid(items) {
         }
 
         const img = document.createElement('img');
-        img.src = imageURL;
+        img.src = imageurl;
         img.alt = name;
         img.loading = "lazy";
         img.setAttribute('data-id', id);
