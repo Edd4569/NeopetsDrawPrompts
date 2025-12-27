@@ -1,117 +1,227 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-      <script src="p2Matcher.js"></script>
-      <script src="p2Labray.js"></script>
-      <script src="p2Zone.js"></script>
-      <title>Edd's Neopets Stuff!</title>
-      <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
-      <!-- Navbar (only visible on mobile) -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-         <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarMenu">
-               <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
-                  <li class="nav-item">
-                     <button onclick="randomP2()" class="btn btn-primary w-100 my-1">Random P2!</button>
-                  </li>
-                  <li class="nav-item">
-                     <button onclick="uniqueP2()" class="btn btn-primary w-100 my-1">Nonexistent Petpet Color/Species Combo!</button>
-                  </li>
-                  <li class="nav-item">
-                     <button onclick="p2labRay()" class="btn btn-primary w-100 my-1">The Petpet Laboratory!</button>
-                  </li>
-                  <li class="nav-item">
-                     <button class="btn btn-warning w-100 my-1 Mystery-Solving">Mystery Solving Hub</button>
-                  </li>
-                  <li class="nav-item">
-                     <button class="btn btn-success w-100 my-1 TradingPost">Baby Paintbrush Calculator</button>
-                  </li>
-               </ul>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Neopets Goodies!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>Neopets Goodie<span id="secretS">s</span>!</h1>
+    <div class="panel">
+    <div class="buttons" style="justify-content: center;">
+        <button id="btnRandom">Random P2</button>
+        <button id="btnReal">Real P2</button>
+        <button id="btnFake">Non-Existent P2</button>
+        <button id="btnPPLR">Petpet Lab Ray</button>
+        <button id="btnDAM">#data-and-mechanics</button>
+    </div>
+    <div id="intro" class="meta "></div>
+    <div id="divMain" class="hidden">
+        <div id="output" class="result">Click a button</div>
+        <div id="outputMeta" class="meta"></div>
+    </div>
+    <div id="divFunc4" class="hidden">
+        <div id="labRayOutput">labRay</div>
+        <div id="abc" class="collected">
+          <div class="card">
+            <div class="center">
+              <h2>Collected Petpets!</h2>
+              <div class="subtitle">Can you collect them all!</div>
+              <div id="grid" class="grid-container"></div>
             </div>
-         </div>
-      </nav>
-      <div class="container mt-4">
-         <div class="col-sm-12">
-            <div class="card">
-               <div class="card-body text-center">
-                  <h1>Neopets Goodies!</h1>
-                  <div class="container button-container">
-                     <button onclick="randomP2()" class="btn btn-primary">Random P2!</button>
-                     <button onclick="uniqueP2()" class="btn btn-primary">Nonexistent Petpet Color/Species Combo!</button>
-                     <button onclick="p2labRay()" class="btn btn-primary">The Petpet Laboratory!</button>
-                     <button class="btn btn-warning Mystery-Solving">Mystery Solving Hub</button>
-                     <button class="btn btn-success TradingPost">Baby Paintbrush Calculator</button>
-                  </div>
-                  <br>
-                  <figcaption class="blockquote-footer" id="idDescription">Pick one of the buttons to get started</figcaption>
-               </div>
-            </div>
-         </div>
-         <div class="col-sm-12 mt-4">
-            <div class="card">
-               <div class="text-center">
-                  <br>
-                  <div id="drawP"></div>
-               </div>
-            </div>
-         </div>
-         <div id="abc">
-            <div class="col-sm-12 mt-4">
-               <div class="card">
-                  <div class="text-center">
-                     <br>
-                     <h2>Collected Petpets!</h2><br>
-                     <figcaption class="blockquote-footer">Can you collect them all!</figcaption>
-                     <div id="grid" class="grid-container"></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <footer>
-         <br>
-         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            <p>© 1999-2025 Neopets, Inc. All rights reserved.<br> Unofficially powered by the Jellyneo Item Database.
-               <a href="https://items.jellyneo.net/" target="_blank" rel="noopener noreferrer">
-               <img src="https://www.jellyneo.net/images/articles/idbicon.png" alt="JNIDBLOGO" class="img-inline-text"/>
-               </a>
-            </p>
-            <figcaption class="blockquote-footer">
-               <br>This is an unauthorized fan site (v12.26.2025)
-               <p>Questions? Concerns? Ideas? DM @eddwith3ds on discord</p>
-            </figcaption>
-         </div>
-      </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-      <script src="script.js"></script>
-      <script>
-         const buttonLinks = {
-             "Mystery-Solving": "https://edd4569.github.io/Mystery-Solving/",
-             "TradingPost": "https://edd4569.github.io/tradingpost/"
-         };
-         for (const [className, url] of Object.entries(buttonLinks)) {
-             document.querySelectorAll(`.${className}`).forEach(btn => {
-                 btn.addEventListener("click", e => {
-                     if (!(e.ctrlKey || e.metaKey || e.button === 1)) {
-                         location.href = url;
-                     }
-                 });
-                 btn.addEventListener("mousedown", e => {
-                     if (e.button === 1 || e.ctrlKey || e.metaKey) {
-                         window.open(url, "_blank");
-                     }
-                 });
-             });
-         }
-      </script>
-   </body>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p class="site-footer__text">
+      © 1999-2025 Neopets, Inc. All rights reserved.<br>
+      Unofficially powered by the
+      <a href="https://items.jellyneo.net/" target="_blank" rel="noopener noreferrer">
+        Jellyneo Item Database</a>.
+    </p>
+
+    <div class="site-footer__fineprint">
+      <div>This is an unauthorized fan site (v12.26.2025)</div>
+      <div>Questions? Concerns? Ideas? DM @eddwith3ds on discord</div>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    const $ = (id) => document.getElementById(id);
+
+    function randInt(minInclusive, maxInclusive) {
+      return Math.floor(Math.random() * (maxInclusive - minInclusive + 1)) + minInclusive;
+    }
+
+    function randChoice(arr) {
+      return arr[randInt(0, arr.length - 1)];
+    }
+
+    function colorNameFromId(colorId) {
+        if (!Number.isInteger(colorId)) {
+            return "(invalid colorId)";
+        }
+        if (colorId < 0 || colorId >= p2Colors.length) {
+            return `(unknown colorId ${colorId})`;
+        }
+        return p2Colors[colorId];
+    }
+
+    function showMain() {
+      $("divMain").classList.remove("hidden");
+      $("divFunc4").classList.add("hidden");
+    }
+
+    function showPPLR() {
+      $("divMain").classList.add("hidden");
+      $("divFunc4").classList.remove("hidden");
+      setOutput(``,``);
+    }
+
+    function setOutput(titleText, metaText = "") {
+      $("output").innerHTML = titleText;
+      $("intro").innerHTML = metaText + `<br>`;
+    }
+    function setLabOutput(titleText, metaText = "") {
+        $("labRayOutput").innerHTML = titleText;
+    }
+
+    function ensureDataReady() {
+      if (!Array.isArray(p2Colors) || p2Colors.length === 0) {
+        return false;
+      }
+      if (!Array.isArray(p2Types) || p2Types.length === 0) {
+        return false;
+      }
+      if (!Array.isArray(fullArray) || fullArray.length === 0) {
+        return true;
+      }
+      if (!Array.isArray(SillyP2Colors) || SillyP2Colors.length === 0) {
+        return true;
+      }
+      return true;
+    }
+
+    function runFunction1() {
+      showMain();
+      if (!ensureDataReady()) {
+        return;
+      }
+
+      const type = randChoice(p2Types);
+      const color = randChoice(p2Colors);
+
+      setOutput(jnLinkFormat(color,type,0),`- Generate a real or fake Petpet Color/Species`);
+    }
+
+    function runFunction2() {
+      showMain();
+      if (!ensureDataReady()) {
+        return;
+      }
+
+      if (!Array.isArray(fullArray) || fullArray.length === 0) {
+        return;
+      }
+
+      const entry = randChoice(fullArray);
+      if (!entry || typeof entry.t !== "string" || !Array.isArray(entry.v) || entry.v.length === 0) {
+        return;
+      }
+
+      const colorId = randChoice(entry.v);
+      const colorName = colorNameFromId(colorId);
+      setOutput(jnLinkFormat(colorName,entry.t,1),`- Generate a real Petpet Color/Species`);
+    }
+
+    function runFunction3() {
+      showMain();
+      if (!ensureDataReady()) {
+        return;
+      }
+
+      if (!Array.isArray(fullArray) || fullArray.length === 0) {
+        return;
+      }
+
+      const entry = randChoice(fullArray);
+      if (!entry || typeof entry.t !== "string" || !Array.isArray(entry.v)) {
+        return;
+      }
+
+      const allColors = Array.from({ length: p2Colors.length }, (_, id) => id);
+      const validSet = new Set(entry.v.filter(Number.isInteger));
+      const b = Number.isInteger(entry.b) ? entry.b : null;
+      const inv = allColors.filter(id => !validSet.has(id) && (b === null || id !== b));
+
+      if (inv.length === 0) {
+        setOutput(`${entry.t}`, `No invalid colors available`);
+        return;
+      }
+
+      const colorId = randChoice(inv);
+      const colorName = colorNameFromId(colorId);
+
+      setOutput(jnLinkFormat(colorName,entry.t,0),`- Should generate a Petpet Color/Species combo that doesn't exist on site. (Unless TNT releases a new combo before I can update)`);
+    }
+
+    function runFunction5()  {
+      showMain();
+      if (!ensureDataReady()) {
+        return;
+      }
+      const type = randChoice(p2Types);
+      const color = randChoice(SillyP2Colors);
+
+      setOutput(jnLinkFormat(color,type,0),`- Generate a secret fake Petpet Color/Species`);
+    }
+
+    function getDrawText(item) {
+        let print = 'You should draw a';
+        if (item.charAt(0) == 'A' ||item.charAt(0) == 'E'|| item.charAt(0) == 'I'|| item.charAt(0) == 'O') {
+            print += 'n';
+        }
+        print += ":<br> " +item + "! ";
+        return print;
+    }
+
+    function jnLinkFormat(color, type, real) {
+        let textPrompt = getDrawText(`${color} ${type}`);
+        let url = "https://items.jellyneo.net/search/all-petpets/?name=%s";
+        let url2 =  "https://items.jellyneo.net/search/all-petpets/?name=%s&name_type=3";
+        let image = "https://images.neopets.com/items/toy_plushie_negg_fish.gif";
+        url = url.replace("%s", type);
+        if (real==1) {
+            url2 = url2.replace("%s", "" +color +" "+type);
+            return `<div>${textPrompt}<br><a tabindex='-1' target='_blank' href='${url2}'><img src='${image}' class='searchImg'></a></div>`;
+        } else {
+            url = url.replace("%s", type);
+            return `<div>${textPrompt}<br><a tabindex='-1' target='_blank' href='${url}'><img src='${image}' class='searchImg'></a></div>`;
+        }
+    }
+
+    $("btnRandom").addEventListener("click", runFunction1);
+    $("btnReal").addEventListener("click", runFunction2);
+    $("btnFake").addEventListener("click", runFunction3);
+
+    $("btnPPLR").addEventListener("click", () => {
+      showPPLR();
+      p2labRay();
+    });
+
+    $("btnDAM").addEventListener("click", () => {
+      window.open("https://edd4569.github.io/Mystery-Solving/", "_blank", "noopener,noreferrer");
+    });
+
+  </script>
+  <script src="./script.js"></script>
+  <script src="./p2zone.js"></script>
+  <script src="./labRayScript.js"></script>
+</body>
 </html>

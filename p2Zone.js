@@ -1,7 +1,7 @@
 function createItemGrid(items) {
     const gridContainer = document.getElementById('grid');
     items.forEach(item => {
-        const [name, id, r, imageurl, isExclusive] = item;
+        const [name, id, r, imageURL, isExclusive] = item;
 
         const card = document.createElement('div');
         card.classList.add('item-card');
@@ -14,7 +14,7 @@ function createItemGrid(items) {
         }
 
         const img = document.createElement('img');
-        img.src = imageurl;
+        img.src = imageURL;
         img.alt = name;
         img.loading = "lazy";
         img.setAttribute('data-id', id);
@@ -28,6 +28,10 @@ function createItemGrid(items) {
 
         gridContainer.appendChild(card);
     });
+}
+
+function clearGrid() {
+    document.getElementById('grid').innerHTML =``;
 }
 
 function toggleGreyscaleById(id) {
