@@ -4071,6 +4071,8 @@ function setupLabRay() {
         labRayList.push(["Alien Meepit",82401,101,"https://images.neopets.com/items/c717a097a.gif",1]);
         labRayList.push(["Christmas Plumpy",82389,101,"https://images.neopets.com/items/plumpy_christmas.gif",0]);
         labRayList.push(["Christmas Zebba",82390,101,"https://images.neopets.com/items/zebba_christmas.gif",0]);
+        labRayList.push(["Alien Rock",82409,101,"https://images.neopets.com/items/3c8348a34f.gif",1]);
+        labRayList.push(["Alien Kadoatie",82406,101,"https://images.neopets.com/items/fd5c77sdf4.gif",1]);
     }
         createItemGrid(labRayList);
         toggleGreyscaleById(2914);
